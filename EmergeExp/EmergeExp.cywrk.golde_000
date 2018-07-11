@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="EmergeExp\Module_1\Source Files\main.c">
+<ExpandedNodeIds>
+<v>EmergeExp</v>
+<v>EmergeExp\Acelerometer\TopDesign</v>
+<v>EmergeExp\Acelerometer\Acelerometer.cydwr\Pins</v>
+<v>EmergeExp\Acelerometer\Acelerometer.cydwr\Analog</v>
+<v>EmergeExp\Acelerometer\Acelerometer.cydwr\DMA</v>
+<v>EmergeExp\Acelerometer\Acelerometer.cydwr\Clocks</v>
+<v>EmergeExp\Acelerometer\Acelerometer.cydwr\Interrupts</v>
+<v>EmergeExp\Acelerometer\Acelerometer.cydwr\System</v>
+<v>EmergeExp\Acelerometer\Acelerometer.cydwr\Directives</v>
+<v>EmergeExp\Acelerometer\Acelerometer.cydwr\Flash Security</v>
+<v>EmergeExp\Acelerometer\Header Files</v>
+<v>EmergeExp\Acelerometer\Header Files\cyapicallbacks.h</v>
+<v>EmergeExp\Acelerometer\Header Files\protocolo can.h</v>
+<v>EmergeExp\Acelerometer\Source Files</v>
+<v>EmergeExp\Acelerometer\Source Files\main.c</v>
+<v>EmergeExp\Acelerometer\Generated_Source\PSoC4</v>
+<v>EmergeExp\Module_1</v>
+<v>EmergeExp\Module_1\TopDesign</v>
+<v>EmergeExp\Module_1\Module_1.cydwr</v>
+<v>EmergeExp\Module_1\Module_1.cydwr\Pins</v>
+<v>EmergeExp\Module_1\Module_1.cydwr\Analog</v>
+<v>EmergeExp\Module_1\Module_1.cydwr\DMA</v>
+<v>EmergeExp\Module_1\Module_1.cydwr\Clocks</v>
+<v>EmergeExp\Module_1\Module_1.cydwr\Interrupts</v>
+<v>EmergeExp\Module_1\Module_1.cydwr\System</v>
+<v>EmergeExp\Module_1\Module_1.cydwr\Directives</v>
+<v>EmergeExp\Module_1\Module_1.cydwr\Flash Security</v>
+<v>EmergeExp\Module_1\Header Files</v>
+<v>EmergeExp\Module_1\Header Files\AX12.h</v>
+<v>EmergeExp\Module_1\Header Files\CPG.h</v>
+<v>EmergeExp\Module_1\Header Files\cyapicallbacks.h</v>
+<v>EmergeExp\Module_1\Header Files\DynamixelSerial1.h</v>
+<v>EmergeExp\Module_1\Header Files\VCNL4010_1.h</v>
+<v>EmergeExp\Module_1\Header Files\VCNL4010_2.h</v>
+<v>EmergeExp\Module_1\Header Files\VCNL4010_3.h</v>
+<v>EmergeExp\Module_1\Header Files\VCNL4010_4.h</v>
+<v>EmergeExp\Module_1\Source Files</v>
+<v>EmergeExp\Module_1\Source Files\CPG.c</v>
+<v>EmergeExp\Module_1\Source Files\main.c</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4</v>
+<v>EmergeExp\Module_CPG\TopDesign</v>
+<v>EmergeExp\Module_CPG\Module_CPG.cydwr</v>
+<v>EmergeExp\Module_CPG\Module_CPG.cydwr\Pins</v>
+<v>EmergeExp\Module_CPG\Module_CPG.cydwr\Analog</v>
+<v>EmergeExp\Module_CPG\Module_CPG.cydwr\DMA</v>
+<v>EmergeExp\Module_CPG\Module_CPG.cydwr\Clocks</v>
+<v>EmergeExp\Module_CPG\Module_CPG.cydwr\Interrupts</v>
+<v>EmergeExp\Module_CPG\Module_CPG.cydwr\System</v>
+<v>EmergeExp\Module_CPG\Module_CPG.cydwr\Directives</v>
+<v>EmergeExp\Module_CPG\Module_CPG.cydwr\Flash Security</v>
+<v>EmergeExp\Module_CPG\Header Files</v>
+<v>EmergeExp\Module_CPG\Header Files\AX12.h</v>
+<v>EmergeExp\Module_CPG\Header Files\cyapicallbacks.h</v>
+<v>EmergeExp\Module_CPG\Header Files\DynamixelSerial1.h</v>
+<v>EmergeExp\Module_CPG\Header Files\inicio.h</v>
+<v>EmergeExp\Module_CPG\Header Files\protocolo can.h</v>
+<v>EmergeExp\Module_CPG\Header Files\VCNL4010_1.h</v>
+<v>EmergeExp\Module_CPG\Header Files\VCNL4010_2.h</v>
+<v>EmergeExp\Module_CPG\Header Files\VCNL4010_3.h</v>
+<v>EmergeExp\Module_CPG\Header Files\VCNL4010_4.h</v>
+<v>EmergeExp\Module_CPG\Source Files</v>
+<v>EmergeExp\Module_CPG\Source Files\main.c</v>
+<v>EmergeExp\Module_CPG\Generated_Source</v>
+<v>EmergeExp\Module_CPG\Generated_Source\PSoC4</v>
+<v>EmergeExp\Module_CPG\Generated_Source\PSoC4\CAN</v>
+<v>EmergeExp\Test_Module\TopDesign</v>
+<v>EmergeExp\Test_Module\Test_Module.cydwr\Pins</v>
+<v>EmergeExp\Test_Module\Test_Module.cydwr\Analog</v>
+<v>EmergeExp\Test_Module\Test_Module.cydwr\DMA</v>
+<v>EmergeExp\Test_Module\Test_Module.cydwr\Clocks</v>
+<v>EmergeExp\Test_Module\Test_Module.cydwr\Interrupts</v>
+<v>EmergeExp\Test_Module\Test_Module.cydwr\System</v>
+<v>EmergeExp\Test_Module\Test_Module.cydwr\Directives</v>
+<v>EmergeExp\Test_Module\Test_Module.cydwr\Flash Security</v>
+<v>EmergeExp\Test_Module\Header Files</v>
+<v>EmergeExp\Test_Module\Header Files\AX12.h</v>
+<v>EmergeExp\Test_Module\Header Files\cyapicallbacks.h</v>
+<v>EmergeExp\Test_Module\Header Files\DynamixelSerial1.h</v>
+<v>EmergeExp\Test_Module\Header Files\VCNL4010_1.h</v>
+<v>EmergeExp\Test_Module\Header Files\VCNL4010_2.h</v>
+<v>EmergeExp\Test_Module\Header Files\VCNL4010_3.h</v>
+<v>EmergeExp\Test_Module\Header Files\VCNL4010_4.h</v>
+<v>EmergeExp\Test_Module\Source Files</v>
+<v>EmergeExp\Test_Module\Source Files\main.c</v>
+<v>EmergeExp\Test_Module\Generated_Source\PSoC4</v>
+<v>EmergeExp\Test_Module_CAN_1</v>
+<v>EmergeExp\Test_Module_CAN_1\TopDesign</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Pins</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Analog</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\DMA</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Clocks</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Interrupts</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\System</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Directives</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Flash Security</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\AX12.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\cyapicallbacks.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\DynamixelSerial1.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\VCNL4010_1.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\VCNL4010_2.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\VCNL4010_3.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\VCNL4010_4.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Source Files</v>
+<v>EmergeExp\Test_Module_CAN_1\Source Files\main.c</v>
+<v>EmergeExp\Test_Module_CAN_1\Generated_Source</v>
+<v>EmergeExp\Test_Module_CAN_1\Generated_Source\PSoC4</v>
+<v>EmergeExp\Test_Module_CAN_1\Generated_Source\PSoC4\CAN</v>
+<v>EmergeExp\Test_Module_CAN_2\TopDesign</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2.cydwr</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2.cydwr\Pins</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2.cydwr\Analog</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2.cydwr\DMA</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2.cydwr\Clocks</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2.cydwr\Interrupts</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2.cydwr\System</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2.cydwr\Directives</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2.cydwr\Flash Security</v>
+<v>EmergeExp\Test_Module_CAN_2\Header Files</v>
+<v>EmergeExp\Test_Module_CAN_2\Header Files\AX12.h</v>
+<v>EmergeExp\Test_Module_CAN_2\Header Files\cyapicallbacks.h</v>
+<v>EmergeExp\Test_Module_CAN_2\Header Files\DynamixelSerial1.h</v>
+<v>EmergeExp\Test_Module_CAN_2\Header Files\VCNL4010_1.h</v>
+<v>EmergeExp\Test_Module_CAN_2\Header Files\VCNL4010_2.h</v>
+<v>EmergeExp\Test_Module_CAN_2\Header Files\VCNL4010_3.h</v>
+<v>EmergeExp\Test_Module_CAN_2\Header Files\VCNL4010_4.h</v>
+<v>EmergeExp\Test_Module_CAN_2\Source Files</v>
+<v>EmergeExp\Test_Module_CAN_2\Source Files\main.c</v>
+<v>EmergeExp\Test_Module_CAN_2\Generated_Source</v>
+<v>EmergeExp\Test_Module_CAN_2\Generated_Source\PSoC4</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>EmergeExp\Module_1\Module_1.cydwr\Interrupts</v>
+<v>EmergeExp\Module_1\Module_1.cydwr\System</v>
+<v>EmergeExp\Module_1\Module_1.cydwr\Directives</v>
+<v>EmergeExp\Module_1\Module_1.cydwr\Flash Security</v>
+<v>EmergeExp\Module_1\Header Files</v>
+<v>EmergeExp\Module_1\Header Files\AX12.h</v>
+<v>EmergeExp\Module_1\Header Files\CPG.h</v>
+<v>EmergeExp\Module_1\Header Files\cyapicallbacks.h</v>
+<v>EmergeExp\Module_1\Header Files\DynamixelSerial1.h</v>
+<v>EmergeExp\Module_1\Header Files\VCNL4010_1.h</v>
+<v>EmergeExp\Module_1\Header Files\VCNL4010_2.h</v>
+<v>EmergeExp\Module_1\Header Files\VCNL4010_3.h</v>
+<v>EmergeExp\Module_1\Header Files\VCNL4010_4.h</v>
+<v>EmergeExp\Module_1\Source Files</v>
+<v>EmergeExp\Module_1\Source Files\CPG.c</v>
+<v>EmergeExp\Module_1\Source Files\main.c</v>
+<v>EmergeExp\Module_1\Generated_Source</v>
+<v>EmergeExp\Module_CPG</v>
+<v>EmergeExp\Test_Module</v>
+<v>EmergeExp\Test_Module_CAN_1</v>
+<v>EmergeExp\Test_Module_CAN_1\TopDesign</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Pins</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Analog</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\DMA</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Clocks</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Interrupts</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\System</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Directives</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.cydwr\Flash Security</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\AX12.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\cyapicallbacks.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\DynamixelSerial1.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\VCNL4010_1.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\VCNL4010_2.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\VCNL4010_3.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Header Files\VCNL4010_4.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Source Files</v>
+<v>EmergeExp\Test_Module_CAN_1\Source Files\main.c</v>
+<v>EmergeExp\Test_Module_CAN_1\Generated_Source</v>
+<v>EmergeExp\Test_Module_CAN_1\Generated_Source\PSoC4</v>
+<v>EmergeExp\Test_Module_CAN_1\Generated_Source\PSoC4\CAN</v>
+<v>EmergeExp\Test_Module_CAN_1\Generated_Source\PSoC4\CAN\CAN.c</v>
+<v>EmergeExp\Test_Module_CAN_1\Generated_Source\PSoC4\CAN\CAN.h</v>
+<v>EmergeExp\Test_Module_CAN_1\Generated_Source\PSoC4\CAN\CAN_INT.c</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>EmergeExp</v>
+<v>EmergeExp\Acelerometer</v>
+<v>EmergeExp\Acelerometer\TopDesign</v>
+<v>EmergeExp\Acelerometer\TopDesign\TopDesign.cysch</v>
+<v>EmergeExp\Module_1</v>
+<v>EmergeExp\Module_1\TopDesign</v>
+<v>EmergeExp\Module_1\TopDesign\TopDesign.cysch</v>
+<v>EmergeExp\Module_CPG</v>
+<v>EmergeExp\Module_CPG\TopDesign</v>
+<v>EmergeExp\Module_CPG\TopDesign\TopDesign.cysch</v>
+<v>EmergeExp\Test_Module</v>
+<v>EmergeExp\Test_Module\TopDesign</v>
+<v>EmergeExp\Test_Module\TopDesign\TopDesign.cysch</v>
+<v>EmergeExp\Test_Module_CAN_1</v>
+<v>EmergeExp\Test_Module_CAN_1\TopDesign</v>
+<v>EmergeExp\Test_Module_CAN_1\TopDesign\TopDesign.cysch</v>
+<v>EmergeExp\Test_Module_CAN_2</v>
+<v>EmergeExp\Test_Module_CAN_2\TopDesign</v>
+<v>EmergeExp\Test_Module_CAN_2\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>EmergeExp</v>
+<v>EmergeExp\Acelerometer</v>
+<v>EmergeExp\Acelerometer\TopDesign</v>
+<v>EmergeExp\Acelerometer\TopDesign\TopDesign.cysch</v>
+<v>EmergeExp\Module_1</v>
+<v>EmergeExp\Module_1\TopDesign</v>
+<v>EmergeExp\Module_1\TopDesign\TopDesign.cysch</v>
+<v>EmergeExp\Module_CPG</v>
+<v>EmergeExp\Module_CPG\TopDesign</v>
+<v>EmergeExp\Module_CPG\TopDesign\TopDesign.cysch</v>
+<v>EmergeExp\Test_Module</v>
+<v>EmergeExp\Test_Module\TopDesign</v>
+<v>EmergeExp\Test_Module\TopDesign\TopDesign.cysch</v>
+<v>EmergeExp\Test_Module_CAN_1</v>
+<v>EmergeExp\Test_Module_CAN_1\TopDesign</v>
+<v>EmergeExp\Test_Module_CAN_1\TopDesign\TopDesign.cysch</v>
+<v>EmergeExp\Test_Module_CAN_2</v>
+<v>EmergeExp\Test_Module_CAN_2\TopDesign</v>
+<v>EmergeExp\Test_Module_CAN_2\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>EmergeExp</v>
+<v>EmergeExp\Acelerometer</v>
+<v>EmergeExp\Acelerometer\CortexM0</v>
+<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541</v>
+<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug</v>
+<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Acelerometer.elf</v>
+<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Acelerometer.hex</v>
+<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Acelerometer.map</v>
+<v>EmergeExp\Acelerometer\Acelerometer.gpdsc</v>
+<v>EmergeExp\Acelerometer\Acelerometer.rpt</v>
+<v>EmergeExp\Acelerometer\Acelerometer_timing.html</v>
+<v>EmergeExp\Module_1</v>
+<v>EmergeExp\Module_1\CortexM0</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_HFCLK.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_INT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_isr.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_TX_RX_func.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CPG.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_BOOT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_INT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_IntClock.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\RX.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_1.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_1_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_BOOT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_INT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_IntClock.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_BOOT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_BOOT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_INT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_MASTER.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_SCB_IRQ.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_SCBCLK.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_scl.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_scl_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_sda.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_sda_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_BOOT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_BOOT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_INT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_MASTER.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_SCB_IRQ.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_SCBCLK.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_scl.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_scl_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_sda.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_sda_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_BOOT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_BOOT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_INT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_MASTER.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_SCB_IRQ.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_SCBCLK.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_scl.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_scl_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_sda.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_sda_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_BOOT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_BOOT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_INT.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_MASTER.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_SCB_IRQ.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_SCBCLK.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_scl.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_scl_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_sda.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_sda_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\TX_1.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\TX_1_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\TXC.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Listing Files\TXC_PM.lst</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Module_1.elf</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Module_1.hex</v>
+<v>EmergeExp\Module_1\CortexM0\ARM_GCC_541\Debug\Module_1.map</v>
+<v>EmergeExp\Module_1\Module_1.gpdsc</v>
+<v>EmergeExp\Module_1\Module_1.rpt</v>
+<v>EmergeExp\Module_1\Module_1_timing.html</v>
+<v>EmergeExp\Module_CPG</v>
+<v>EmergeExp\Module_CPG\CortexM0</v>
+<v>EmergeExp\Module_CPG\CortexM0\ARM_GCC_541</v>
+<v>EmergeExp\Module_CPG\CortexM0\ARM_GCC_541\Debug</v>
+<v>EmergeExp\Module_CPG\CortexM0\ARM_GCC_541\Debug\Module_CPG.elf</v>
+<v>EmergeExp\Module_CPG\CortexM0\ARM_GCC_541\Debug\Module_CPG.hex</v>
+<v>EmergeExp\Module_CPG\CortexM0\ARM_GCC_541\Debug\Module_CPG.map</v>
+<v>EmergeExp\Module_CPG\Module_CPG.gpdsc</v>
+<v>EmergeExp\Module_CPG\Module_CPG.rpt</v>
+<v>EmergeExp\Module_CPG\Module_CPG_timing.html</v>
+<v>EmergeExp\Test_Module</v>
+<v>EmergeExp\Test_Module\CortexM0</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_HFCLK.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_INT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_isr.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_TX_RX_func.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_BOOT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_INT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_IntClock.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_2.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_2_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_BOOT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_scl.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_scl_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_sda.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_sda_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_BOOT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_scl.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_scl_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_sda.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_sda_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_BOOT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_scl.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_scl_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_sda.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_sda_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_BOOT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_scl.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_scl_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_sda.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_sda_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\TX_2.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Listing Files\TX_2_PM.lst</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Test_Module.elf</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Test_Module.hex</v>
+<v>EmergeExp\Test_Module\CortexM0\ARM_GCC_541\Debug\Test_Module.map</v>
+<v>EmergeExp\Test_Module\Test_Module.gpdsc</v>
+<v>EmergeExp\Test_Module\Test_Module.rpt</v>
+<v>EmergeExp\Test_Module\Test_Module_timing.html</v>
+<v>EmergeExp\Test_Module_CAN_1</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_HFCLK.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_isr.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_TX_RX_func.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_IntClock.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_2.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_2_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_scl.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_scl_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_sda.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_sda_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_scl.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_scl_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_sda.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_sda_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_scl.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_scl_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_sda.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_sda_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_scl.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_scl_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_sda.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_sda_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\TX_2.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Listing Files\TX_2_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Test_Module_CAN_1.elf</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Test_Module_CAN_1.hex</v>
+<v>EmergeExp\Test_Module_CAN_1\CortexM0\ARM_GCC_541\Debug\Test_Module_CAN_1.map</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.gpdsc</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1.rpt</v>
+<v>EmergeExp\Test_Module_CAN_1\Test_Module_CAN_1_timing.html</v>
+<v>EmergeExp\Test_Module_CAN_2</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_HFCLK.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_isr.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_TX_RX_func.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_2_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_3_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_4_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_IntClock.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\MOTOR_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_2.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_2_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_scl.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_scl_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_sda.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_1_sda_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_scl.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_scl_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_sda.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_2_sda_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_scl.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_scl_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_sda.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_3_sda_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_BOOT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_INT.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_I2C_MASTER.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_SCB_IRQ.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_SCBCLK.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_scl.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_scl_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_sda.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\SENSOR_4_sda_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\TX_2.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Listing Files\TX_2_PM.lst</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Test_Module_CAN_2.elf</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Test_Module_CAN_2.hex</v>
+<v>EmergeExp\Test_Module_CAN_2\CortexM0\ARM_GCC_541\Debug\Test_Module_CAN_2.map</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2.gpdsc</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2.rpt</v>
+<v>EmergeExp\Test_Module_CAN_2\Test_Module_CAN_2_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>EmergeExp</v>
+<v>EmergeExp\Acelerometer</v>
+<v>EmergeExp\Acelerometer\Acelerometer.rpt</v>
+<v>EmergeExp\Acelerometer\Acelerometer_timing.html</v>
+<v>EmergeExp\Module_1</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>EmergeExp</v>
+<v>EmergeExp\Acelerometer</v>
+<v>EmergeExp\Acelerometer\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Acelerometer\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Acelerometer\System Reference Guides</v>
+<v>EmergeExp\Acelerometer\System Reference Guides\cy_boot_v5_40</v>
+<v>EmergeExp\Acelerometer\System Reference Guides\cy_dmac_v1_10</v>
+<v>EmergeExp\Acelerometer\System Reference Guides\cy_lfclk_v1_10</v>
+<v>EmergeExp\Acelerometer\ADC_SAR_SEQ_P4_v2_50.pdf</v>
+<v>EmergeExp\Acelerometer\CAN_v3_0.pdf</v>
+<v>EmergeExp\Acelerometer\cy_clock_v2_20.pdf</v>
+<v>EmergeExp\Acelerometer\cy_isr_v1_70.pdf</v>
+<v>EmergeExp\Acelerometer\cy_pins_v2_20</v>
+<v>EmergeExp\Acelerometer\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>EmergeExp\Acelerometer\Timer_v2_70.pdf</v>
+<v>EmergeExp\Acelerometer\ZeroTerminal.pdf</v>
+<v>EmergeExp\Module_1</v>
+<v>EmergeExp\Module_1\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Module_1\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Module_1\System Reference Guides</v>
+<v>EmergeExp\Module_1\System Reference Guides\cy_boot_v5_40</v>
+<v>EmergeExp\Module_1\System Reference Guides\cy_dmac_v1_10</v>
+<v>EmergeExp\Module_1\System Reference Guides\cy_lfclk_v1_10</v>
+<v>EmergeExp\Module_1\CAN_v3_0.pdf</v>
+<v>EmergeExp\Module_1\cy_constant_v1_0</v>
+<v>EmergeExp\Module_1\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>EmergeExp\Module_1\cy_pins_v2_20</v>
+<v>EmergeExp\Module_1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>EmergeExp\Module_1\CyControlReg_v1_80.pdf</v>
+<v>EmergeExp\Module_1\mux_v1_10</v>
+<v>EmergeExp\Module_1\mux_v1_10\mux_v1_10.pdf</v>
+<v>EmergeExp\Module_1\SCB_P4_v3_20</v>
+<v>EmergeExp\Module_1\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
+<v>EmergeExp\Module_1\UART_v2_50</v>
+<v>EmergeExp\Module_1\UART_v2_50\UART_v2_50.pdf</v>
+<v>EmergeExp\Module_CPG</v>
+<v>EmergeExp\Module_CPG\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Module_CPG\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Module_CPG\System Reference Guides</v>
+<v>EmergeExp\Module_CPG\System Reference Guides\cy_boot_v5_40</v>
+<v>EmergeExp\Module_CPG\System Reference Guides\cy_dmac_v1_10</v>
+<v>EmergeExp\Module_CPG\System Reference Guides\cy_lfclk_v1_10</v>
+<v>EmergeExp\Module_CPG\CAN_v3_0.pdf</v>
+<v>EmergeExp\Module_CPG\cy_constant_v1_0</v>
+<v>EmergeExp\Module_CPG\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>EmergeExp\Module_CPG\cy_pins_v2_20</v>
+<v>EmergeExp\Module_CPG\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>EmergeExp\Module_CPG\CyControlReg_v1_80.pdf</v>
+<v>EmergeExp\Module_CPG\mux_v1_10</v>
+<v>EmergeExp\Module_CPG\mux_v1_10\mux_v1_10.pdf</v>
+<v>EmergeExp\Module_CPG\SCB_P4_v3_20</v>
+<v>EmergeExp\Module_CPG\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
+<v>EmergeExp\Module_CPG\UART_v2_50</v>
+<v>EmergeExp\Module_CPG\UART_v2_50\UART_v2_50.pdf</v>
+<v>EmergeExp\Test_Module</v>
+<v>EmergeExp\Test_Module\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Test_Module\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Test_Module\System Reference Guides</v>
+<v>EmergeExp\Test_Module\System Reference Guides\cy_boot_v5_40</v>
+<v>EmergeExp\Test_Module\System Reference Guides\cy_dmac_v1_10</v>
+<v>EmergeExp\Test_Module\System Reference Guides\cy_lfclk_v1_10</v>
+<v>EmergeExp\Test_Module\CAN_v3_0.pdf</v>
+<v>EmergeExp\Test_Module\cy_pins_v2_20</v>
+<v>EmergeExp\Test_Module\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>EmergeExp\Test_Module\SCB_P4_v3_20</v>
+<v>EmergeExp\Test_Module\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
+<v>EmergeExp\Test_Module\UART_v2_50.pdf</v>
+<v>EmergeExp\Test_Module_CAN_1</v>
+<v>EmergeExp\Test_Module_CAN_1\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Test_Module_CAN_1\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Test_Module_CAN_1\System Reference Guides</v>
+<v>EmergeExp\Test_Module_CAN_1\System Reference Guides\cy_boot_v5_40</v>
+<v>EmergeExp\Test_Module_CAN_1\System Reference Guides\cy_dmac_v1_10</v>
+<v>EmergeExp\Test_Module_CAN_1\System Reference Guides\cy_lfclk_v1_10</v>
+<v>EmergeExp\Test_Module_CAN_1\CAN_v3_0.pdf</v>
+<v>EmergeExp\Test_Module_CAN_1\cy_pins_v2_20</v>
+<v>EmergeExp\Test_Module_CAN_1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>EmergeExp\Test_Module_CAN_1\SCB_P4_v3_20</v>
+<v>EmergeExp\Test_Module_CAN_1\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
+<v>EmergeExp\Test_Module_CAN_1\UART_v2_50.pdf</v>
+<v>EmergeExp\Test_Module_CAN_2</v>
+<v>EmergeExp\Test_Module_CAN_2\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Test_Module_CAN_2\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Test_Module_CAN_2\System Reference Guides</v>
+<v>EmergeExp\Test_Module_CAN_2\System Reference Guides\cy_boot_v5_40</v>
+<v>EmergeExp\Test_Module_CAN_2\System Reference Guides\cy_dmac_v1_10</v>
+<v>EmergeExp\Test_Module_CAN_2\System Reference Guides\cy_lfclk_v1_10</v>
+<v>EmergeExp\Test_Module_CAN_2\CAN_v3_0.pdf</v>
+<v>EmergeExp\Test_Module_CAN_2\cy_pins_v2_20</v>
+<v>EmergeExp\Test_Module_CAN_2\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>EmergeExp\Test_Module_CAN_2\SCB_P4_v3_20</v>
+<v>EmergeExp\Test_Module_CAN_2\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
+<v>EmergeExp\Test_Module_CAN_2\UART_v2_50.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>EmergeExp</v>
+<v>EmergeExp\Acelerometer</v>
+<v>EmergeExp\Acelerometer\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Acelerometer\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Acelerometer\System Reference Guides</v>
+<v>EmergeExp\Acelerometer\System Reference Guides\cy_boot_v5_40</v>
+<v>EmergeExp\Acelerometer\System Reference Guides\cy_dmac_v1_10</v>
+<v>EmergeExp\Acelerometer\System Reference Guides\cy_lfclk_v1_10</v>
+<v>EmergeExp\Acelerometer\ADC_SAR_SEQ_P4_v2_50.pdf</v>
+<v>EmergeExp\Acelerometer\CAN_v3_0.pdf</v>
+<v>EmergeExp\Acelerometer\cy_clock_v2_20.pdf</v>
+<v>EmergeExp\Acelerometer\cy_isr_v1_70.pdf</v>
+<v>EmergeExp\Acelerometer\cy_pins_v2_20</v>
+<v>EmergeExp\Acelerometer\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>EmergeExp\Acelerometer\Timer_v2_70.pdf</v>
+<v>EmergeExp\Acelerometer\ZeroTerminal.pdf</v>
+<v>EmergeExp\Module_1</v>
+<v>EmergeExp\Module_1\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Module_1\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Module_1\System Reference Guides</v>
+<v>EmergeExp\Module_1\System Reference Guides\cy_boot_v5_40</v>
+<v>EmergeExp\Module_1\System Reference Guides\cy_dmac_v1_10</v>
+<v>EmergeExp\Module_1\System Reference Guides\cy_lfclk_v1_10</v>
+<v>EmergeExp\Module_1\CAN_v3_0.pdf</v>
+<v>EmergeExp\Module_1\cy_constant_v1_0</v>
+<v>EmergeExp\Module_1\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>EmergeExp\Module_1\cy_pins_v2_20</v>
+<v>EmergeExp\Module_1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>EmergeExp\Module_1\CyControlReg_v1_80.pdf</v>
+<v>EmergeExp\Module_1\mux_v1_10</v>
+<v>EmergeExp\Module_1\mux_v1_10\mux_v1_10.pdf</v>
+<v>EmergeExp\Module_1\SCB_P4_v3_20</v>
+<v>EmergeExp\Module_1\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
+<v>EmergeExp\Module_1\UART_v2_50</v>
+<v>EmergeExp\Module_1\UART_v2_50\UART_v2_50.pdf</v>
+<v>EmergeExp\Module_CPG</v>
+<v>EmergeExp\Module_CPG\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Module_CPG\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Module_CPG\System Reference Guides</v>
+<v>EmergeExp\Module_CPG\System Reference Guides\cy_boot_v5_40</v>
+<v>EmergeExp\Module_CPG\System Reference Guides\cy_dmac_v1_10</v>
+<v>EmergeExp\Module_CPG\System Reference Guides\cy_lfclk_v1_10</v>
+<v>EmergeExp\Module_CPG\CAN_v3_0.pdf</v>
+<v>EmergeExp\Module_CPG\cy_constant_v1_0</v>
+<v>EmergeExp\Module_CPG\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>EmergeExp\Module_CPG\cy_pins_v2_20</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\lib\CPG.h" />
+<name v=".\lib\CPG.c" />
+<name v=".\Module_1.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1094, 681" SelectedTabbedMdiWindow="451736e6-b7c4-465b-8667-75c40a9181ec"><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.h" Guid="eaeeaf01-eacb-4be8-857a-184cf0dad276" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.c" Guid="9ff47282-0fb2-44c9-9340-a19d07dd50e6" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\main.c" Guid="451736e6-b7c4-465b-8667-75c40a9181ec" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
