@@ -1,6 +1,6 @@
 #include <math.h>
 
-float teta;
+float teta[3];
 float ampli;
 float dampli;
 float offset;
@@ -8,7 +8,7 @@ float doffset;
 float output;
 float ampliSet;
 float offsetSet;
-float phaseDiffSet;
+float phaseDiffSet[2];
 float dt;
 
-void updateCPG(float teta1,float teta2);
+void updateCPG(float teta[]);

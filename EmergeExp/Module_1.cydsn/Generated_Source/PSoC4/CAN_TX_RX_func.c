@@ -25,11 +25,9 @@
 #include "cyapicallbacks.h"
 
 /* `#START TX_RX_FUNCTION` */
-extern uint8 dato_enviado[8];
-extern uint8 dato_enviado_1[8];
-extern uint8 dato_enviado_2[8];
-extern uint8 mailbox0[8];
-extern uint8 mailbox1[8];
+
+
+
 /* `#END` */
 
 
@@ -190,7 +188,7 @@ void CAN_TxCancel(uint8 bufferId)
 
 #if (CAN_TX0_FUNC_ENABLE)
     /*******************************************************************************
-    * FUNCTION NAME:   CAN_SendMsg0
+    * FUNCTION NAME:   CAN_SendMsgphaseData
     ********************************************************************************
     *
     * Summary:
@@ -209,7 +207,7 @@ void CAN_TxCancel(uint8 bufferId)
     *    CAN_FAIL              The function failed
     *
     *******************************************************************************/
-    uint8 CAN_SendMsg0(void) 
+    uint8 CAN_SendMsgphaseData(void) 
     {
         uint8 result = CYRET_SUCCESS;
 
@@ -223,20 +221,13 @@ void CAN_TxCancel(uint8 bufferId)
             }
             else
             {
-                /* `#START MESSAGE_0_TRASMITTED` */
-                CAN_TX_DATA_BYTE(0,0,dato_enviado[0]);
-                CAN_TX_DATA_BYTE(0,1,dato_enviado[1]);
-                CAN_TX_DATA_BYTE(0,2,dato_enviado[2]);
-                CAN_TX_DATA_BYTE(0,3,dato_enviado[3]);
-                CAN_TX_DATA_BYTE(0,4,dato_enviado[4]);
-                CAN_TX_DATA_BYTE(0,5,dato_enviado[5]);
-                CAN_TX_DATA_BYTE(0,6,dato_enviado[6]);
-                CAN_TX_DATA_BYTE(0,7,dato_enviado[7]);                           
+                /* `#START MESSAGE_phaseData_TRASMITTED` */
+
                 /* `#END` */
 
-                #ifdef CAN_SEND_MSG_0_CALLBACK
-                    CAN_SendMsg_0_Callback();
-                #endif /* CAN_SEND_MSG_0_CALLBACK */
+                #ifdef CAN_SEND_MSG_phaseData_CALLBACK
+                    CAN_SendMsg_phaseData_Callback();
+                #endif /* CAN_SEND_MSG_phaseData_CALLBACK */
 
                 CY_SET_REG32(CAN_TX_CMD_PTR(0u),
                 CY_GET_REG32(CAN_TX_CMD_PTR(0u)) | CAN_SEND_MESSAGE);
@@ -671,7 +662,7 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
 
 #if (CAN_RX0_FUNC_ENABLE)
     /*******************************************************************************
-    * FUNCTION NAME:   CAN_ReceiveMsg0
+    * FUNCTION NAME:   CAN_ReceiveMsgphaseData
     ********************************************************************************
     *
     * Summary:
@@ -689,26 +680,15 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
     *  Depends on the Customer code.
     *
     *******************************************************************************/
-    void CAN_ReceiveMsg0(void) 
+    void CAN_ReceiveMsgphaseData(void) 
     {
-        /* `#START MESSAGE_0_RECEIVED` */
-  
-        mailbox0[0]=CAN_RX_DATA_BYTE1(0);
-        mailbox0[1]=CAN_RX_DATA_BYTE2(0);
-        mailbox0[2]=CAN_RX_DATA_BYTE3(0);
-        mailbox0[3]=CAN_RX_DATA_BYTE4(0);
-        mailbox0[4]=CAN_RX_DATA_BYTE5(0);
-        mailbox0[5]=CAN_RX_DATA_BYTE6(0);
-        mailbox0[6]=CAN_RX_DATA_BYTE7(0);
-        mailbox0[7]=CAN_RX_DATA_BYTE8(0);
-      
-        
-        
+        /* `#START MESSAGE_phaseData_RECEIVED` */
+
         /* `#END` */
 
-        #ifdef CAN_RECEIVE_MSG_0_CALLBACK
-            CAN_ReceiveMsg_0_Callback();
-        #endif /* CAN_RECEIVE_MSG_0_CALLBACK */
+        #ifdef CAN_RECEIVE_MSG_phaseData_CALLBACK
+            CAN_ReceiveMsg_phaseData_Callback();
+        #endif /* CAN_RECEIVE_MSG_phaseData_CALLBACK */
 
         CAN_RX_ACK_MESSAGE(0u);
     }
@@ -1248,3 +1228,33 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
 
 
 /* [] END OF FILE */
+#if 0 /* begin disabled code */
+`#start MESSAGE_0_TRASMITTED` -- section removed from template
+                CAN_TX_DATA_BYTE(0,0,dato_enviado[0]);
+                CAN_TX_DATA_BYTE(0,1,dato_enviado[1]);
+                CAN_TX_DATA_BYTE(0,2,dato_enviado[2]);
+                CAN_TX_DATA_BYTE(0,3,dato_enviado[3]);
+                CAN_TX_DATA_BYTE(0,4,dato_enviado[4]);
+                CAN_TX_DATA_BYTE(0,5,dato_enviado[5]);
+                CAN_TX_DATA_BYTE(0,6,dato_enviado[6]);
+                CAN_TX_DATA_BYTE(0,7,dato_enviado[7]);                           
+`#end`
+
+#endif /* end disabled code */
+#if 0 /* begin disabled code */
+`#start MESSAGE_0_RECEIVED` -- section removed from template
+  
+            mailbox0[0]=CAN_RX_DATA_BYTE1(0);
+            mailbox0[1]=CAN_RX_DATA_BYTE2(0);
+            mailbox0[2]=CAN_RX_DATA_BYTE3(0);
+            mailbox0[3]=CAN_RX_DATA_BYTE4(0);
+            mailbox0[4]=CAN_RX_DATA_BYTE5(0);
+            mailbox0[5]=CAN_RX_DATA_BYTE6(0);
+            mailbox0[6]=CAN_RX_DATA_BYTE7(0);
+            mailbox0[7]=CAN_RX_DATA_BYTE8(0);
+      
+        
+        
+`#end`
+
+#endif /* end disabled code */

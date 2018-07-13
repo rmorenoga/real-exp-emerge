@@ -54,20 +54,18 @@ int main()
 //    TXC_Write(3);                   // rx y tx desabilitados
     CAN_GlobalIntEnable();
     
-    teta[1] = -1;
+    teta[2] = -1;
 
     for(;;){
     //Bucle Infinito
         
-        
-        
         phaseRx = (CAN_RX_DATA_BYTE1(CAN_TX_MAILBOX_phaseData) << 8) + CAN_RX_DATA_BYTE2(CAN_TX_MAILBOX_phaseData);
        
-        teta[2] = (float) phaseRx/10000.0;        
+        teta[1] = (float) phaseRx/10000.0;        
         
         updateCPG(teta);
         
-        phaseTx = (uint16) (teta[0]*10000.0);
+        phaseTx = (uint16) (teta[0]*10000.0); 
         
         CAN_TX_DATA_BYTE1(CAN_TX_MAILBOX_phaseData,HI8(phaseTx));
         CAN_TX_DATA_BYTE2(CAN_TX_MAILBOX_phaseData,LO8(phaseTx));
@@ -79,7 +77,7 @@ int main()
         CAN_TX_DATA_BYTE8(CAN_TX_MAILBOX_phaseData,0u);
         CAN_SendMsgphaseData();
         
-        CyDelay(1000);
+        CyDelay(2000);
         
         
 
