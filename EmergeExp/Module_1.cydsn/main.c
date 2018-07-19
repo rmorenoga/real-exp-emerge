@@ -4,6 +4,7 @@
 #include <..\lib\VCNL4010_3.h>
 #include <..\lib\VCNL4010_4.h>
 #include <..\lib\CPG.h>
+#include <..\lib\CANProtocol.h>
 
 
 /* Global variables*/

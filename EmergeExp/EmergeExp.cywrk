@@ -13,6 +13,9 @@
 <v>.\Acelerometer.cydsn\Acelerometer.cyprj</v>
 <v>.\Module_CPG.cydsn\Module_CPG.cyprj</v>
 <v>.\Module_1.cydsn\Module_1.cyprj</v>
+<v>.\CAN_Full_Example02.cydsn\CAN_Full_Example02.cyprj</v>
+<v>.\CAN_Basic_Example01.cydsn\CAN_Basic_Example01.cyprj</v>
+<v>.\Module_2.cydsn\Module_2.cyprj</v>
 </projects>
 <workspace_id v="fa707f8a-ebcd-4122-848b-a7f1316f2a3e" />
 <WriteAppVersionLastSavedWith v="4.2.0.641" />
