@@ -8,81 +8,63 @@
 
 
 /* Global variables*/
-
+//Declared in each library for ease of implementation
+//TODO: Reorganize global variables in main
+    float angle = 0.0;
+    int motorGoal;
 
 /*Function Prototypes*/
-//CY_ISR_PROTO(ISR_CAN);
-CY_ISR(ISR_CAN){
-    
-    LED_3_Write(1);
-    CAN_MsgRXIsr(); ///para marcar la interrucion como leida y resive msm 
-    CyDelay(500);
-    LED_3_Write(0);
-}
+CY_ISR_PROTO(ISR_CAN); // CAN Interruption handler declaration
+int convertAngleToPosition(float input, int maxPos, int minPos);
 
 
 int main()
 {  
+    /*Morphology Configuration Parameters*/
+    id = 0;
+    connh[0] = -1;
+    connh[1] = 1;
+    connh[2] = -1;
+    connh[3] = -1;
     
-    uint16 phaseTx;
-    uint16 phaseRx;
-    /* Set CAN interrupt handler to local routine */
-    //CyIntSetVector(CAN_ISR_NUMBER, ISR_CAN);    
-    
-    CyGlobalIntEnable;              /* Enable global interrupts. */
+    /*Initialization Routines*/
     //Init LED's
-//    LED_1_Write(0);
-//    LED_2_Write(0);
-    LED_3_Write(0);
-//    LED_4_Write(0);
-//    //Init Sensor's
-//    SENSOR_1_Start();
-//    SENSOR_1_Enable();
-//    SENSOR_2_Start();
-//    SENSOR_2_Enable();
-//    SENSOR_3_Start();
-//    SENSOR_3_Enable();
-//    //SENSOR_4_Start();
-//    //SENSOR_4_Enable();    
-//
-//    //initVCNL_4();
-//  
-    CAN_Start();                    //  start CAN
-    CAN_isr_StartEx(ISR_CAN);   //interrucion can
-//
-//    RX_Start();                     //rx motor
-//    MOTOR_Start();                  //tx motor
-//    TXC_Write(3);                   // rx y tx desabilitados
-    CAN_GlobalIntEnable();
+    LED_3_Write(0);    
+    CAN_Start();                    //  Start CAN module
     
-    teta[1] = -1;
+    //CyIntSetVector(CAN_ISR_NUMBER, ISR_CAN); // Set CAN interrupt handler to local routine
+    CAN_isr_StartEx(ISR_CAN);       // Equivalent to last instruction 
+    
+    CyGlobalIntEnable;              // Enable global interrupts
+    //CAN_GlobalIntEnable();        // Equivalent to last instruction
 
+    /*Loop Forever*/
     for(;;){
-    //Bucle Infinito
-        
-        
-        
-        phaseRx = (CAN_RX_DATA_BYTE1(CAN_TX_MAILBOX_phaseData) << 8) + CAN_RX_DATA_BYTE2(CAN_TX_MAILBOX_phaseData);
-       
-        teta[2] = (float) phaseRx/10000.0;        
-        
-        updateCPG(teta);
-        
-        phaseTx = (uint16) (teta[0]*10000.0);
-        
-        CAN_TX_DATA_BYTE1(CAN_TX_MAILBOX_phaseData,HI8(phaseTx));
-        CAN_TX_DATA_BYTE2(CAN_TX_MAILBOX_phaseData,LO8(phaseTx));
-        CAN_TX_DATA_BYTE3(CAN_TX_MAILBOX_phaseData,0u);
-        CAN_TX_DATA_BYTE4(CAN_TX_MAILBOX_phaseData,0u);
-        CAN_TX_DATA_BYTE5(CAN_TX_MAILBOX_phaseData,0u);
-        CAN_TX_DATA_BYTE6(CAN_TX_MAILBOX_phaseData,0u);
-        CAN_TX_DATA_BYTE7(CAN_TX_MAILBOX_phaseData,0u);
-        CAN_TX_DATA_BYTE8(CAN_TX_MAILBOX_phaseData,0u);
-        CAN_SendMsgphaseData();
-        
-        CyDelay(1000);
-        
-        
 
+        updateCPG(teta);            // Update CPG Equations
+        angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position
+        motorGoal = convertAngleToPosition(angle,800,200);                                    
+        
+        sendPhase(teta[0]);         // Send phase through CAN
+        CyDelay(1000);              // Wait for 1 second and repeats
     }
+}
+
+CY_ISR(ISR_CAN){
+    
+    CAN_MsgRXIsr();                 // Clear Receive Message interrupt flag and calls appropriate handlers
+    receivePhase(teta);                 // Receive phase information and updtates appropiate phase (teta) field
+
+}
+
+int convertAngleToPosition(float input, int maxPos, int minPos){
+    
+    int output = 0;
+    float oldRange = 1-(-1);
+    float newRange = maxPos - minPos;
+    float convertedInput =  (((input - (-1)) * newRange) / oldRange) + minPos;
+    
+    output = convertedInput;
+    
+    return output;    
 }

@@ -1,47 +1,49 @@
 #include <..\lib\CANProtocol.h>
 
-int sendPhase(float phase){
+uint8 id = -1;
+int connh[] = {-1,-1,-1,-1};
+
+void sendPhase(float phase){
     
     uint8 bytePhase[4];
     
     float_encode(phase,bytePhase);
     
-	CAN_TX_DATA_BYTE1(CAN_TX_MAILBOX_phaseData,bytePhase[0]);
-    CAN_TX_DATA_BYTE2(CAN_TX_MAILBOX_phaseData,bytePhase[1]);
-    CAN_TX_DATA_BYTE3(CAN_TX_MAILBOX_phaseData,bytePhase[2]);
-    CAN_TX_DATA_BYTE4(CAN_TX_MAILBOX_phaseData,bytePhase[3]);
-    CAN_TX_DATA_BYTE5(CAN_TX_MAILBOX_phaseData,0u);
+    CAN_TX_DATA_BYTE1(CAN_TX_MAILBOX_phaseData,id);
+	CAN_TX_DATA_BYTE2(CAN_TX_MAILBOX_phaseData,bytePhase[0]);
+    CAN_TX_DATA_BYTE3(CAN_TX_MAILBOX_phaseData,bytePhase[1]);
+    CAN_TX_DATA_BYTE4(CAN_TX_MAILBOX_phaseData,bytePhase[2]);
+    CAN_TX_DATA_BYTE5(CAN_TX_MAILBOX_phaseData,bytePhase[3]);
     CAN_TX_DATA_BYTE6(CAN_TX_MAILBOX_phaseData,0u);
     CAN_TX_DATA_BYTE7(CAN_TX_MAILBOX_phaseData,0u);
     CAN_TX_DATA_BYTE8(CAN_TX_MAILBOX_phaseData,0u);
     
     CAN_SendMsgphaseData();
-    
-    return 0;
 }
 
-
-
-
-float receivePhase(int face){
+void receivePhase(float * phase){
+    
+    uint8 i;
+    uint8 senderId = -1;
     uint8 bytePhase[4];
-    float phase = 0.0;
+    float receivedPhase = 0.0;
+   
+    senderId = CAN_RX_DATA_BYTE1(CAN_RX_MAILBOX_phaseData);
+    bytePhase[0] = CAN_RX_DATA_BYTE2(CAN_RX_MAILBOX_phaseData);
+    bytePhase[1] = CAN_RX_DATA_BYTE3(CAN_RX_MAILBOX_phaseData);
+    bytePhase[2] = CAN_RX_DATA_BYTE4(CAN_RX_MAILBOX_phaseData);
+    bytePhase[3] = CAN_RX_DATA_BYTE5(CAN_RX_MAILBOX_phaseData);
     
-    if (face == 0){
+    receivedPhase = float_decode(bytePhase);
     
-    bytePhase[0] = CAN_RX_DATA_BYTE1(CAN_RX_MAILBOX_phaseData);
-    bytePhase[1] = CAN_RX_DATA_BYTE2(CAN_RX_MAILBOX_phaseData);
-    bytePhase[2] = CAN_RX_DATA_BYTE3(CAN_RX_MAILBOX_phaseData);
-    bytePhase[3] = CAN_RX_DATA_BYTE4(CAN_RX_MAILBOX_phaseData);
-    
-    phase = float_decode(bytePhase);
-    
+    for (i=0;i<4;i++){
+        if (connh[i] == senderId){
+            phase[i+1] = receivedPhase;
+        }      
     }
-    
-    return(phase);
 }
 
-int float_encode(float p_value, uint8 * p_encoded_data){
+void float_encode(float p_value, uint8 * p_encoded_data){
     
     union { 
         float float_val;
@@ -53,10 +55,9 @@ int float_encode(float p_value, uint8 * p_encoded_data){
     p_encoded_data[1] = encoder.char_val[1];
     p_encoded_data[2] = encoder.char_val[2];
     p_encoded_data[3] = encoder.char_val[3];
-    return(0);
 }
 
-float float_decode(uint8 p_encoded_data[4]){
+float float_decode(uint8 p_encoded_data[]){
     
     union { 
         float float_val;

@@ -203,6 +203,11 @@
 <file name="..\lib\VCNL4010_2.h" />
 <file name="..\lib\VCNL4010_3.h" />
 <file name="..\lib\VCNL4010_4.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\CPG.o">
+<dep name="..\lib\CPG.c" />
+<dep name="..\lib\CPG.h" />
+</file>
+<file name="..\lib\CPG.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\CANProtocol.o">
 <dep name=".\Generated_Source\PSoC4\CAN.h" />
 <dep name=".\Generated_Source\PSoC4\CAN_HFCLK.h" />
@@ -340,11 +345,6 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\CAN_TX_RX_func.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\CPG.o">
-<dep name="..\lib\CPG.c" />
-<dep name="..\lib\CPG.h" />
-</file>
-<file name="..\lib\CPG.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\CAN_HFCLK.o">
 <dep name=".\Generated_Source\PSoC4\CAN_HFCLK.c" />
 <dep name=".\Generated_Source\PSoC4\CAN_HFCLK.h" />
@@ -2238,7 +2238,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131764359082305577" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131765224358831973" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

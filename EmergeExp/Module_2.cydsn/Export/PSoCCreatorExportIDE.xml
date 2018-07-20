@@ -38,6 +38,7 @@
         <Files Root="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">..\lib\CPG.c</File>
+          <File BuildType="BUILD" Toolchain="">..\lib\CANProtocol.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">..\lib\AX12.h</File>
           <File BuildType="BUILD" Toolchain="">..\lib\DynamixelSerial1.h</File>
@@ -46,6 +47,7 @@
           <File BuildType="BUILD" Toolchain="">..\lib\VCNL4010_3.h</File>
           <File BuildType="BUILD" Toolchain="">..\lib\VCNL4010_4.h</File>
           <File BuildType="BUILD" Toolchain="">..\lib\CPG.h</File>
+          <File BuildType="BUILD" Toolchain="">..\lib\CANProtocol.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\Generated_Source\PSoC4">

@@ -1,6 +1,6 @@
 #include <math.h>
 
-float teta[3];
+float teta[5];
 float ampli;
 float dampli;
 float offset;

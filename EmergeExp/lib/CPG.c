@@ -1,6 +1,6 @@
 #include <..\lib\CPG.h>
 
-float teta[3] = {0.0,-1,-1};
+float teta[5] = {0.0,-1,-1,-1,-1};
 float ampli = 0.0;
 float dampli = 0.0;
 float offset = (0.8333)*M_PI;
@@ -14,11 +14,11 @@ float dt = 0.3;
 float dteta(float teta[], float phaseDiffSet[]){
     float wij = 0.8; 
     float v = 0.3;
-    float component[2];
+    float component[4];
     int i;
     float sum = 2*M_PI*v;
     
-    for (i = 1; i < 3 ; i++){
+    for (i = 1; i < 5 ; i++){
         if (teta[i] != -1){
             component[i-1] = (wij*sin(teta[i]-teta[0]-phaseDiffSet[i-1]));
         }else{
@@ -26,7 +26,7 @@ float dteta(float teta[], float phaseDiffSet[]){
         }
     }
     
-    for (i = 0; i < 2; i++){
+    for (i = 0; i < 4; i++){
         sum = sum + component[i];   
     }
     return sum;
