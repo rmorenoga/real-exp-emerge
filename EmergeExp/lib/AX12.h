@@ -1,4 +1,4 @@
-#include <DynamixelSerial1.h>
+#include <..\lib\DynamixelSerial1.h>
 #include <project.h>
 
 //////actualizado 2.0     <---------------------------------------------
