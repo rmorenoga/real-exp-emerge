@@ -1,10 +1,10 @@
 #include <..\lib\CANProtocol.h>
 
-uint8 receivedFlags = 0x00; //Flags: bit0(0x01):phaseBuffer1 bit1(0x02):phaseBuffer2 bit2(0x04):phaseBuffer3 bit3(0x08):phaseBuffer4
+uint8 receivedFlags = 0x00u; //Flags: bit0(0x01):phaseBuffer1 bit1(0x02):phaseBuffer2 bit2(0x04):phaseBuffer3 bit3(0x08):phaseBuffer4
                             //Flags: bit4(0x10):hormoneBuffer1 bit5(0x20):hormoneBuffer2 bit6(0x40):hormoneBuffer3 bit7(0x80):hormoneBuffer4
 float phaseBuffer[4] = {0};
-uint8 hormBuffer0[HORM_BUFFER_SIZE][6] ={0};
-int8 buffercount[4] = {0};
+uint8 hormBuffer0[HORM_BUFFER_SIZE][6] ={0u};
+int8 buffercount[4] = {0u};
 
 void sendPhase(float phase){
     
@@ -54,7 +54,7 @@ void receivePhase(uint8 sender){
         {
         case 0u : 
             phaseBuffer[0] = float_decode(bytePhase);
-            receivedFlags |= 0x01; 
+            receivedFlags |= 0x01u; 
             break;
         default:
             break;
@@ -66,13 +66,13 @@ void readPhaseBuffers(float phase[]){
     uint8 shift = 0x01u;
     uint8 bufferNumber;
     
-    for (bufferNumber = 0;bufferNumber<4;bufferNumber++){
+    for (bufferNumber = 0;bufferNumber < 4;bufferNumber++){
         if((receivedFlags & shift) != 0u){
             phase[bufferNumber+1] = phaseBuffer[0];           
         }
         shift <<= 1u;
     }
-    receivedFlags &= 0xF0;  //Clear phase received flags
+    receivedFlags &= 0xF0u;  //Clear phase received flags
 }
 
 void receiveHormone(uint8 sender){
@@ -91,12 +91,12 @@ void receiveHormone(uint8 sender){
         {
         case 0u : 
             if(buffercount[0] < HORM_BUFFER_SIZE){
-                for(i=0;i<6;i++){
+                for(i=0;i < 6;i++){
                     hormBuffer0[buffercount[0]][i] = receivedHormone[i]; 
                 }
                 buffercount[0]++;
             }
-            receivedFlags |= 0x10; 
+            receivedFlags |= 0x10u; 
             break;
         default:
             break;
@@ -108,7 +108,7 @@ void readHormoneBuffers(void){
     for (i = 0; i < 4; i++){
         buffercount[i] = 0;    
     }
-    receivedFlags &= 0x0F;
+    receivedFlags &= 0x0Fu;
 }
 
 void float_encode(float p_value, uint8 * p_encoded_data){

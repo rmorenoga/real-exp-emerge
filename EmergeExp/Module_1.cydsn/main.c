@@ -14,7 +14,7 @@
 //TODO: Reorganize global variables in main
     float angle = 0.0;
     int motorGoal;
-    uint8 controlFlags = 0x00; //Flags: bit0(0x01):SendHormone bit1(0x02):N/A bit2(0x04):N/A bit3(0x08):N/A
+    uint8 controlFlags = 0x00u; //Flags: bit0(0x01):SendHormone bit1(0x02):N/A bit2(0x04):N/A bit3(0x08):N/A
                         //Flags: bit4(0x10):N/A         bit5(0x20):N/A bit6(0x40):N/A bit7(0x80):N/A
     uint8 horm[6];
     
@@ -27,20 +27,39 @@ int convertAngleToPosition(float input, int maxPos, int minPos);
 
 
 int main()
-{  
-    /*Morphology Configuration Parameters (now at the can buffer configuration)*/
-
-    
+{      
     /*Initialization Routines*/
     //Init LED's
-    LED_3_Write(0);    
-    CAN_Start();                    //  Start CAN module
+    LED_1_Write(0);
+	//LED_2_Write(0);
+	LED_3_Write(0);
+	//LED_4_Write(0);
+ 
+    CAN_Start(); //  Start CAN module
+    
+    SENSOR_1_Start();               // Start sensor I2C
+	//SENSOR_1_Enable();
+	//SENSOR_2_Start();
+	//SENSOR_2_Enable();
+	SENSOR_3_Start();
+	//SENSOR_3_Enable();
+	//SENSOR_4_Start();
+	//SENSOR_4_Enable();
     
     //CyIntSetVector(CAN_ISR_NUMBER, ISR_CAN); // Set CAN interrupt handler to local routine
     CAN_isr_StartEx(ISR_CAN);       // Equivalent to last instruction 
     
     CyGlobalIntEnable;              // Enable global interrupts
     //CAN_GlobalIntEnable();        // Equivalent to last instruction
+    
+    CyDelay(100);
+    
+	initVCNL_1();                   // Check sensors working (Enable global interrupts before this)
+	//initVCNL_2();
+	initVCNL_3();
+	//initVCNL_4();
+    
+                  
 
     /*Loop Forever*/
     for(;;){
@@ -53,7 +72,7 @@ int main()
         
         //Sense environment
             //Clear SendHormone flag
-            controlFlags &= ~(0x01);// clear a bit with: number &= ~(1u << n);
+            controlFlags &= ~(0x01u);// clear a bit with: number &= ~(1u << n);
             //Read Sensors and create hormone
         generateHormone(&controlFlags,horm);
         
@@ -61,7 +80,7 @@ int main()
         
         //CPG and movement
         updateCPG(teta);            // Update CPG Equations
-        angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position
+        angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
         motorGoal = convertAngleToPosition(angle,800,200);                                    
         //Move motor to motorGoal
         
@@ -69,13 +88,11 @@ int main()
         sendPhase(teta[0]);         // Send phase through CAN
         
         //Send Generated Hormone message
-        if ((controlFlags & 0x01) != 0u){
+        if ((controlFlags & 0x01u) != 0u){
             sendHormone(horm);
         }
         
         //Propagate received hormone message
-        
-        
         
         
         CyDelay(1000);              // Wait for 1 second and repeat

@@ -3,7 +3,7 @@
 float teta[5] = {0.0,-1,-1,-1,-1};
 float ampli = 0.0;
 float dampli = 0.0;
-float offset = (0.8333)*M_PI;
+float offset = (0.3333)*M_PI;
 float doffset = 0.0;
 float output = 0.0;
 float ampliSet = 0.0;
@@ -33,13 +33,13 @@ float dteta(float teta[], float phaseDiffSet[]){
 }
 
 float ddampli(float dampli, float ampli, float amp){
-  float ar = 30;
-  return ar*((ar/4)*(amp-ampli)-dampli);
+  int ar = 8;
+  return ar*(((ar/4)*(amp-ampli))-dampli);
 }
 
 float ddoffset(float doffset, float offset, float of){
- float ax = 30;
-return ax*((ax/4)*(of-offset)-doffset); 
+ int ax = 8;
+return ax*(((ax/4)*(of-offset))-doffset); 
 }
 
 void updateCPG(float teta[]){

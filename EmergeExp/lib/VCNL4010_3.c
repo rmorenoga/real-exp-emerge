@@ -10,15 +10,15 @@ void writeVCNL_3(uint8 address, uint8 data){
 }
 
 uint8 readVCNL_3(uint8 address){
-    uint8 Write_buf[1]={0};
-    uint8 read_Buf[1]={0};
-    Write_buf[0]=address;
+    uint8 Write_buf = 0;
+    uint8 read_Buf = 0;
+    Write_buf = address;
     
-    SENSOR_3_I2CMasterWriteBuf(VCNL4010_ADDRESS,Write_buf,1,SENSOR_3_I2C_MODE_NO_STOP);
+    SENSOR_3_I2CMasterWriteBuf(VCNL4010_ADDRESS,&Write_buf,1,SENSOR_3_I2C_MODE_NO_STOP);
     while((SENSOR_3_I2CMasterStatus()&SENSOR_3_I2C_MSTAT_WR_CMPLT)==0){}
-    SENSOR_3_I2CMasterReadBuf(VCNL4010_ADDRESS,read_Buf,1,SENSOR_3_I2C_MODE_REPEAT_START);
+    SENSOR_3_I2CMasterReadBuf(VCNL4010_ADDRESS,&read_Buf,1,SENSOR_3_I2C_MODE_REPEAT_START);
     while((SENSOR_3_I2CMasterStatus()&SENSOR_3_I2C_MSTAT_RD_CMPLT)==0){}
-    return read_Buf[0];
+    return read_Buf;
 }
 
 void initVCNL_3(){

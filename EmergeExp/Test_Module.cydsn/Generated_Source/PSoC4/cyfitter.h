@@ -1575,7 +1575,7 @@
 #define SENSOR_4_sda__SHIFT 1u
 
 /* Miscellaneous */
-#define CY_PROJECT_NAME "Test_Module_Copy_01"
+#define CY_PROJECT_NAME "Test_Module"
 #define CY_VERSION "PSoC Creator  4.2"
 #define CYDEV_BANDGAP_VOLTAGE 1.024
 #define CYDEV_BCLK__HFCLK__HZ 24000000U
