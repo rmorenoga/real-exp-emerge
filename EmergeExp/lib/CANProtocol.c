@@ -69,6 +69,8 @@ void readPhaseBuffers(float phase[]){
     for (bufferNumber = 0;bufferNumber < 4;bufferNumber++){
         if((receivedFlags & shift) != 0u){
             phase[bufferNumber+1] = phaseBuffer[0];           
+        }else{
+            phase[bufferNumber+1] = -1;
         }
         shift <<= 1u;
     }

@@ -27,20 +27,39 @@ int convertAngleToPosition(float input, int maxPos, int minPos);
 
 
 int main()
-{  
-    /*Morphology Configuration Parameters (now at the can buffer configuration)*/
-
-    
+{      
     /*Initialization Routines*/
     //Init LED's
-    LED_3_Write(0);    
-    CAN_Start();                    //  Start CAN module
+    LED_1_Write(0);
+	//LED_2_Write(0);
+	//LED_3_Write(0);
+	//LED_4_Write(0);
+ 
+    CAN_Start(); //  Start CAN module
+    
+    //SENSOR_1_Start();               // Start sensor I2C
+	//SENSOR_1_Enable();
+	//SENSOR_2_Start();
+	//SENSOR_2_Enable();
+	//SENSOR_3_Start();
+	//SENSOR_3_Enable();
+	//SENSOR_4_Start();
+	//SENSOR_4_Enable();
     
     //CyIntSetVector(CAN_ISR_NUMBER, ISR_CAN); // Set CAN interrupt handler to local routine
     CAN_isr_StartEx(ISR_CAN);       // Equivalent to last instruction 
     
     CyGlobalIntEnable;              // Enable global interrupts
     //CAN_GlobalIntEnable();        // Equivalent to last instruction
+    
+    CyDelay(100);
+    
+	//initVCNL_1();                   // Check sensors working (Enable global interrupts before this)
+	//initVCNL_2();
+	//initVCNL_3();
+	//initVCNL_4();
+    
+                  
 
     /*Loop Forever*/
     for(;;){
@@ -48,20 +67,20 @@ int main()
         //Read and clear phase and hormone buffers
             //Read and clear phase buffer
             readPhaseBuffers(teta);
-            readHormoneBuffers();
+            //readHormoneBuffers();
             
         
         //Sense environment
             //Clear SendHormone flag
-            controlFlags &= ~(0x01u);// clear a bit with: number &= ~(1u << n);
+            //controlFlags &= ~(0x01u);// clear a bit with: number &= ~(1u << n);
             //Read Sensors and create hormone
-        generateHormone(&controlFlags,horm);
+        //generateHormone(&controlFlags,horm);
         
         
         
         //CPG and movement
         updateCPG(teta);            // Update CPG Equations
-        angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position
+        angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
         motorGoal = convertAngleToPosition(angle,800,200);                                    
         //Move motor to motorGoal
         
@@ -69,14 +88,14 @@ int main()
         sendPhase(teta[0]);         // Send phase through CAN
         
         //Send Generated Hormone message
-        if ((controlFlags & 0x01u) != 0u){
-            sendHormone(horm);
-        }
+        //if ((controlFlags & 0x01u) != 0u){
+       //     sendHormone(horm);
+       // }
         
         //Propagate received hormone message
-        
-        
-        
+        LED_1_Write(1);
+        CyDelay(500);
+        LED_1_Write(0);
         
         CyDelay(1000);              // Wait for 1 second and repeat
     }
@@ -108,9 +127,9 @@ CY_ISR(ISR_CAN){
 int convertAngleToPosition(float input, int maxPos, int minPos){
     
     int output = 0;
-    float oldRange = 1-(-1);
+    const float oldRange = M_PI/2-(-M_PI/2);
     float newRange = maxPos - minPos;
-    float convertedInput =  (((input - (-1)) * newRange) / oldRange) + minPos;
+    float convertedInput =  (((input - (-M_PI/2)) * newRange) / oldRange) + minPos;
     
     output = convertedInput;
     

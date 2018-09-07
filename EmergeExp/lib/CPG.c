@@ -14,21 +14,19 @@ float dt = 0.3;
 float dteta(float teta[], float phaseDiffSet[]){
     float wij = 0.8; 
     float v = 0.3;
-    float component[4];
+    float component = 0;
     int i;
     float sum = 2*M_PI*v;
     
     for (i = 1; i < 5 ; i++){
         if (teta[i] != -1){
-            component[i-1] = (wij*sin(teta[i]-teta[0]-phaseDiffSet[i-1]));
+            component = (wij*sin(teta[i]-teta[0]-phaseDiffSet[i-1]));
         }else{
-            component[i-1] = 0;   
+            component = 0;   
         }
+        sum = sum + component;
     }
     
-    for (i = 0; i < 4; i++){
-        sum = sum + component[i];   
-    }
     return sum;
 }
 
