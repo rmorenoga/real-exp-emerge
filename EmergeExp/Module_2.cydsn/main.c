@@ -20,7 +20,6 @@
                         //Flags: bit4(0x10):N/A         bit5(0x20):N/A bit6(0x40):N/A bit7(0x80):N/A
     uint8 horm[6];
     
-    
 //uint8 receiveMailboxNumber = RX_MAILBOX_RESET; // Global variable used to store receive message mailbox number
 
 /*Function Prototypes*/
@@ -38,8 +37,8 @@ int main()
 	//LED_4_Write(0);
     
     //Motor communication
-    //RX_Start();                     //rx motor
-    //MOTOR_Start();                  //tx motor
+    RX_Start();                     //rx motor
+    MOTOR_Start();                  //tx motor
  
     CAN_Start(); //  Start CAN module
     
@@ -71,8 +70,12 @@ int main()
     for(;;){
         
         //Read and clear phase and hormone buffers
-            //Read and clear phase buffer
-            readPhaseBuffers(teta);
+        
+        if(((receivedFlags >> 0) & 1u) != 0u){
+            receivePhase(CAN_RX_MAILBOX_phaseData0, teta);
+            receivedFlags &= ~(1u << 0);
+        }
+            
             //readHormoneBuffers();
             
         
@@ -88,7 +91,7 @@ int main()
         updateCPG(teta);            // Update CPG Equations
         angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
         motorGoal = convertAngleToPosition(angle,800,200);                                    
-        //MoveSpeed(MOTOR_ID, motorGoal, 150);
+        MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message
         sendPhase(teta[0]);         // Send phase through CAN
@@ -104,26 +107,32 @@ int main()
         //CyDelay(500);
         //LED_1_Write(0);
         
-        CyDelay(10000);              // Wait for 1 second and repeat
+        CyDelay(100);              // Wait for 1 second and repeat
     }
 }
 
 CY_ISR(ISR_CAN){
+               
+    /* Clear Receive Message flag */
+    CAN_INT_SR_REG = CAN_RX_MESSAGE_MASK; //Doesn't acknowledge message
+    //CAN_MsgRXIsr();     //Be careful acknowledges message before receiving mailbox can be sorted out
     
-    CAN_MsgRXIsr();                 // Clear Receive Message interrupt flag and calls appropriate handlers
     LED_1_Write(1);
     CyDelay(10);
     LED_1_Write(0);
-    
     //Identify message header (see isr example)
     //If phase data
     if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_0_SHIFT) != 0u){
-        receivePhase(CAN_RX_MAILBOX_phaseData0);         // Receive phase information and store in buffer
+        receivedFlags |= 1u; // Set phase1 received flag
+        //receivePhase(CAN_RX_MAILBOX_phaseData0); // Deprecated:Receive phase information and store in buffer  
+        CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_phaseData0); //Message acknowledge, strange behavior when trying to sort out receiving mailbox after this
     }
+    
     
     //If Hormone Data
      if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_1_SHIFT) != 0u){
         receiveHormone(CAN_RX_MAILBOX_hormoneData0);     // Receive hormone information and updtates appropiate buffer
+        CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData0);
     }
         //Identify Sender
         //Transform data (rearrange)

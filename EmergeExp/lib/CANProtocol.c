@@ -1,8 +1,8 @@
 #include <..\lib\CANProtocol.h>
 
-uint8 receivedFlags = 0x00u; //Flags: bit0(0x01):phaseBuffer1 bit1(0x02):phaseBuffer2 bit2(0x04):phaseBuffer3 bit3(0x08):phaseBuffer4
+uint8 receivedFlags = 0x00u; //Flags: bit0(0x01):phase1 bit1(0x02):phase2 bit2(0x04):phase3 bit3(0x08):phase4
                             //Flags: bit4(0x10):hormoneBuffer1 bit5(0x20):hormoneBuffer2 bit6(0x40):hormoneBuffer3 bit7(0x80):hormoneBuffer4
-float phaseBuffer[4] = {0};
+//float phaseBuffer[4] = {0};
 uint8 hormBuffer0[HORM_BUFFER_SIZE][6] ={0u};
 int8 buffercount[4] = {0u};
 
@@ -41,6 +41,25 @@ void sendHormone(uint8 horm[]){
 }
 
 
+void receivePhase(uint8 sender, float phase[]){
+    
+    uint8 bytePhase[4];
+   
+    bytePhase[0] = CAN_RX_DATA_BYTE1(CAN_RX_MAILBOX_phaseData0);
+    bytePhase[1] = CAN_RX_DATA_BYTE2(CAN_RX_MAILBOX_phaseData0);
+    bytePhase[2] = CAN_RX_DATA_BYTE3(CAN_RX_MAILBOX_phaseData0);
+    bytePhase[3] = CAN_RX_DATA_BYTE4(CAN_RX_MAILBOX_phaseData0);
+    
+    switch(sender){
+        case 0u : 
+            phase[1] = float_decode(bytePhase);
+            break;
+        default:
+            break;
+    }
+}
+
+/* Deprecated
 void receivePhase(uint8 sender){
     
     uint8 bytePhase[4];
@@ -76,6 +95,7 @@ void readPhaseBuffers(float phase[]){
     }
     receivedFlags &= 0xF0u;  //Clear phase received flags
 }
+*/
 
 void receiveHormone(uint8 sender){
     

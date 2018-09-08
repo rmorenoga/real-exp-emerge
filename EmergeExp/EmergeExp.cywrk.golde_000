@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="EmergeExp\Module_1">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="EmergeExp\Module_2">
 <ExpandedNodeIds>
 <v>EmergeExp</v>
 <v>EmergeExp\Acelerometer\TopDesign</v>
@@ -50,7 +50,6 @@
 <v>EmergeExp\CAN_Basic_Example01\CAN_Basic_Example.pdf</v>
 <v>EmergeExp\CAN_Basic_Example01\Generated_Source</v>
 <v>EmergeExp\CAN_Basic_Example01\Generated_Source\PSoC3</v>
-<v>EmergeExp\CAN_Full_Example02</v>
 <v>EmergeExp\CAN_Full_Example02\TopDesign</v>
 <v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr</v>
 <v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Pins</v>
@@ -102,11 +101,9 @@
 <v>EmergeExp\Module_1\Source Files\VCNL4010_2.c</v>
 <v>EmergeExp\Module_1\Source Files\VCNL4010_3.c</v>
 <v>EmergeExp\Module_1\Source Files\VCNL4010_4.c</v>
-<v>EmergeExp\Module_1\Generated_Source</v>
 <v>EmergeExp\Module_1\Generated_Source\PSoC4</v>
 <v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN</v>
 <v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN_isr</v>
-<v>EmergeExp\Module_2</v>
 <v>EmergeExp\Module_2\TopDesign</v>
 <v>EmergeExp\Module_2\Module_2.cydwr</v>
 <v>EmergeExp\Module_2\Module_2.cydwr\Pins</v>
@@ -236,48 +233,12 @@
 <v>EmergeExp\Acelerometer</v>
 <v>EmergeExp\CAN_Basic_Example01</v>
 <v>EmergeExp\CAN_Full_Example02</v>
-<v>EmergeExp\CAN_Full_Example02\TopDesign</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Pins</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Analog</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Clocks</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Interrupts</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\DMA</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\System</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Directives</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Flash Security</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\EEPROM</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cyre</v>
-<v>EmergeExp\CAN_Full_Example02\Header Files</v>
-<v>EmergeExp\CAN_Full_Example02\Header Files\cyapicallbacks.h</v>
-<v>EmergeExp\CAN_Full_Example02\Source Files</v>
-<v>EmergeExp\CAN_Full_Example02\Source Files\main.c</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example.pdf</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN\CAN.c</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN\CAN.h</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN\CAN_INT.c</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN\CAN_PM.c</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN\CAN_TX_RX_func.c</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cy_boot</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\Em_EEPROM_Dynamic</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\LCD</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\LCD_LCDPort</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\RX</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\TX</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\TX_EN</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cycodeshareexport.ld</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cycodeshareimport.ld</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cycodeshareimport.scat</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cydevice.h</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cydevice_trm.h</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cydevicekeil.inc</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cydevicekeil_trm.inc</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cydisabledsheets.h</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cyfitter.h</v>
-<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cyfitter_cfg.c</v>
+<v>EmergeExp\Module_1</v>
+<v>EmergeExp\Module_2</v>
+<v>EmergeExp\Module_CPG</v>
+<v>EmergeExp\Test_Module</v>
+<v>EmergeExp\Test_Module_CAN_1</v>
+<v>EmergeExp\Test_Module_CAN_2</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
