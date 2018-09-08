@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="EmergeExp\Module_2\Header Files\CPG.h">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="EmergeExp\Module_1">
 <ExpandedNodeIds>
 <v>EmergeExp</v>
 <v>EmergeExp\Acelerometer\TopDesign</v>
@@ -50,6 +50,7 @@
 <v>EmergeExp\CAN_Basic_Example01\CAN_Basic_Example.pdf</v>
 <v>EmergeExp\CAN_Basic_Example01\Generated_Source</v>
 <v>EmergeExp\CAN_Basic_Example01\Generated_Source\PSoC3</v>
+<v>EmergeExp\CAN_Full_Example02</v>
 <v>EmergeExp\CAN_Full_Example02\TopDesign</v>
 <v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr</v>
 <v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Pins</v>
@@ -235,48 +236,48 @@
 <v>EmergeExp\Acelerometer</v>
 <v>EmergeExp\CAN_Basic_Example01</v>
 <v>EmergeExp\CAN_Full_Example02</v>
-<v>EmergeExp\Module_1</v>
-<v>EmergeExp\Module_2</v>
-<v>EmergeExp\Module_2\TopDesign</v>
-<v>EmergeExp\Module_2\Module_2.cydwr</v>
-<v>EmergeExp\Module_2\Module_2.cydwr\Pins</v>
-<v>EmergeExp\Module_2\Module_2.cydwr\Analog</v>
-<v>EmergeExp\Module_2\Module_2.cydwr\DMA</v>
-<v>EmergeExp\Module_2\Module_2.cydwr\Clocks</v>
-<v>EmergeExp\Module_2\Module_2.cydwr\Interrupts</v>
-<v>EmergeExp\Module_2\Module_2.cydwr\System</v>
-<v>EmergeExp\Module_2\Module_2.cydwr\Directives</v>
-<v>EmergeExp\Module_2\Module_2.cydwr\Flash Security</v>
-<v>EmergeExp\Module_2\Header Files</v>
-<v>EmergeExp\Module_2\Header Files\AX12.h</v>
-<v>EmergeExp\Module_2\Header Files\CANProtocol.h</v>
-<v>EmergeExp\Module_2\Header Files\CPG.h</v>
-<v>EmergeExp\Module_2\Header Files\cyapicallbacks.h</v>
-<v>EmergeExp\Module_2\Header Files\DynamixelSerial1.h</v>
-<v>EmergeExp\Module_2\Header Files\Hormone.h</v>
-<v>EmergeExp\Module_2\Header Files\VCNL4010_1.h</v>
-<v>EmergeExp\Module_2\Header Files\VCNL4010_2.h</v>
-<v>EmergeExp\Module_2\Header Files\VCNL4010_3.h</v>
-<v>EmergeExp\Module_2\Header Files\VCNL4010_4.h</v>
-<v>EmergeExp\Module_2\Source Files</v>
-<v>EmergeExp\Module_2\Source Files\CANProtocol.c</v>
-<v>EmergeExp\Module_2\Source Files\CPG.c</v>
-<v>EmergeExp\Module_2\Source Files\Hormone.c</v>
-<v>EmergeExp\Module_2\Source Files\main.c</v>
-<v>EmergeExp\Module_2\Source Files\VCNL4010_1.c</v>
-<v>EmergeExp\Module_2\Source Files\VCNL4010_2.c</v>
-<v>EmergeExp\Module_2\Source Files\VCNL4010_3.c</v>
-<v>EmergeExp\Module_2\Source Files\VCNL4010_4.c</v>
-<v>EmergeExp\Module_2\Generated_Source</v>
-<v>EmergeExp\Module_2\Generated_Source\PSoC4</v>
-<v>EmergeExp\Module_2\Generated_Source\PSoC4\CAN</v>
-<v>EmergeExp\Module_2\Generated_Source\PSoC4\CAN\CAN.c</v>
-<v>EmergeExp\Module_2\Generated_Source\PSoC4\CAN\CAN.h</v>
-<v>EmergeExp\Module_2\Generated_Source\PSoC4\CAN\CAN_INT.c</v>
-<v>EmergeExp\Module_2\Generated_Source\PSoC4\CAN\CAN_PM.c</v>
-<v>EmergeExp\Module_2\Generated_Source\PSoC4\CAN\CAN_TX_RX_func.c</v>
-<v>EmergeExp\Module_2\Generated_Source\PSoC4\CAN_HFCLK</v>
-<v>EmergeExp\Module_2\Generated_Source\PSoC4\CAN_isr</v>
+<v>EmergeExp\CAN_Full_Example02\TopDesign</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Pins</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Analog</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Clocks</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Interrupts</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\DMA</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\System</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Directives</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\Flash Security</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cydwr\EEPROM</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example02.cyre</v>
+<v>EmergeExp\CAN_Full_Example02\Header Files</v>
+<v>EmergeExp\CAN_Full_Example02\Header Files\cyapicallbacks.h</v>
+<v>EmergeExp\CAN_Full_Example02\Source Files</v>
+<v>EmergeExp\CAN_Full_Example02\Source Files\main.c</v>
+<v>EmergeExp\CAN_Full_Example02\CAN_Full_Example.pdf</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN\CAN.c</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN\CAN.h</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN\CAN_INT.c</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN\CAN_PM.c</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\CAN\CAN_TX_RX_func.c</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cy_boot</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\Em_EEPROM_Dynamic</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\LCD</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\LCD_LCDPort</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\RX</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\TX</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\TX_EN</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cycodeshareexport.ld</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cycodeshareimport.ld</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cycodeshareimport.scat</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cydevice.h</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cydevice_trm.h</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cydevicekeil.inc</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cydevicekeil_trm.inc</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cydisabledsheets.h</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cyfitter.h</v>
+<v>EmergeExp\CAN_Full_Example02\Generated_Source\PSoC3\cyfitter_cfg.c</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -1228,6 +1229,14 @@
 <name v=".\Module_1.cydsn\Generated_Source\PSoC4\CAN_TX_RX_func.c" />
 <name v=".\lib\CPG.h" />
 <name v=".\Module_1.cydsn\Generated_Source\PSoC4\LED_1.c" />
+<name v=".\lib\AX12.h" />
+<name v=".\Module_CPG.cydsn\main.c" />
+<name v=".\Module_2.cydsn\Generated_Source\PSoC4\CyBootAsmGnu.s" />
+<name v=".\Module_2.cydsn\Generated_Source\PSoC4\CAN_TX_RX_func.c" />
+<name v=".\Module_2.cydsn\Generated_Source\PSoC4\CAN.h" />
+<name v=".\Module_1.cydsn\Generated_Source\PSoC4\CAN_INT.c" />
+<name v=".\Module_2.cydsn\Generated_Source\PSoC4\CAN.c" />
+<name v=".\Module_1.cydsn\Generated_Source\PSoC4\CAN.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -1235,7 +1244,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1102, 681" SelectedTabbedMdiWindow="0e401caf-c2e6-4f88-ad28-00b02593d07f"><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\main.c" Guid="f638a743-3221-410e-8d4a-ff27c928cedd" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\TopDesign\TopDesign.cysch" Guid="e98b2516-429c-4d57-a175-413760df7746" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.c" Guid="8c92425d-2d07-48f7-8198-941b8ba3f2e0" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Hormone.c" Guid="2862981d-cba5-4cbc-ac24-48717be74206" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\VCNL4010_1.c" Guid="bac62f8d-2668-46af-9aee-3ea3b772f24b" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.c" Guid="51c9bff2-70d8-47c8-a9a9-a08a3881d0f0" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\TopDesign\TopDesign.cysch" Guid="e471e945-da4e-4bf8-b92c-cdb8d674b8bb" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.h" Guid="1bfad846-d3a5-4cbf-8c62-442d520e9675" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\main.c" Guid="0e401caf-c2e6-4f88-ad28-00b02593d07f" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN_TX_RX_func.c" Guid="c21d0c92-cba5-42fc-b21d-556fdc57e3c3" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.h" Guid="e17761e9-6c51-48ce-9087-96f171d78d0c" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\LED_1.c" Guid="7f98c4ca-c4da-4a92-adf6-f5fdac46b141" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1309, 681" SelectedTabbedMdiWindow="cd8273da-f48b-4b19-a8bd-6cca6df25c05"><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\main.c" Guid="f638a743-3221-410e-8d4a-ff27c928cedd" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\TopDesign\TopDesign.cysch" Guid="e98b2516-429c-4d57-a175-413760df7746" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.c" Guid="8c92425d-2d07-48f7-8198-941b8ba3f2e0" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Hormone.c" Guid="2862981d-cba5-4cbc-ac24-48717be74206" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\VCNL4010_1.c" Guid="bac62f8d-2668-46af-9aee-3ea3b772f24b" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.c" Guid="51c9bff2-70d8-47c8-a9a9-a08a3881d0f0" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\TopDesign\TopDesign.cysch" Guid="e471e945-da4e-4bf8-b92c-cdb8d674b8bb" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.h" Guid="1bfad846-d3a5-4cbf-8c62-442d520e9675" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\main.c" Guid="0e401caf-c2e6-4f88-ad28-00b02593d07f" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN_TX_RX_func.c" Guid="c21d0c92-cba5-42fc-b21d-556fdc57e3c3" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.h" Guid="e17761e9-6c51-48ce-9087-96f171d78d0c" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\LED_1.c" Guid="7f98c4ca-c4da-4a92-adf6-f5fdac46b141" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\AX12.h" Guid="b14b40fc-1611-40ab-89d1-2014ec0c1d13" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_CPG.cydsn\main.c" Guid="67f23152-c8b6-415a-a650-764c2d411a09" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\Generated_Source\PSoC4\CyBootAsmGnu.s" Guid="f0076ed6-33d5-4f44-9dc1-3c0008365548" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\Generated_Source\PSoC4\CAN_TX_RX_func.c" Guid="b2cb8065-7148-4473-bbf0-955841a1f290" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\Generated_Source\PSoC4\CAN.h" Guid="2b4e1ed4-b329-4eff-adae-a2e2cb6dd886" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN_INT.c" Guid="cd8273da-f48b-4b19-a8bd-6cca6df25c05" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\Generated_Source\PSoC4\CAN.c" Guid="936f5957-336b-46a1-baef-6816e7c8b3bd" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN.h" Guid="ad837b8f-1420-4307-a45c-b9cdfcbb909d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

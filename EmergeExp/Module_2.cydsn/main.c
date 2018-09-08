@@ -2,9 +2,11 @@
 #include <..\lib\CPG.h>
 #include <..\lib\CANProtocol.h>
 #include <..\lib\Hormone.h>
+#include <..\lib\AX12.h>
 
 #define CAN_RX_MAILBOX_0_SHIFT      (1u)
 #define CAN_RX_MAILBOX_1_SHIFT      (2u)
+#define MOTOR_ID                    (1)
 
 /* Reset received mailbox number define */
 #define RX_MAILBOX_RESET 			(0xFFu)
@@ -34,6 +36,10 @@ int main()
 	//LED_2_Write(0);
 	//LED_3_Write(0);
 	//LED_4_Write(0);
+    
+    //Motor communication
+    //RX_Start();                     //rx motor
+    //MOTOR_Start();                  //tx motor
  
     CAN_Start(); //  Start CAN module
     
@@ -82,7 +88,7 @@ int main()
         updateCPG(teta);            // Update CPG Equations
         angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
         motorGoal = convertAngleToPosition(angle,800,200);                                    
-        //Move motor to motorGoal
+        //MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message
         sendPhase(teta[0]);         // Send phase through CAN
@@ -93,17 +99,21 @@ int main()
        // }
         
         //Propagate received hormone message
-        LED_1_Write(1);
-        CyDelay(500);
-        LED_1_Write(0);
         
-        CyDelay(1000);              // Wait for 1 second and repeat
+        //LED_1_Write(1);
+        //CyDelay(500);
+        //LED_1_Write(0);
+        
+        CyDelay(10000);              // Wait for 1 second and repeat
     }
 }
 
 CY_ISR(ISR_CAN){
     
     CAN_MsgRXIsr();                 // Clear Receive Message interrupt flag and calls appropriate handlers
+    LED_1_Write(1);
+    CyDelay(10);
+    LED_1_Write(0);
     
     //Identify message header (see isr example)
     //If phase data

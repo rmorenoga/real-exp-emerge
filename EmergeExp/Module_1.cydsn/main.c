@@ -2,9 +2,11 @@
 #include <..\lib\CPG.h>
 #include <..\lib\CANProtocol.h>
 #include <..\lib\Hormone.h>
+#include <..\lib\AX12.h>
 
 #define CAN_RX_MAILBOX_0_SHIFT      (1u)
 #define CAN_RX_MAILBOX_1_SHIFT      (2u)
+#define MOTOR_ID                    (1)
 
 /* Reset received mailbox number define */
 #define RX_MAILBOX_RESET 			(0xFFu)
@@ -17,7 +19,6 @@
     uint8 controlFlags = 0x00u; //Flags: bit0(0x01):SendHormone bit1(0x02):N/A bit2(0x04):N/A bit3(0x08):N/A
                         //Flags: bit4(0x10):N/A         bit5(0x20):N/A bit6(0x40):N/A bit7(0x80):N/A
     uint8 horm[6];
-    
     
 //uint8 receiveMailboxNumber = RX_MAILBOX_RESET; // Global variable used to store receive message mailbox number
 
@@ -34,6 +35,10 @@ int main()
 	//LED_2_Write(0);
 	//LED_3_Write(0);
 	//LED_4_Write(0);
+    
+    //Motor communication
+    //RX_Start();                     //rx motor
+    //MOTOR_Start();                  //tx motor
  
     CAN_Start(); //  Start CAN module
     
@@ -66,6 +71,7 @@ int main()
         
         //Read and clear phase and hormone buffers
             //Read and clear phase buffer
+        
             readPhaseBuffers(teta);
             //readHormoneBuffers();
             
@@ -82,7 +88,7 @@ int main()
         updateCPG(teta);            // Update CPG Equations
         angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
         motorGoal = convertAngleToPosition(angle,800,200);                                    
-        //Move motor to motorGoal
+        //MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message
         sendPhase(teta[0]);         // Send phase through CAN
@@ -93,23 +99,26 @@ int main()
        // }
         
         //Propagate received hormone message
-        LED_1_Write(1);
-        CyDelay(500);
-        LED_1_Write(0);
+        if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_0_SHIFT) != 0u){
+            CAN_RX_ACK_MESSAGE(0u);
+            receivePhase(CAN_RX_MAILBOX_phaseData0); // Receive phase information and store in buffer       
+        }
+        //LED_1_Write(1);
+        //CyDelay(500);
+        //LED_1_Write(0);
         
-        CyDelay(1000);              // Wait for 1 second and repeat
+        //CyDelay(500);              // Wait for 1 second and repeat
     }
 }
 
 CY_ISR(ISR_CAN){
     
     CAN_MsgRXIsr();                 // Clear Receive Message interrupt flag and calls appropriate handlers
-    
+    LED_1_Write(1);
+    CyDelay(10);
+    LED_1_Write(0);
     //Identify message header (see isr example)
     //If phase data
-    if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_0_SHIFT) != 0u){
-        receivePhase(CAN_RX_MAILBOX_phaseData0);         // Receive phase information and store in buffer
-    }
     
     //If Hormone Data
      if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_1_SHIFT) != 0u){
