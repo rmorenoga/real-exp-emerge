@@ -1,10 +1,11 @@
 #include <..\lib\CANProtocol.h>
 
 uint8 receivedFlags = 0x00u; //Flags: bit0(0x01):phase1 bit1(0x02):phase2 bit2(0x04):phase3 bit3(0x08):phase4
-                            //Flags: bit4(0x10):hormoneBuffer1 bit5(0x20):hormoneBuffer2 bit6(0x40):hormoneBuffer3 bit7(0x80):hormoneBuffer4
+                            //Flags: bit4(0x10):hormone1 bit5(0x20):hormone2 bit6(0x40):hormone3 bit7(0x80):hormone4
 //float phaseBuffer[4] = {0};
 uint8 hormBuffer0[HORM_BUFFER_SIZE][6] ={0u};
 int8 buffercount[4] = {0u};
+uint8 dummy = 0u;
 
 void sendPhase(float phase){
     
@@ -25,7 +26,9 @@ void sendPhase(float phase){
     CAN_SendMsgphaseOwn();
 }
 
+/*
 void sendHormone(uint8 horm[]){
+    
     
     CAN_TX_DATA_BYTE1(CAN_TX_MAILBOX_phaseOwn,horm[0]);
 	CAN_TX_DATA_BYTE2(CAN_TX_MAILBOX_phaseOwn,horm[1]);
@@ -39,7 +42,28 @@ void sendHormone(uint8 horm[]){
     CAN_SendMsghormoneOwn();
     
 }
+*/
 
+void sendHormone(void){
+    
+    if(dummy > 2u){
+        dummy = 0u;
+    }
+    
+    CAN_TX_DATA_BYTE1(CAN_TX_MAILBOX_hormoneOwn,0x01+dummy);
+	CAN_TX_DATA_BYTE2(CAN_TX_MAILBOX_hormoneOwn,0x02+dummy);
+    CAN_TX_DATA_BYTE3(CAN_TX_MAILBOX_hormoneOwn,0x03+dummy);
+    CAN_TX_DATA_BYTE4(CAN_TX_MAILBOX_hormoneOwn,0x04+dummy);
+    CAN_TX_DATA_BYTE5(CAN_TX_MAILBOX_hormoneOwn,0x05+dummy);
+    CAN_TX_DATA_BYTE6(CAN_TX_MAILBOX_hormoneOwn,0x06+dummy);
+    CAN_TX_DATA_BYTE7(CAN_TX_MAILBOX_hormoneOwn,0x07+dummy);
+    CAN_TX_DATA_BYTE8(CAN_TX_MAILBOX_hormoneOwn,0x08+dummy);
+
+    dummy++;
+        
+    CAN_SendMsghormoneOwn();
+    
+}
 
 void receivePhase(uint8 sender, float phase[]){
     
@@ -97,6 +121,7 @@ void readPhaseBuffers(float phase[]){
 }
 */
 
+/*
 void receiveHormone(uint8 sender){
     
     uint8 receivedHormone[6];
@@ -124,6 +149,51 @@ void receiveHormone(uint8 sender){
             break;
         } 
 }
+*/
+
+void receiveHormoneFull(uint8 sender){
+    
+    switch(sender)
+        {
+        case 3u : 
+            readMailBoxes(sender);
+            break;
+        default:
+            break;
+        } 
+    
+  }  
+    
+    
+void readMailBoxes(uint8 sender){//TODO: Include hormBuffer management
+    
+    sender =1u;
+   
+    //for (i = first;i < first + count;i++){
+        hormBuffer0[0][0] = CAN_RX_DATA_BYTE1(CAN_RX_MAILBOX_hormoneData00);
+        hormBuffer0[0][1] = CAN_RX_DATA_BYTE2(CAN_RX_MAILBOX_hormoneData00);
+        hormBuffer0[0][2] = CAN_RX_DATA_BYTE3(CAN_RX_MAILBOX_hormoneData00);
+        hormBuffer0[0][3] = CAN_RX_DATA_BYTE4(CAN_RX_MAILBOX_hormoneData00);
+        hormBuffer0[0][4] = CAN_RX_DATA_BYTE5(CAN_RX_MAILBOX_hormoneData00);
+        hormBuffer0[0][5] = CAN_RX_DATA_BYTE6(CAN_RX_MAILBOX_hormoneData00);
+        
+        hormBuffer0[1][0] = CAN_RX_DATA_BYTE1(CAN_RX_MAILBOX_hormoneData01);
+        hormBuffer0[1][1] = CAN_RX_DATA_BYTE2(CAN_RX_MAILBOX_hormoneData01);
+        hormBuffer0[1][2] = CAN_RX_DATA_BYTE3(CAN_RX_MAILBOX_hormoneData01);
+        hormBuffer0[1][3] = CAN_RX_DATA_BYTE4(CAN_RX_MAILBOX_hormoneData01);
+        hormBuffer0[1][4] = CAN_RX_DATA_BYTE5(CAN_RX_MAILBOX_hormoneData01);
+        hormBuffer0[1][5] = CAN_RX_DATA_BYTE6(CAN_RX_MAILBOX_hormoneData01);
+        
+        hormBuffer0[2][0] = CAN_RX_DATA_BYTE1(CAN_RX_MAILBOX_hormoneData02);
+        hormBuffer0[2][1] = CAN_RX_DATA_BYTE2(CAN_RX_MAILBOX_hormoneData02);
+        hormBuffer0[2][2] = CAN_RX_DATA_BYTE3(CAN_RX_MAILBOX_hormoneData02);
+        hormBuffer0[2][3] = CAN_RX_DATA_BYTE4(CAN_RX_MAILBOX_hormoneData02);
+        hormBuffer0[2][4] = CAN_RX_DATA_BYTE5(CAN_RX_MAILBOX_hormoneData02);
+        hormBuffer0[2][5] = CAN_RX_DATA_BYTE6(CAN_RX_MAILBOX_hormoneData02);
+    //}  
+    
+}
+
 
 void readHormoneBuffers(void){
     int8 i;

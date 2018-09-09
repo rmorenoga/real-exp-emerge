@@ -6,6 +6,9 @@
 
 #define CAN_RX_MAILBOX_0_SHIFT      (1u)
 #define CAN_RX_MAILBOX_1_SHIFT      (2u)
+#define CAN_RX_MAILBOX_2_SHIFT      (4u)
+#define CAN_RX_MAILBOX_3_SHIFT      (8u)
+
 #define MOTOR_ID                    (1)
 
 /* Reset received mailbox number define */
@@ -37,8 +40,8 @@ int main()
 	//LED_4_Write(0);
     
     //Motor communication
-    RX_Start();                     //rx motor
-    MOTOR_Start();                  //tx motor
+    //RX_Start();                     //rx motor
+    //MOTOR_Start();                  //tx motor
  
     CAN_Start(); //  Start CAN module
     
@@ -74,6 +77,9 @@ int main()
         if(((receivedFlags >> 0) & 1u) != 0u){
             receivePhase(CAN_RX_MAILBOX_phaseData0, teta);
             receivedFlags &= ~(1u << 0);
+        }else if(((receivedFlags >> 4) & 1u) != 0u){
+            receiveHormoneFull(CAN_RX_MAILBOX_hormoneData02);
+            receivedFlags &= ~(1u << 4);
         }
             
             //readHormoneBuffers();
@@ -91,7 +97,7 @@ int main()
         updateCPG(teta);            // Update CPG Equations
         angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
         motorGoal = convertAngleToPosition(angle,800,200);                                    
-        MoveSpeed(MOTOR_ID, motorGoal, 150);
+        //MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message
         sendPhase(teta[0]);         // Send phase through CAN
@@ -130,9 +136,12 @@ CY_ISR(ISR_CAN){
     
     
     //If Hormone Data
-     if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_1_SHIFT) != 0u){
-        receiveHormone(CAN_RX_MAILBOX_hormoneData0);     // Receive hormone information and updtates appropiate buffer
-        CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData0);
+     if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_3_SHIFT) != 0u){
+        receivedFlags |= (1u << 4);
+        //receiveHormone(CAN_RX_MAILBOX_hormoneData0);     // Receive hormone information and updtates appropiate buffer
+        CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData00);
+        CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData01);
+        CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData02);
     }
         //Identify Sender
         //Transform data (rearrange)

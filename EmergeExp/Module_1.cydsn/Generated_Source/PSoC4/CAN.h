@@ -84,9 +84,9 @@ extern uint8 CAN_initVar;
 #define CAN_TX6_FUNC_ENABLE            (0u)
 #define CAN_TX7_FUNC_ENABLE            (0u)
 #define CAN_RX0_FUNC_ENABLE            (1u)
-#define CAN_RX1_FUNC_ENABLE            (1u)
+#define CAN_RX3_FUNC_ENABLE            (1u)
+#define CAN_RX1_FUNC_ENABLE            (0u)
 #define CAN_RX2_FUNC_ENABLE            (0u)
-#define CAN_RX3_FUNC_ENABLE            (0u)
 #define CAN_RX4_FUNC_ENABLE            (0u)
 #define CAN_RX5_FUNC_ENABLE            (0u)
 #define CAN_RX6_FUNC_ENABLE            (0u)
@@ -99,7 +99,7 @@ extern uint8 CAN_initVar;
 #define CAN_RX13_FUNC_ENABLE           (0u)
 #define CAN_RX14_FUNC_ENABLE           (0u)
 #define CAN_RX15_FUNC_ENABLE           (0u)
-#define CAN_RX_MAILBOX_TYPE            (0x3u)
+#define CAN_RX_MAILBOX_TYPE            (0x9u)
 #define CAN_TX_MAILBOX_TYPE            (0x3u)
 
 
@@ -309,13 +309,13 @@ void  CAN_ReceiveMsg(uint8 rxMailbox) ;
     void CAN_ReceiveMsgphaseData0(void) ;
 #endif /* CAN_RX0_FUNC_ENABLE */
 #if (CAN_RX1_FUNC_ENABLE)
-    void CAN_ReceiveMsghormoneData0(void) ;
+    void CAN_ReceiveMsg1(void) ;
 #endif /* CAN_RX1_FUNC_ENABLE */
 #if (CAN_RX2_FUNC_ENABLE)
     void CAN_ReceiveMsg2(void) ;
 #endif /* CAN_RX2_FUNC_ENABLE */
 #if (CAN_RX3_FUNC_ENABLE)
-    void CAN_ReceiveMsg3(void) ;
+    void CAN_ReceiveMsghormoneData02(void) ;
 #endif /* CAN_RX3_FUNC_ENABLE */
 #if (CAN_RX4_FUNC_ENABLE)
     void CAN_ReceiveMsg4(void) ;
@@ -422,9 +422,9 @@ void  CAN_ReceiveMsg(uint8 rxMailbox) ;
 
 /* RX Defines to link mailbox names with mailbox numbers */
 #define CAN_RX_MAILBOX_phaseData0      (0u)
-#define CAN_RX_MAILBOX_hormoneData0    (1u)
-#define CAN_RX_MAILBOX_2               (2u)
-#define CAN_RX_MAILBOX_3               (3u)
+#define CAN_RX_MAILBOX_hormoneData00   (1u)
+#define CAN_RX_MAILBOX_hormoneData01   (2u)
+#define CAN_RX_MAILBOX_hormoneData02   (3u)
 #define CAN_RX_MAILBOX_4               (4u)
 #define CAN_RX_MAILBOX_5               (5u)
 #define CAN_RX_MAILBOX_6               (6u)

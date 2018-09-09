@@ -37,8 +37,8 @@ int main()
 	//LED_4_Write(0);
     
     //Motor communication
-    RX_Start();                     //rx motor
-    MOTOR_Start();                  //tx motor
+    //RX_Start();                     //rx motor
+    //MOTOR_Start();                  //tx motor
  
     CAN_Start(); //  Start CAN module
     
@@ -91,14 +91,14 @@ int main()
         updateCPG(teta);            // Update CPG Equations
         angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
         motorGoal = convertAngleToPosition(angle,800,200);                                    
-        MoveSpeed(MOTOR_ID, motorGoal, 150);
+        //MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message
-        sendPhase(teta[0]);         // Send phase through CAN
+        //sendPhase(teta[0]);         // Send phase through CAN
         
         //Send Generated Hormone message
         //if ((controlFlags & 0x01u) != 0u){
-       //     sendHormone(horm);
+            sendHormone();
        // }
         
         //Propagate received hormone message
@@ -107,7 +107,7 @@ int main()
         //CyDelay(500);
         //LED_1_Write(0);
         
-        CyDelay(100);              // Wait for 1 second and repeat
+        CyDelay(4000);              // Wait for 1 second and repeat
     }
 }
 
@@ -130,10 +130,10 @@ CY_ISR(ISR_CAN){
     
     
     //If Hormone Data
-     if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_1_SHIFT) != 0u){
+    /* if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_1_SHIFT) != 0u){
         receiveHormone(CAN_RX_MAILBOX_hormoneData0);     // Receive hormone information and updtates appropiate buffer
         CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData0);
-    }
+    }*/
         //Identify Sender
         //Transform data (rearrange)
         //Store in sender buffer
