@@ -22,6 +22,7 @@
     uint8 controlFlags = 0x00u; //Flags: bit0(0x01):SendHormone bit1(0x02):N/A bit2(0x04):N/A bit3(0x08):N/A
                         //Flags: bit4(0x10):N/A         bit5(0x20):N/A bit6(0x40):N/A bit7(0x80):N/A
     uint8 horm[6];
+    uint8 flag = 0u;
     
 //uint8 receiveMailboxNumber = RX_MAILBOX_RESET; // Global variable used to store receive message mailbox number
 
@@ -77,8 +78,20 @@ int main()
         if(((receivedFlags >> 0) & 1u) != 0u){
             receivePhase(CAN_RX_MAILBOX_phaseData0, teta);
             receivedFlags &= ~(1u << 0);
-        }else if(((receivedFlags >> 4) & 1u) != 0u){
-            receiveHormoneFull(CAN_RX_MAILBOX_hormoneData02);
+        }
+        flag &= 0x00;
+        if(((receivedFlags >> 4) & 1u) != 0u){
+            receiveHormoneFull(CAN_RX_MAILBOX_hormoneData00);
+            if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_2_SHIFT) != 0u){
+                receiveHormoneFull(CAN_RX_MAILBOX_hormoneData01);
+                flag |= (1u << 0);
+                CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData01);
+            }
+            if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_3_SHIFT) != 0u){
+                receiveHormoneFull(CAN_RX_MAILBOX_hormoneData02);
+                flag |= (1u << 1);
+                CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData02);
+            }
             receivedFlags &= ~(1u << 4);
         }
             
@@ -136,12 +149,12 @@ CY_ISR(ISR_CAN){
     
     
     //If Hormone Data
-     if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_3_SHIFT) != 0u){
+     if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_1_SHIFT) != 0u){
         receivedFlags |= (1u << 4);
         //receiveHormone(CAN_RX_MAILBOX_hormoneData0);     // Receive hormone information and updtates appropiate buffer
         CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData00);
-        CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData01);
-        CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData02);
+        //CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData01);
+        //CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData02);
     }
         //Identify Sender
         //Transform data (rearrange)
