@@ -17,7 +17,6 @@ void receivePhase(uint8 sender, float phase[]);
 //void readPhaseBuffers(float phase[]); //Deprecated
 //void receiveHormone(uint8 sender);
 void receiveHormoneFull(uint8 sender);
-void readMailBoxes(uint8 sender);
 void readHormoneBuffers(void);
 void float_encode(float p_value, uint8 * p_encoded_data);
 float float_decode(uint8 * p_encoded_data);
