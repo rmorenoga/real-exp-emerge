@@ -30,21 +30,21 @@ void sendPhase(float phase){
 void sendHormone(uint8 horm[]){
     
     
-    CAN_TX_DATA_BYTE1(CAN_TX_MAILBOX_phaseOwn,horm[0]);
-	CAN_TX_DATA_BYTE2(CAN_TX_MAILBOX_phaseOwn,horm[1]);
-    CAN_TX_DATA_BYTE3(CAN_TX_MAILBOX_phaseOwn,horm[2]);
-    CAN_TX_DATA_BYTE4(CAN_TX_MAILBOX_phaseOwn,horm[3]);
-    CAN_TX_DATA_BYTE5(CAN_TX_MAILBOX_phaseOwn,horm[4]);
-    CAN_TX_DATA_BYTE6(CAN_TX_MAILBOX_phaseOwn,horm[5]);
-    CAN_TX_DATA_BYTE7(CAN_TX_MAILBOX_phaseOwn,0u);
-    CAN_TX_DATA_BYTE8(CAN_TX_MAILBOX_phaseOwn,0u);
+    CAN_TX_DATA_BYTE1(CAN_TX_MAILBOX_hormoneOwn,horm[0]);
+	CAN_TX_DATA_BYTE2(CAN_TX_MAILBOX_hormoneOwn,horm[1]);
+    CAN_TX_DATA_BYTE3(CAN_TX_MAILBOX_hormoneOwn,horm[2]);
+    CAN_TX_DATA_BYTE4(CAN_TX_MAILBOX_hormoneOwn,horm[3]);
+    CAN_TX_DATA_BYTE5(CAN_TX_MAILBOX_hormoneOwn,horm[4]);
+    CAN_TX_DATA_BYTE6(CAN_TX_MAILBOX_hormoneOwn,horm[5]);
+    CAN_TX_DATA_BYTE7(CAN_TX_MAILBOX_hormoneOwn,0u);
+    CAN_TX_DATA_BYTE8(CAN_TX_MAILBOX_hormoneOwn,0u);
 
     CAN_SendMsghormoneOwn();
     
 }
 
 /*
-void sendHormone(void){
+void sendHormone(uint8 horm[]){
     
     if(dummy > 2u){
         dummy = 0u;

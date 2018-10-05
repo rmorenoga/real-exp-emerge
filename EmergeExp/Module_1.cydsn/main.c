@@ -37,7 +37,7 @@ int main()
     //Init LED's
     LED_1_Write(0);
 	//LED_2_Write(0);
-	//LED_3_Write(0);
+	LED_3_Write(0);
 	//LED_4_Write(0);
     
     //Motor communication
@@ -46,11 +46,11 @@ int main()
  
     CAN_Start(); //  Start CAN module
     
-    //SENSOR_1_Start();               // Start sensor I2C
+    SENSOR_1_Start();               // Start sensor I2C
 	//SENSOR_1_Enable();
 	//SENSOR_2_Start();
 	//SENSOR_2_Enable();
-	//SENSOR_3_Start();
+	SENSOR_3_Start();
 	//SENSOR_3_Enable();
 	//SENSOR_4_Start();
 	//SENSOR_4_Enable();
@@ -63,9 +63,9 @@ int main()
     
     CyDelay(100);
     
-	//initVCNL_1();                   // Check sensors working (Enable global interrupts before this)
+	initVCNL_1();                   // Check sensors working (Enable global interrupts before this)
 	//initVCNL_2();
-	//initVCNL_3();
+	initVCNL_3();
 	//initVCNL_4();
     
                   
@@ -113,7 +113,7 @@ int main()
         //MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message
-        sendPhase(teta[0]);         // Send phase through CAN
+        //sendPhase(teta[0]);         // Send phase through CAN
         
         //Send Generated Hormone message
         if ((controlFlags & 0x01u) != 0u){
@@ -126,7 +126,7 @@ int main()
         //CyDelay(500);
         //LED_1_Write(0);
         
-        CyDelay(100);              // Wait for 1 second and repeat
+        CyDelay(1000);              // Wait for 1 second and repeat
     }
 }
 
@@ -156,11 +156,7 @@ CY_ISR(ISR_CAN){
         //CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData01);
         //CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData02);
     }
-        //Identify Sender
-        //Transform data (rearrange)
-        //Store in sender buffer
-            //If sender buffer full
-                //Discard message
+    
         //Add to filtered value
 
 }
