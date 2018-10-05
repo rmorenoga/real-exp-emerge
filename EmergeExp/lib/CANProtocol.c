@@ -26,7 +26,7 @@ void sendPhase(float phase){
     CAN_SendMsgphaseOwn();
 }
 
-/*
+
 void sendHormone(uint8 horm[]){
     
     
@@ -42,8 +42,8 @@ void sendHormone(uint8 horm[]){
     CAN_SendMsghormoneOwn();
     
 }
-*/
 
+/*
 void sendHormone(void){
     
     if(dummy > 2u){
@@ -63,7 +63,7 @@ void sendHormone(void){
         
     CAN_SendMsghormoneOwn();
     
-}
+}*/
 
 void receivePhase(uint8 sender, float phase[]){
     

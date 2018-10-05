@@ -74,7 +74,7 @@ int main()
     for(;;){
         
         //Read and clear phase and hormone buffers
-        
+        buffercount[0]=0u;
         if(((receivedFlags >> 0) & 1u) != 0u){
             receivePhase(CAN_RX_MAILBOX_phaseData0, teta);
             receivedFlags &= ~(1u << 0);
@@ -100,9 +100,9 @@ int main()
         
         //Sense environment
             //Clear SendHormone flag
-            //controlFlags &= ~(0x01u);// clear a bit with: number &= ~(1u << n);
+            controlFlags &= ~(0x01u);// clear a bit with: number &= ~(1u << n);
             //Read Sensors and create hormone
-        //generateHormone(&controlFlags,horm);
+            generateHormone(&controlFlags,horm);
         
         
         
@@ -116,16 +116,16 @@ int main()
         sendPhase(teta[0]);         // Send phase through CAN
         
         //Send Generated Hormone message
-        //if ((controlFlags & 0x01u) != 0u){
-       //     sendHormone(horm);
-       // }
+        if ((controlFlags & 0x01u) != 0u){
+            sendHormone(horm);
+        }
         
         //Propagate received hormone message
         
         //LED_1_Write(1);
         //CyDelay(500);
         //LED_1_Write(0);
-        buffercount[0]=0u;
+        
         CyDelay(100);              // Wait for 1 second and repeat
     }
 }

@@ -11,8 +11,8 @@ int8 buffercount[4];
 
 
 void sendPhase(float phase);
-//void sendHormone(uint8 horm[]);
-void sendHormone(void);
+void sendHormone(uint8 horm[]);
+//void sendHormone(void);
 void receivePhase(uint8 sender, float phase[]);
 //void readPhaseBuffers(float phase[]); //Deprecated
 //void receiveHormone(uint8 sender);

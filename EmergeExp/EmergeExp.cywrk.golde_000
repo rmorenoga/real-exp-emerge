@@ -970,137 +970,38 @@
 <v>EmergeExp\Acelerometer\PSoC 4 Architecture TRM</v>
 <v>EmergeExp\Acelerometer\PSoC 4200M Family Datasheet</v>
 <v>EmergeExp\Acelerometer\System Reference Guides</v>
-<v>EmergeExp\Acelerometer\System Reference Guides\cy_boot_v5_40</v>
-<v>EmergeExp\Acelerometer\System Reference Guides\cy_dmac_v1_10</v>
-<v>EmergeExp\Acelerometer\System Reference Guides\cy_lfclk_v1_10</v>
-<v>EmergeExp\Acelerometer\ADC_SAR_SEQ_P4_v2_50.pdf</v>
-<v>EmergeExp\Acelerometer\CAN_v3_0.pdf</v>
-<v>EmergeExp\Acelerometer\cy_clock_v2_20.pdf</v>
-<v>EmergeExp\Acelerometer\cy_isr_v1_70.pdf</v>
-<v>EmergeExp\Acelerometer\cy_pins_v2_20</v>
-<v>EmergeExp\Acelerometer\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>EmergeExp\Acelerometer\Timer_v2_70.pdf</v>
-<v>EmergeExp\Acelerometer\ZeroTerminal.pdf</v>
 <v>EmergeExp\CAN_Basic_Example01</v>
 <v>EmergeExp\CAN_Basic_Example01\PSoC 3 Architecture TRM</v>
 <v>EmergeExp\CAN_Basic_Example01\CY8C38 Family Datasheet</v>
 <v>EmergeExp\CAN_Basic_Example01\System Reference Guides</v>
-<v>EmergeExp\CAN_Basic_Example01\System Reference Guides\cy_boot_v5_60</v>
-<v>EmergeExp\CAN_Basic_Example01\ADC_DelSig_v3_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\CAN_v3_0.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\CharLCD_v2_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\cy_clock_v2_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\cy_pins_v2_20</v>
-<v>EmergeExp\CAN_Basic_Example01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\Gnd_v1_0.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\PWM_v3_30.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\SwitchSPST_v1_0.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\ZeroTerminal.pdf</v>
 <v>EmergeExp\CAN_Full_Example02</v>
 <v>EmergeExp\CAN_Full_Example02\PSoC 3 Architecture TRM</v>
 <v>EmergeExp\CAN_Full_Example02\CY8C38 Family Datasheet</v>
 <v>EmergeExp\CAN_Full_Example02\System Reference Guides</v>
-<v>EmergeExp\CAN_Full_Example02\System Reference Guides\cy_boot_v5_60</v>
-<v>EmergeExp\CAN_Full_Example02\CAN_v3_0.pdf</v>
-<v>EmergeExp\CAN_Full_Example02\CharLCD_v2_20.pdf</v>
-<v>EmergeExp\CAN_Full_Example02\cy_pins_v2_20</v>
-<v>EmergeExp\CAN_Full_Example02\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>EmergeExp\Module_1</v>
 <v>EmergeExp\Module_1\PSoC 4 Architecture TRM</v>
 <v>EmergeExp\Module_1\PSoC 4200M Family Datasheet</v>
 <v>EmergeExp\Module_1\System Reference Guides</v>
-<v>EmergeExp\Module_1\System Reference Guides\cy_boot_v5_40</v>
-<v>EmergeExp\Module_1\System Reference Guides\cy_dmac_v1_10</v>
-<v>EmergeExp\Module_1\System Reference Guides\cy_lfclk_v1_10</v>
-<v>EmergeExp\Module_1\CAN_v3_0.pdf</v>
-<v>EmergeExp\Module_1\cy_constant_v1_0</v>
-<v>EmergeExp\Module_1\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
-<v>EmergeExp\Module_1\cy_pins_v2_20</v>
-<v>EmergeExp\Module_1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>EmergeExp\Module_1\CyControlReg_v1_80.pdf</v>
-<v>EmergeExp\Module_1\mux_v1_10</v>
-<v>EmergeExp\Module_1\mux_v1_10\mux_v1_10.pdf</v>
-<v>EmergeExp\Module_1\SCB_P4_v3_20</v>
-<v>EmergeExp\Module_1\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
-<v>EmergeExp\Module_1\UART_v2_50</v>
-<v>EmergeExp\Module_1\UART_v2_50\UART_v2_50.pdf</v>
 <v>EmergeExp\Module_2</v>
 <v>EmergeExp\Module_2\PSoC 4 Architecture TRM</v>
 <v>EmergeExp\Module_2\PSoC 4200M Family Datasheet</v>
 <v>EmergeExp\Module_2\System Reference Guides</v>
-<v>EmergeExp\Module_2\System Reference Guides\cy_boot_v5_40</v>
-<v>EmergeExp\Module_2\System Reference Guides\cy_dmac_v1_10</v>
-<v>EmergeExp\Module_2\System Reference Guides\cy_lfclk_v1_10</v>
-<v>EmergeExp\Module_2\CAN_v3_0.pdf</v>
-<v>EmergeExp\Module_2\cy_constant_v1_0</v>
-<v>EmergeExp\Module_2\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
-<v>EmergeExp\Module_2\cy_pins_v2_20</v>
-<v>EmergeExp\Module_2\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>EmergeExp\Module_2\CyControlReg_v1_80.pdf</v>
-<v>EmergeExp\Module_2\mux_v1_10</v>
-<v>EmergeExp\Module_2\mux_v1_10\mux_v1_10.pdf</v>
-<v>EmergeExp\Module_2\SCB_P4_v3_20</v>
-<v>EmergeExp\Module_2\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
-<v>EmergeExp\Module_2\UART_v2_50</v>
-<v>EmergeExp\Module_2\UART_v2_50\UART_v2_50.pdf</v>
 <v>EmergeExp\Module_CPG</v>
 <v>EmergeExp\Module_CPG\PSoC 4 Architecture TRM</v>
 <v>EmergeExp\Module_CPG\PSoC 4200M Family Datasheet</v>
 <v>EmergeExp\Module_CPG\System Reference Guides</v>
-<v>EmergeExp\Module_CPG\System Reference Guides\cy_boot_v5_40</v>
-<v>EmergeExp\Module_CPG\System Reference Guides\cy_dmac_v1_10</v>
-<v>EmergeExp\Module_CPG\System Reference Guides\cy_lfclk_v1_10</v>
-<v>EmergeExp\Module_CPG\CAN_v3_0.pdf</v>
-<v>EmergeExp\Module_CPG\cy_constant_v1_0</v>
-<v>EmergeExp\Module_CPG\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
-<v>EmergeExp\Module_CPG\cy_pins_v2_20</v>
-<v>EmergeExp\Module_CPG\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>EmergeExp\Module_CPG\CyControlReg_v1_80.pdf</v>
-<v>EmergeExp\Module_CPG\mux_v1_10</v>
-<v>EmergeExp\Module_CPG\mux_v1_10\mux_v1_10.pdf</v>
-<v>EmergeExp\Module_CPG\SCB_P4_v3_20</v>
-<v>EmergeExp\Module_CPG\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
-<v>EmergeExp\Module_CPG\UART_v2_50</v>
-<v>EmergeExp\Module_CPG\UART_v2_50\UART_v2_50.pdf</v>
 <v>EmergeExp\Test_Module</v>
 <v>EmergeExp\Test_Module\PSoC 4 Architecture TRM</v>
 <v>EmergeExp\Test_Module\PSoC 4200M Family Datasheet</v>
 <v>EmergeExp\Test_Module\System Reference Guides</v>
-<v>EmergeExp\Test_Module\System Reference Guides\cy_boot_v5_40</v>
-<v>EmergeExp\Test_Module\System Reference Guides\cy_dmac_v1_10</v>
-<v>EmergeExp\Test_Module\System Reference Guides\cy_lfclk_v1_10</v>
-<v>EmergeExp\Test_Module\CAN_v3_0.pdf</v>
-<v>EmergeExp\Test_Module\cy_pins_v2_20</v>
-<v>EmergeExp\Test_Module\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>EmergeExp\Test_Module\SCB_P4_v3_20</v>
-<v>EmergeExp\Test_Module\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
-<v>EmergeExp\Test_Module\UART_v2_50.pdf</v>
 <v>EmergeExp\Test_Module_CAN_1</v>
 <v>EmergeExp\Test_Module_CAN_1\PSoC 4 Architecture TRM</v>
 <v>EmergeExp\Test_Module_CAN_1\PSoC 4200M Family Datasheet</v>
 <v>EmergeExp\Test_Module_CAN_1\System Reference Guides</v>
-<v>EmergeExp\Test_Module_CAN_1\System Reference Guides\cy_boot_v5_40</v>
-<v>EmergeExp\Test_Module_CAN_1\System Reference Guides\cy_dmac_v1_10</v>
-<v>EmergeExp\Test_Module_CAN_1\System Reference Guides\cy_lfclk_v1_10</v>
-<v>EmergeExp\Test_Module_CAN_1\CAN_v3_0.pdf</v>
-<v>EmergeExp\Test_Module_CAN_1\cy_pins_v2_20</v>
-<v>EmergeExp\Test_Module_CAN_1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>EmergeExp\Test_Module_CAN_1\SCB_P4_v3_20</v>
-<v>EmergeExp\Test_Module_CAN_1\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
-<v>EmergeExp\Test_Module_CAN_1\UART_v2_50.pdf</v>
 <v>EmergeExp\Test_Module_CAN_2</v>
 <v>EmergeExp\Test_Module_CAN_2\PSoC 4 Architecture TRM</v>
 <v>EmergeExp\Test_Module_CAN_2\PSoC 4200M Family Datasheet</v>
 <v>EmergeExp\Test_Module_CAN_2\System Reference Guides</v>
-<v>EmergeExp\Test_Module_CAN_2\System Reference Guides\cy_boot_v5_40</v>
-<v>EmergeExp\Test_Module_CAN_2\System Reference Guides\cy_dmac_v1_10</v>
-<v>EmergeExp\Test_Module_CAN_2\System Reference Guides\cy_lfclk_v1_10</v>
-<v>EmergeExp\Test_Module_CAN_2\CAN_v3_0.pdf</v>
-<v>EmergeExp\Test_Module_CAN_2\cy_pins_v2_20</v>
-<v>EmergeExp\Test_Module_CAN_2\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>EmergeExp\Test_Module_CAN_2\SCB_P4_v3_20</v>
-<v>EmergeExp\Test_Module_CAN_2\SCB_P4_v3_20\SCB_P4_v3_20.pdf</v>
-<v>EmergeExp\Test_Module_CAN_2\UART_v2_50.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>EmergeExp</v>
@@ -1108,31 +1009,31 @@
 <v>EmergeExp\Acelerometer\PSoC 4 Architecture TRM</v>
 <v>EmergeExp\Acelerometer\PSoC 4200M Family Datasheet</v>
 <v>EmergeExp\Acelerometer\System Reference Guides</v>
-<v>EmergeExp\Acelerometer\System Reference Guides\cy_boot_v5_40</v>
-<v>EmergeExp\Acelerometer\System Reference Guides\cy_dmac_v1_10</v>
-<v>EmergeExp\Acelerometer\System Reference Guides\cy_lfclk_v1_10</v>
-<v>EmergeExp\Acelerometer\ADC_SAR_SEQ_P4_v2_50.pdf</v>
-<v>EmergeExp\Acelerometer\CAN_v3_0.pdf</v>
-<v>EmergeExp\Acelerometer\cy_clock_v2_20.pdf</v>
-<v>EmergeExp\Acelerometer\cy_isr_v1_70.pdf</v>
-<v>EmergeExp\Acelerometer\cy_pins_v2_20</v>
-<v>EmergeExp\Acelerometer\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>EmergeExp\Acelerometer\Timer_v2_70.pdf</v>
-<v>EmergeExp\Acelerometer\ZeroTerminal.pdf</v>
 <v>EmergeExp\CAN_Basic_Example01</v>
 <v>EmergeExp\CAN_Basic_Example01\PSoC 3 Architecture TRM</v>
 <v>EmergeExp\CAN_Basic_Example01\CY8C38 Family Datasheet</v>
 <v>EmergeExp\CAN_Basic_Example01\System Reference Guides</v>
-<v>EmergeExp\CAN_Basic_Example01\System Reference Guides\cy_boot_v5_60</v>
-<v>EmergeExp\CAN_Basic_Example01\ADC_DelSig_v3_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\CAN_v3_0.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\CharLCD_v2_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\cy_clock_v2_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\cy_pins_v2_20</v>
-<v>EmergeExp\CAN_Basic_Example01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\Gnd_v1_0.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\PWM_v3_30.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\SwitchSPST_v1_0.pdf</v>
+<v>EmergeExp\CAN_Full_Example02</v>
+<v>EmergeExp\CAN_Full_Example02\PSoC 3 Architecture TRM</v>
+<v>EmergeExp\CAN_Full_Example02\CY8C38 Family Datasheet</v>
+<v>EmergeExp\CAN_Full_Example02\System Reference Guides</v>
+<v>EmergeExp\Module_1</v>
+<v>EmergeExp\Module_1\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Module_1\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Module_1\System Reference Guides</v>
+<v>EmergeExp\Module_2</v>
+<v>EmergeExp\Module_2\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Module_2\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Module_2\System Reference Guides</v>
+<v>EmergeExp\Module_CPG</v>
+<v>EmergeExp\Module_CPG\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Module_CPG\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Module_CPG\System Reference Guides</v>
+<v>EmergeExp\Test_Module</v>
+<v>EmergeExp\Test_Module\PSoC 4 Architecture TRM</v>
+<v>EmergeExp\Test_Module\PSoC 4200M Family Datasheet</v>
+<v>EmergeExp\Test_Module\System Reference Guides</v>
+<v>EmergeExp\Test_Module_CAN_1</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -1159,6 +1060,7 @@
 <name v=".\Module_1.cydsn\Generated_Source\PSoC4\CAN.h" />
 <name v=".\Module_1.cydsn\Generated_Source\PSoC4\CAN_INT.c" />
 <name v=".\Module_1.cydsn\Generated_Source\PSoC4\CyBootAsmGnu.s" />
+<name v=".\lib\VCNL4010_1.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -1166,7 +1068,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="995, 399" SelectedTabbedMdiWindow="17ce5ef0-e7b7-476f-8529-9fe774517458"><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\main.c" Guid="f638a743-3221-410e-8d4a-ff27c928cedd" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\TopDesign\TopDesign.cysch" Guid="16009a89-b511-421e-aeb6-f962872084c0" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.h" Guid="96f6c483-06ed-4428-9bab-ea3a34a71bff" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.c" Guid="17ce5ef0-e7b7-476f-8529-9fe774517458" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.c" Guid="8c1be083-6118-495e-84e2-7af7afc8c413" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Hormone.c" Guid="811214d4-3e01-4c71-95eb-0a82c00635e7" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\main.c" Guid="39561e28-755c-4c7e-9214-a987dff8ffbc" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\TopDesign\TopDesign.cysch" Guid="9b29df89-7df6-4040-8de7-67200cc74f0b" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN_TX_RX_func.c" Guid="709ad882-1383-49d5-b5a1-213527cb56b9" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN.h" Guid="5218b0eb-768d-4efd-87a4-e1fe42f5f933" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN_INT.c" Guid="edf1d31e-c0e7-40df-b60a-043d2641d50b" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CyBootAsmGnu.s" Guid="17a764ab-d7e5-475e-8f1f-0347453be974" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1549, 711" SelectedTabbedMdiWindow="811214d4-3e01-4c71-95eb-0a82c00635e7"><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\main.c" Guid="f638a743-3221-410e-8d4a-ff27c928cedd" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\TopDesign\TopDesign.cysch" Guid="16009a89-b511-421e-aeb6-f962872084c0" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.h" Guid="96f6c483-06ed-4428-9bab-ea3a34a71bff" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.c" Guid="17ce5ef0-e7b7-476f-8529-9fe774517458" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.c" Guid="8c1be083-6118-495e-84e2-7af7afc8c413" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Hormone.c" Guid="811214d4-3e01-4c71-95eb-0a82c00635e7" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\main.c" Guid="39561e28-755c-4c7e-9214-a987dff8ffbc" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\TopDesign\TopDesign.cysch" Guid="9b29df89-7df6-4040-8de7-67200cc74f0b" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN_TX_RX_func.c" Guid="709ad882-1383-49d5-b5a1-213527cb56b9" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN.h" Guid="5218b0eb-768d-4efd-87a4-e1fe42f5f933" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN_INT.c" Guid="edf1d31e-c0e7-40df-b60a-043d2641d50b" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CyBootAsmGnu.s" Guid="17a764ab-d7e5-475e-8f1f-0347453be974" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\VCNL4010_1.c" Guid="50fe4267-5d56-48ec-a9e7-3aac8e424b85" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
