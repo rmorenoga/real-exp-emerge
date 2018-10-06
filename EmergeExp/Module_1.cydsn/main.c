@@ -21,7 +21,7 @@
     int motorGoal;
     uint8 controlFlags = 0x00u; //Flags: bit0(0x01):SendHormone bit1(0x02):N/A bit2(0x04):N/A bit3(0x08):N/A
                         //Flags: bit4(0x10):N/A         bit5(0x20):N/A bit6(0x40):N/A bit7(0x80):N/A
-    uint8 horm[6];
+    uint8 horm[HORM_SIZE];
     //uint8 flag = 0u;
     
 //uint8 receiveMailboxNumber = RX_MAILBOX_RESET; // Global variable used to store receive message mailbox number
