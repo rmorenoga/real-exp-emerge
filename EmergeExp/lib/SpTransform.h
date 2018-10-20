@@ -11,4 +11,4 @@ int8 f2[ORIENTATIONS][HORM_SIZE];
 int8 f3[ORIENTATIONS][HORM_SIZE];
 int8 f4[ORIENTATIONS][HORM_SIZE];
 
-void spHormoneTransform(uint8 horm[],int8 face,int8 connori,float hormTransformed[]);
+void spHormoneTransform(uint8 horm[],int8 face,int8 connori,uint8 hormTransformed[]);

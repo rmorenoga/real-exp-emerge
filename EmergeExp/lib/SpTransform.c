@@ -9,13 +9,13 @@ int8 f3[ORIENTATIONS][HORM_SIZE] = {{3,4,2,1,5,6},{6,5,2,1,3,4},{4,3,2,1,6,5},{5
 int8 f4[ORIENTATIONS][HORM_SIZE] = {{4,3,1,2,5,6},{5,6,1,2,3,4},{3,4,1,2,6,5},{6,5,1,2,4,3}};
 
 
-void spHormoneTransform(uint8 horm[],int8 face,int8 connori,float hormTransformed[]){
+void spHormoneTransform(uint8 horm[],int8 face,int8 connori,uint8 hormTransformed[]){
         
     int8 entry[HORM_SIZE];
     int8 i;
     if (face == 1){
         int8 dadFace = floor(connori/10);
-        int8 myOri = connori - (dadFace*10);
+        int8 myOri = (connori - (dadFace*10))-1;
         switch (dadFace){
          case 1: 
             for(i=0;i<HORM_SIZE;i++){
@@ -35,35 +35,29 @@ void spHormoneTransform(uint8 horm[],int8 face,int8 connori,float hormTransforme
         }
         
         for (i=0;i<HORM_SIZE;i++){
-            hormTransformed[i] = horm[entry[i]];
+            hormTransformed[i] = horm[entry[i]-1];
         }
     }else{    
         switch (face){
          case 2: 
             for(i=0;i<HORM_SIZE;i++){
-                entry[i] = f2[connori][i];
+                entry[i] = f2[connori-1][i];
             }
             break;
          case 3:
             for(i=0;i<HORM_SIZE;i++){
-                entry[i] = f3[connori][i];
+                entry[i] = f3[connori-1][i];
             }
             break;
          case 4:
             for(i=0;i<HORM_SIZE;i++){
-                entry[i] = f4[connori][i];
+                entry[i] = f4[connori-1][i];
             }
             break;
         }
         
         for (i=0;i<HORM_SIZE;i++){
-            hormTransformed[i] = horm[entry[i]];
-        }
-        
-    }
-    
-    
-   
-    
+            hormTransformed[i] = horm[entry[i]-1];
+        }       
+    } 
 }
-
