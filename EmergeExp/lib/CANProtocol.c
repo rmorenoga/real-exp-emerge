@@ -3,8 +3,8 @@
 uint8 receivedFlags = 0x00u; //Flags: bit0(0x01):phase1 bit1(0x02):phase2 bit2(0x04):phase3 bit3(0x08):phase4
                             //Flags: bit4(0x10):hormone1 bit5(0x20):hormone2 bit6(0x40):hormone3 bit7(0x80):hormone4
 //float phaseBuffer[4] = {0};
-uint8 hormBuffer0[HORM_BUFFER_SIZE][HORM_SIZE] ={0u};
-int8 buffercount[4] = {0u};
+uint8 hormBuffer0[HORM_BUFFER_SIZE][HORM_SIZE];
+int8 buffercount[4] = {0u,0u,0u,0u};
 uint8 dummy = 0u;
 
 void sendPhase(float phase){

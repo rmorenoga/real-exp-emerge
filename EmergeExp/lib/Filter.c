@@ -2,18 +2,19 @@
 
 int8 hormArrivedCount = 0;
 int8 oriCount[6] = {0,0,0,0,0,0};
+int8 filteredOri = 0;
 
-void filterHormones(uint8 horm[],unsigned int timestep,float hormFiltered[]){
+void filterHormones(float horm[],unsigned int timestep,float hormFiltered[]){
     
-    uint8 hormSumTotal[HORM_SIZE] = {0u,0u,0u,0u,0u,0u};
+    float hormSumTotal[HORM_SIZE] = {0u,0u,0u,0u,0u,0u};
     int8 i;
     int8 j;
-    
+    /*
     if (timestep == 0){
         for (i=0;i<HORM_SIZE;i++){
             hormFiltered[i] = horm[i];
         }
-    }
+    }*/
     
     for(i = 0;i<HORM_SIZE;i++){
         hormSumArrived[hormArrivedCount][i] = horm[i];    
@@ -27,7 +28,7 @@ void filterHormones(uint8 horm[],unsigned int timestep,float hormFiltered[]){
             }
         }
         for(i = 0;i<HORM_SIZE;i++){
-            hormFiltered[i] = ((float)hormSumTotal[i])/hormArrivedCount;   
+            hormFiltered[i] = hormSumTotal[i]/hormArrivedCount;   
         }
         hormArrivedCount = 0;
     }
@@ -57,10 +58,11 @@ void normalizedHormoneSum(uint8 horm[] ,float hormNorm[]){
         if(count[i]==0){
             hormNorm[i] = 0;
         }else{
-            hormNorm[i] = hormSum[i]/count[i];   
+            hormNorm[i] = ((float)hormSum[i])/count[i];   
         }
     } 
 }
+
 
 
 void integrate(int8 count[], uint8 horm[]){
@@ -73,17 +75,8 @@ void integrate(int8 count[], uint8 horm[]){
     }
     
 }
-/*
-void sumHormones(uint8 hormTotal[], uint8 horm1[], uint8 horm2[]){
-    //Assumes both hormones have the same size 
-    int8 i;   
-    for (i = 0;i<HORM_SIZE;i++){
-        hormTotal[i] = horm1[i]+horm2[i]; 
-    }
-}*/
 
-int8 filterOri(int8 ori,unsigned int timestep){
-    int8 filteredOri = 0;
+void filterOri(int8 ori,unsigned int timestep){
     int8 i;
     if(timestep==0){
         filteredOri = ori;
@@ -98,12 +91,12 @@ int8 filterOri(int8 ori,unsigned int timestep){
         for (i=0;i<6;i++){
             oriCount[i] = 0;
         }
-    }  
-    return filteredOri;   
+    }     
 }
 
+
 int8 findMaxCount(){
-    int maxCount = 0;
+    int8 maxCount = 0;
     int8 index = -1;
     int8 i;
     
