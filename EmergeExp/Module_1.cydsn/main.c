@@ -3,6 +3,8 @@
 #include <..\lib\CANProtocol.h>
 #include <..\lib\Hormone.h>
 #include <..\lib\AX12.h>
+#include <..\lib\SpTransform.h>
+#include <..\lib\Propagate.h>
 
 #define CAN_RX_MAILBOX_0_SHIFT      (1u)
 #define CAN_RX_MAILBOX_1_SHIFT      (2u)
@@ -36,9 +38,9 @@ int main()
     /*Initialization Routines*/
     //Init LED's
     LED_1_Write(0);
-	//LED_2_Write(0);
+	LED_2_Write(0);
 	LED_3_Write(0);
-	//LED_4_Write(0);
+	LED_4_Write(0);
     
     //Motor communication
     //RX_Start();                     //rx motor
@@ -46,13 +48,13 @@ int main()
  
     CAN_Start(); //  Start CAN module
     
-    SENSOR_1_Start();               // Start sensor I2C
+    SENSOR_1_Start();               // Start sensor I2C (Start calls enable)
 	//SENSOR_1_Enable();
-	//SENSOR_2_Start();
+	SENSOR_2_Start();
 	//SENSOR_2_Enable();
 	SENSOR_3_Start();
 	//SENSOR_3_Enable();
-	//SENSOR_4_Start();
+	SENSOR_4_Start();
 	//SENSOR_4_Enable();
     
     //CyIntSetVector(CAN_ISR_NUMBER, ISR_CAN); // Set CAN interrupt handler to local routine
@@ -63,10 +65,10 @@ int main()
     
     CyDelay(100);
     
-	initVCNL_1();                   // Check sensors working (Enable global interrupts before this)
-	//initVCNL_2();
+	initVCNL_1();                   // Check sensors working (Enable global interrupts before this!)
+	initVCNL_2();
 	initVCNL_3();
-	//initVCNL_4();
+	initVCNL_4();
     
                   
 
@@ -104,6 +106,9 @@ int main()
             //Read Sensors and create hormone
             generateHormone(&controlFlags,horm);
         
+        spTransformAllBuffers();
+        
+        receptors(horm);
         
         
         //CPG and movement
@@ -113,7 +118,7 @@ int main()
         //MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message
-        //sendPhase(teta[0]);         // Send phase through CAN
+        sendPhase(teta[0]);         // Send phase through CAN
         
         //Send Generated Hormone message
         if ((controlFlags & 0x01u) != 0u){
@@ -121,6 +126,7 @@ int main()
         }
         
         //Propagate received hormone message
+        propagate();
         
         //LED_1_Write(1);
         //CyDelay(500);

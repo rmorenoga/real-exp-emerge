@@ -1,7 +1,7 @@
 #include <project.h>
 #include <math.h>
 
-#define ANN_INPUT_SIZE (12)
+#define ANN_INPUT_SIZE (6)
 #define ANN_HIDDEN_SIZE (12)
 #define ANN_OUTPUT_SIZE (6)
 

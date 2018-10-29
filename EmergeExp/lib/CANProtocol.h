@@ -8,6 +8,9 @@ uint8 receivedFlags;//Flags: bit0(0x01):phase1 bit1(0x02):phase2 bit2(0x04):phas
 
 //float phaseBuffer[4];
 uint8 hormBuffer0[HORM_BUFFER_SIZE][HORM_SIZE];
+uint8 hormBuffer1[HORM_BUFFER_SIZE][HORM_SIZE];
+uint8 hormBuffer2[HORM_BUFFER_SIZE][HORM_SIZE];
+uint8 hormBuffer3[HORM_BUFFER_SIZE][HORM_SIZE];
 int8 buffercount[4];
 
 

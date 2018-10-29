@@ -22,4 +22,3 @@ void propagateANN(float input [],float output[]){
     } 
       
 }
-    

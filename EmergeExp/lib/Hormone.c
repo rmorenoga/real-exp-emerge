@@ -7,9 +7,9 @@ void generateHormone(uint8 * controlFlags, uint8 horm[]){
     uint8 i;
     
     SensorValues[0] = readSensor(1u);
-    SensorValues[1] = 0u;//readSensor(2u);
+    SensorValues[1] = readSensor(2u);
     SensorValues[2] = readSensor(3u);
-    SensorValues[3] = 0u;//readSensor(4u);
+    SensorValues[3] = readSensor(4u);
     
     for (i=0;i < 4;i++){
         if(SensorValues[i] != 0u){
@@ -56,3 +56,26 @@ uint8 readSensor(uint8 sensor){
     }
 }
 
+void receptors(uint8 horm[]){
+    float hormSummed[HORM_SIZE];
+    float hormFiltered[HORM_SIZE];
+    float output[ANN_OUTPUT_SIZE];
+    
+    normalizedHormoneSum(horm,hormSummed);
+    filterHormones(hormSummed,timeStep,hormFiltered);
+    propagateANN(hormFiltered,output);
+    convertOutputToCPGParameters(output);
+    
+    advanceTimeStep();
+}
+
+void convertOutputToCPGParameters(float output[]){
+    ampliSet = convertFromUnitToRange(output[0],MAX_AMLPITUDE,MIN_AMPLITUDE);
+    offsetSet = convertFromUnitToRange(output[1],MAX_OFFSET,MIN_OFFSET);
+    phaseDiffSet[0] =  convertFromUnitToRange(output[2],MAX_PHASE,MIN_PHASE);
+    phaseDiffSet[1] =  convertFromUnitToRange(output[3],MAX_PHASE,MIN_PHASE);
+}
+
+float convertFromUnitToRange(float value,float maxValue,float minValue){
+    return (((value)*(maxValue-minValue))) + minValue;
+}

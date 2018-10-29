@@ -3,6 +3,7 @@
 int8 hormArrivedCount = 0;
 int8 oriCount[6] = {0,0,0,0,0,0};
 int8 filteredOri = 0;
+unsigned int timeStep = 0;
 
 void filterHormones(float horm[],unsigned int timestep,float hormFiltered[]){
     
@@ -108,4 +109,8 @@ int8 findMaxCount(){
     }
     
     return index;
+}
+
+void advanceTimeStep(){
+    timeStep++;       
 }
