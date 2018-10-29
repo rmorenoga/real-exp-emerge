@@ -21,8 +21,8 @@ void generateHormone(uint8 * controlFlags, uint8 horm[]){
     horm[1] = SensorValues[1];
     horm[2] = SensorValues[2];
     horm[3] = SensorValues[3];
-    horm[4] = 0;
-    horm[5] = 0;    
+    horm[4] = 0u;
+    horm[5] = 0u;    
 }
 
 /*void sendHormone(uint16 horm[6]){
@@ -58,15 +58,34 @@ uint8 readSensor(uint8 sensor){
 
 void receptors(uint8 horm[]){
     float hormSummed[HORM_SIZE];
-    float hormFiltered[HORM_SIZE];
     float output[ANN_OUTPUT_SIZE];
-    
+    float input[ANN_INPUT_SIZE];
+    int i;
+       
     normalizedHormoneSum(horm,hormSummed);
-    filterHormones(hormSummed,timeStep,hormFiltered);
-    propagateANN(hormFiltered,output);
+    filterHormones(hormSummed,hormFiltered);
+    
+    for(i=0;i<HORM_SIZE;i++){
+        input[i] = hormFiltered[i]/255.0;       
+    }
+    /*
+    input[0] = 0.0;
+    input[1] = 0.0;
+    input[2] = 0.0;
+    input[3] = 0.0;
+    input[4] = 0.0;
+    input[5] = 0.0;*/
+    
+    input[6] = 0.9;
+    input[7] = 0.1;
+    input[8] = 0.1;
+    input[9] = 0.0;
+    input[10] = 0.1;
+    input[11] = 0.1;
+    
+    propagateANN(input,output);
     convertOutputToCPGParameters(output);
     
-    advanceTimeStep();
 }
 
 void convertOutputToCPGParameters(float output[]){

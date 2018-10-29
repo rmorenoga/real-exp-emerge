@@ -16,6 +16,8 @@
 #define MAX_OFFSET (1)
 #define MIN_OFFSET (-1)
 
+float hormFiltered[HORM_SIZE];
+
 void generateHormone(uint8 * controlFlags, uint8 horm[]);
 uint8 readSensor(uint8 sensor);
 

@@ -5,15 +5,15 @@
 #define ORI_WINDOW  (12)
 float hormSumArrived[HORM_SUM_WINDOW][HORM_SIZE];
 int8 hormArrivedCount;
+int8 oriArrivedCount;
 int8 oriCount[6];
 int8 filteredOri;
-unsigned int timeStep;
+//unsigned int timeStep;
 
-void filterHormones(float horm[],unsigned int timestep,float hormFiltered[]);
+void filterHormones(float horm[],float hormFiltered[]);
 void normalizedHormoneSum(uint8 horm[] ,float hormNorm[]);
 void integrate(int8 count[], uint8 horm[]);
 
-void filterOri(int8 ori,unsigned int timestep);
+void filterOri(int8 ori);
 int8 findMaxCount();
 
-void advanceTimeStep();

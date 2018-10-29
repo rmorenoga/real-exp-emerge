@@ -5,7 +5,6 @@ float ampli = 0.0;
 float dampli = 0.0;
 float offset = (0.3333)*M_PI;
 float doffset = 0.0;
-float output = 0.0;
 float ampliSet = M_PI/4;
 float offsetSet = 0.0;
 float phaseDiffSet[2] = {-M_PI/4,-M_PI/3};

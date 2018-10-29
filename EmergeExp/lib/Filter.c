@@ -1,28 +1,31 @@
 #include <..\lib\Filter.h>
 
-int8 hormArrivedCount = 0;
+int8 hormArrivedCount = -1;
+int8 oriArrivedCount = -1;
 int8 oriCount[6] = {0,0,0,0,0,0};
 int8 filteredOri = 0;
-unsigned int timeStep = 0;
+//unsigned int timeStep = 0;
 
-void filterHormones(float horm[],unsigned int timestep,float hormFiltered[]){
+void filterHormones(float horm[],float hormFiltered[]){
     
     float hormSumTotal[HORM_SIZE] = {0u,0u,0u,0u,0u,0u};
     int8 i;
     int8 j;
-    /*
-    if (timestep == 0){
+    
+    if (hormArrivedCount == -1){
         for (i=0;i<HORM_SIZE;i++){
             hormFiltered[i] = horm[i];
         }
-    }*/
+        hormArrivedCount++;
+    }
     
     for(i = 0;i<HORM_SIZE;i++){
         hormSumArrived[hormArrivedCount][i] = horm[i];    
     }
     hormArrivedCount++;
     
-    if((timestep%HORM_SUM_WINDOW)==0){
+    //if((timestep%HORM_SUM_WINDOW)==0){
+    if (hormArrivedCount==HORM_SUM_WINDOW){
         for (i = 0;i<hormArrivedCount;i++){
             for (j = 0;j<HORM_SIZE;j++){
                 hormSumTotal[j] = hormSumTotal[j]+hormSumArrived[i][j]; 
@@ -77,21 +80,24 @@ void integrate(int8 count[], uint8 horm[]){
     
 }
 
-void filterOri(int8 ori,unsigned int timestep){
+void filterOri(int8 ori){
     int8 i;
-    if(timestep==0){
+    if(oriArrivedCount == -1){
         filteredOri = ori;
+        oriArrivedCount++;
     }
     
     if (ori!=-1){
         oriCount[ori]++;
     }
-    
-    if((timestep%ORI_WINDOW)==0){
+    oriArrivedCount++;
+    //if((timestep%ORI_WINDOW)==0){
+    if (oriArrivedCount==ORI_WINDOW){
         filteredOri = findMaxCount();
         for (i=0;i<6;i++){
             oriCount[i] = 0;
         }
+        oriArrivedCount = 0;
     }     
 }
 
@@ -109,8 +115,4 @@ int8 findMaxCount(){
     }
     
     return index;
-}
-
-void advanceTimeStep(){
-    timeStep++;       
 }
