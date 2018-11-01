@@ -63,6 +63,7 @@
           <File BuildType="BUILD" Toolchain="">..\lib\SpTransform.h</File>
           <File BuildType="BUILD" Toolchain="">..\lib\ANNBias.h</File>
           <File BuildType="BUILD" Toolchain="">..\lib\Propagate.h</File>
+          <File BuildType="BUILD" Toolchain="">..\lib\Configuration.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4">

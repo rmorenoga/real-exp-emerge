@@ -5,11 +5,15 @@
 #include <..\lib\AX12.h>
 #include <..\lib\SpTransform.h>
 #include <..\lib\Propagate.h>
+#include <..\lib\Configuration.h>
 
 #define CAN_RX_MAILBOX_0_SHIFT      (1u)
 #define CAN_RX_MAILBOX_1_SHIFT      (2u)
 #define CAN_RX_MAILBOX_2_SHIFT      (4u)
 #define CAN_RX_MAILBOX_3_SHIFT      (8u)
+#define CAN_RX_MAILBOX_4_SHIFT      (16u)
+#define CAN_RX_MAILBOX_5_SHIFT      (32u)
+#define CAN_RX_MAILBOX_6_SHIFT      (64u)
 
 #define MOTOR_ID                    (1)
 
@@ -57,6 +61,8 @@ int main()
 	SENSOR_4_Start();
 	//SENSOR_4_Enable();
     
+    
+    configureCANID();
     //CyIntSetVector(CAN_ISR_NUMBER, ISR_CAN); // Set CAN interrupt handler to local routine
     CAN_isr_StartEx(ISR_CAN);       // Equivalent to last instruction 
     
@@ -84,12 +90,12 @@ int main()
         //flag &= 0x00;
         if(((receivedFlags >> 4) & 1u) != 0u){
             receiveHormoneFull(CAN_RX_MAILBOX_hormoneData00);
-            if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_2_SHIFT) != 0u){
+            if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_5_SHIFT) != 0u){
                 receiveHormoneFull(CAN_RX_MAILBOX_hormoneData01);
                 //flag |= (1u << 0);
                 CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData01);
             }
-            if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_3_SHIFT) != 0u){
+            if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_6_SHIFT) != 0u){
                 receiveHormoneFull(CAN_RX_MAILBOX_hormoneData02);
                 //flag |= (1u << 1);
                 CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData02);
@@ -155,7 +161,7 @@ CY_ISR(ISR_CAN){
     
     
     //If Hormone Data
-     if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_1_SHIFT) != 0u){
+     if((CAN_BUF_SR_REG & CAN_RX_MAILBOX_4_SHIFT) != 0u){
         receivedFlags |= (1u << 4);
         //receiveHormone(CAN_RX_MAILBOX_hormoneData0);     // Receive hormone information and updtates appropiate buffer
         CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData00);

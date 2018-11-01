@@ -62,8 +62,8 @@ void sendHormone(uint8 horm[]){
         
     CAN_SendMsghormoneOwn();
     
-}*/
-
+}
+*/
 void receivePhase(uint8 sender, float phase[]){
     
     uint8 bytePhase[4];

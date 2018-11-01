@@ -430,7 +430,13 @@
                         {
                             case 0u : CAN_ReceiveMsgphaseData0();
                             break;
-                            case 1u : CAN_ReceiveMsghormoneData00();
+                            case 1u : CAN_ReceiveMsgphaseData1();
+                            break;
+                            case 2u : CAN_ReceiveMsgphaseData2();
+                            break;
+                            case 3u : CAN_ReceiveMsgorientationData();
+                            break;
+                            case 4u : CAN_ReceiveMsghormoneData00();
                             break;
                             default:
                             break;

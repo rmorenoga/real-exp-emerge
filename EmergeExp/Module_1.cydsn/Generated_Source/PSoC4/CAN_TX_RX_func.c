@@ -690,12 +690,117 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
 
 #if (CAN_RX1_FUNC_ENABLE)
     /*******************************************************************************
-    * FUNCTION NAME:    CAN_ReceiveMsghormoneData00
+    * FUNCTION NAME:    CAN_ReceiveMsgphaseData1
     ********************************************************************************
     *
     * Summary:
     *  This function is the entry point to Receive Message 1 Interrupt. Clears the
     *  Receive Message 1 interrupt flag. Generated only for the Receive mailbox
+    *  designed as Full.
+    *
+    * Parameters:
+    *  None.
+    *
+    * Return:
+    *  None.
+    *
+    * Reentrant:
+    *  Depends on the Customer code.
+    *
+    *******************************************************************************/
+    void CAN_ReceiveMsgphaseData1(void) 
+    {
+        /* `#START MESSAGE_phaseData1_RECEIVED` */
+
+        /* `#END` */
+
+        #ifdef CAN_RECEIVE_MSG_phaseData1_CALLBACK
+            CAN_ReceiveMsg_phaseData1_Callback();
+        #endif /* CAN_RECEIVE_MSG_phaseData1_CALLBACK */
+
+        CAN_RX_ACK_MESSAGE(1u);
+    }
+#endif /* CAN_RX1_FUNC_ENABLE */
+
+
+#if (CAN_RX2_FUNC_ENABLE)
+    /*******************************************************************************
+    * FUNCTION NAME:   CAN_ReceiveMsgphaseData2
+    ********************************************************************************
+    *
+    * Summary:
+    *  This function is the entry point to Receive Message 2 Interrupt. Clears the
+    *  Receive Message 2 interrupt flag. Generated only for the Receive mailbox
+    *  designed as Full.
+    *
+    * Parameters:
+    *  None.
+    *
+    * Return:
+    *  None.
+    *
+    * Reentrant:
+    *  Depends on the Customer code.
+    *
+    *******************************************************************************/
+    void CAN_ReceiveMsgphaseData2(void) 
+    {
+        /* `#START MESSAGE_phaseData2_RECEIVED` */
+
+        /* `#END` */
+
+        #ifdef CAN_RECEIVE_MSG_phaseData2_CALLBACK
+            CAN_ReceiveMsg_phaseData2_Callback();
+        #endif /* CAN_RECEIVE_MSG_phaseData2_CALLBACK */
+
+        CAN_RX_ACK_MESSAGE(2u);
+    }
+#endif /* CAN_RX2_FUNC_ENABLE */
+
+
+#if (CAN_RX3_FUNC_ENABLE)
+    /*******************************************************************************
+    * FUNCTION NAME:   CAN_ReceiveMsgorientationData
+    ********************************************************************************
+    *
+    * Summary:
+    *  This function is the entry point to Receive Message 3 Interrupt. Clears the
+    *  Receive Message 3 interrupt flag. Generated only for the Receive mailbox
+    *  designed as Full.
+    *
+    * Parameters:
+    *  None.
+    *
+    * Return:
+    *  None.
+    *
+    * Reentrant:
+    *  Depends on the Customer code.
+    *
+    *******************************************************************************/
+    void CAN_ReceiveMsgorientationData(void) 
+    {
+        /* `#START MESSAGE_orientationData_RECEIVED` */
+
+        /* `#END` */
+
+        #ifdef CAN_RECEIVE_MSG_orientationData_CALLBACK
+            CAN_ReceiveMsg_orientationData_Callback();
+        #endif /* CAN_RECEIVE_MSG_orientationData_CALLBACK */
+
+        CAN_RX_ACK_MESSAGE(3u);
+    }
+#endif /* CAN_RX3_FUNC_ENABLE */
+
+
+#if (CAN_RX4_FUNC_ENABLE)
+    /*******************************************************************************
+    * FUNCTION NAME:   CAN_ReceiveMsghormoneData00
+    ********************************************************************************
+    *
+    * Summary:
+    *  This function is the entry point to Receive Message 4 Interrupt. Clears the
+    *  Receive Message 4 interrupt flag. Generated only for the Receive mailbox
     *  designed as Full.
     *
     * Parameters:
@@ -717,111 +822,6 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
         #ifdef CAN_RECEIVE_MSG_hormoneData00_CALLBACK
             CAN_ReceiveMsg_hormoneData00_Callback();
         #endif /* CAN_RECEIVE_MSG_hormoneData00_CALLBACK */
-
-        CAN_RX_ACK_MESSAGE(1u);
-    }
-#endif /* CAN_RX1_FUNC_ENABLE */
-
-
-#if (CAN_RX2_FUNC_ENABLE)
-    /*******************************************************************************
-    * FUNCTION NAME:   CAN_ReceiveMsg2
-    ********************************************************************************
-    *
-    * Summary:
-    *  This function is the entry point to Receive Message 2 Interrupt. Clears the
-    *  Receive Message 2 interrupt flag. Generated only for the Receive mailbox
-    *  designed as Full.
-    *
-    * Parameters:
-    *  None.
-    *
-    * Return:
-    *  None.
-    *
-    * Reentrant:
-    *  Depends on the Customer code.
-    *
-    *******************************************************************************/
-    void CAN_ReceiveMsg2(void) 
-    {
-        /* `#START MESSAGE_2_RECEIVED` */
-
-        /* `#END` */
-
-        #ifdef CAN_RECEIVE_MSG_2_CALLBACK
-            CAN_ReceiveMsg_2_Callback();
-        #endif /* CAN_RECEIVE_MSG_2_CALLBACK */
-
-        CAN_RX_ACK_MESSAGE(2u);
-    }
-#endif /* CAN_RX2_FUNC_ENABLE */
-
-
-#if (CAN_RX3_FUNC_ENABLE)
-    /*******************************************************************************
-    * FUNCTION NAME:   CAN_ReceiveMsg3
-    ********************************************************************************
-    *
-    * Summary:
-    *  This function is the entry point to Receive Message 3 Interrupt. Clears the
-    *  Receive Message 3 interrupt flag. Generated only for the Receive mailbox
-    *  designed as Full.
-    *
-    * Parameters:
-    *  None.
-    *
-    * Return:
-    *  None.
-    *
-    * Reentrant:
-    *  Depends on the Customer code.
-    *
-    *******************************************************************************/
-    void CAN_ReceiveMsg3(void) 
-    {
-        /* `#START MESSAGE_3_RECEIVED` */
-
-        /* `#END` */
-
-        #ifdef CAN_RECEIVE_MSG_3_CALLBACK
-            CAN_ReceiveMsg_3_Callback();
-        #endif /* CAN_RECEIVE_MSG_3_CALLBACK */
-
-        CAN_RX_ACK_MESSAGE(3u);
-    }
-#endif /* CAN_RX3_FUNC_ENABLE */
-
-
-#if (CAN_RX4_FUNC_ENABLE)
-    /*******************************************************************************
-    * FUNCTION NAME:   CAN_ReceiveMsg4
-    ********************************************************************************
-    *
-    * Summary:
-    *  This function is the entry point to Receive Message 4 Interrupt. Clears the
-    *  Receive Message 4 interrupt flag. Generated only for the Receive mailbox
-    *  designed as Full.
-    *
-    * Parameters:
-    *  None.
-    *
-    * Return:
-    *  None.
-    *
-    * Reentrant:
-    *  Depends on the Customer code.
-    *
-    *******************************************************************************/
-    void CAN_ReceiveMsg4(void) 
-    {
-        /* `#START MESSAGE_4_RECEIVED` */
- 
-        /* `#END` */
-
-        #ifdef CAN_RECEIVE_MSG_4_CALLBACK
-            CAN_ReceiveMsg_4_Callback();
-        #endif /* CAN_RECEIVE_MSG_4_CALLBACK */
 
         CAN_RX_ACK_MESSAGE(4u);
     }
@@ -886,7 +886,7 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
     void CAN_ReceiveMsg6(void) 
     {
         /* `#START MESSAGE_6_RECEIVED` */
- 
+
         /* `#END` */
 
         #ifdef CAN_RECEIVE_MSG_6_CALLBACK
