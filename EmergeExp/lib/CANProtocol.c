@@ -3,7 +3,7 @@
 uint8 receivedFlags = 0x00u; //Flags: bit0(0x01):phase1 bit1(0x02):phase2 bit2(0x04):phase3 bit3(0x08):phase4
                             //Flags: bit4(0x10):hormone1 bit5(0x20):hormone2 bit6(0x40):hormone3 bit7(0x80):hormone4
 //uint8 hormBuffer0[HORM_BUFFER_SIZE][HORM_SIZE] = {{1u,2u,3u,4u,5u,6u},{7u,8u,9u,10u,11u,12u}};
-int8 buffercount[4] = {0u,0u,0u,0u};
+int8 buffercount[4] = {0,0,0,0};
 uint8 dummy = 0u;
 
 void sendPhase(float phase){
@@ -26,7 +26,8 @@ void sendPhase(float phase){
 }
 
 
-void sendHormone(uint8 horm[]){
+void sendHormone(uint8 horm[],uint8 mask){
+    
     
     
     CAN_TX_DATA_BYTE1(CAN_TX_MAILBOX_hormoneOwn,horm[0]);
@@ -35,7 +36,7 @@ void sendHormone(uint8 horm[]){
     CAN_TX_DATA_BYTE4(CAN_TX_MAILBOX_hormoneOwn,horm[3]);
     CAN_TX_DATA_BYTE5(CAN_TX_MAILBOX_hormoneOwn,horm[4]);
     CAN_TX_DATA_BYTE6(CAN_TX_MAILBOX_hormoneOwn,horm[5]);
-    CAN_TX_DATA_BYTE7(CAN_TX_MAILBOX_hormoneOwn,0u);
+    CAN_TX_DATA_BYTE7(CAN_TX_MAILBOX_hormoneOwn,mask);
     CAN_TX_DATA_BYTE8(CAN_TX_MAILBOX_hormoneOwn,0u);
 
     CAN_SendMsghormoneOwn();
@@ -160,47 +161,52 @@ void receiveHormone(uint8 sender){
 
 void receiveHormoneFull(uint8 sender){
     
-    if (sender == CAN_RX_MAILBOX_hormoneData00 || sender == CAN_RX_MAILBOX_hormoneData01 || sender == CAN_RX_MAILBOX_hormoneData02){
-        //readHormoneMailBox(sender,hormBuffer0);
-        hormBuffer0[buffercount[0]][0] = CAN_RX_DATA_BYTE1(sender);
-        hormBuffer0[buffercount[0]][1] = CAN_RX_DATA_BYTE2(sender);
-        hormBuffer0[buffercount[0]][2] = CAN_RX_DATA_BYTE3(sender);
-        hormBuffer0[buffercount[0]][3] = CAN_RX_DATA_BYTE4(sender);
-        hormBuffer0[buffercount[0]][4] = CAN_RX_DATA_BYTE5(sender);
-        hormBuffer0[buffercount[0]][5] = CAN_RX_DATA_BYTE6(sender);
+    uint8 receivedMask = CAN_RX_DATA_BYTE7(sender);
+    
+    if (checkMessageMask(receivedMask)){
+    
+        if (sender == CAN_RX_MAILBOX_hormoneData00 || sender == CAN_RX_MAILBOX_hormoneData01 || sender == CAN_RX_MAILBOX_hormoneData02){
+            //readHormoneMailBox(sender,hormBuffer0);
+            hormBuffer0[buffercount[0]][0] = CAN_RX_DATA_BYTE1(sender);
+            hormBuffer0[buffercount[0]][1] = CAN_RX_DATA_BYTE2(sender);
+            hormBuffer0[buffercount[0]][2] = CAN_RX_DATA_BYTE3(sender);
+            hormBuffer0[buffercount[0]][3] = CAN_RX_DATA_BYTE4(sender);
+            hormBuffer0[buffercount[0]][4] = CAN_RX_DATA_BYTE5(sender);
+            hormBuffer0[buffercount[0]][5] = CAN_RX_DATA_BYTE6(sender);
         
-        buffercount[0]++;
-    } /* else if(sender == CAN_RX_MAILBOX_hormoneData10 || sender == CAN_RX_MAILBOX_hormoneData11 || sender == CAN_RX_MAILBOX_hormoneData12) {
+            buffercount[0]++;
+        } /* else if(sender == CAN_RX_MAILBOX_hormoneData10 || sender == CAN_RX_MAILBOX_hormoneData11 || sender == CAN_RX_MAILBOX_hormoneData12) {
         
-        hormBuffer1[buffercount[1]][0] = CAN_RX_DATA_BYTE1(sender);
-        hormBuffer1[buffercount[1]][1] = CAN_RX_DATA_BYTE2(sender);
-        hormBuffer1[buffercount[1]][2] = CAN_RX_DATA_BYTE3(sender);
-        hormBuffer1[buffercount[1]][3] = CAN_RX_DATA_BYTE4(sender);
-        hormBuffer1[buffercount[1]][4] = CAN_RX_DATA_BYTE5(sender);
-        hormBuffer1[buffercount[1]][5] = CAN_RX_DATA_BYTE6(sender);
+            hormBuffer1[buffercount[1]][0] = CAN_RX_DATA_BYTE1(sender);
+            hormBuffer1[buffercount[1]][1] = CAN_RX_DATA_BYTE2(sender);
+            hormBuffer1[buffercount[1]][2] = CAN_RX_DATA_BYTE3(sender);
+            hormBuffer1[buffercount[1]][3] = CAN_RX_DATA_BYTE4(sender);
+            hormBuffer1[buffercount[1]][4] = CAN_RX_DATA_BYTE5(sender);
+            hormBuffer1[buffercount[1]][5] = CAN_RX_DATA_BYTE6(sender);
         
-        buffercount[1]++;
-    } else if(sender == CAN_RX_MAILBOX_hormoneData20 || sender == CAN_RX_MAILBOX_hormoneData21 || sender == CAN_RX_MAILBOX_hormoneData22) {
+            buffercount[1]++;
+        } else if(sender == CAN_RX_MAILBOX_hormoneData20 || sender == CAN_RX_MAILBOX_hormoneData21 || sender == CAN_RX_MAILBOX_hormoneData22) {
         
-        hormBuffer2[buffercount[2]][0] = CAN_RX_DATA_BYTE1(sender);
-        hormBuffer2[buffercount[2]][1] = CAN_RX_DATA_BYTE2(sender);
-        hormBuffer2[buffercount[2]][2] = CAN_RX_DATA_BYTE3(sender);
-        hormBuffer2[buffercount[2]][3] = CAN_RX_DATA_BYTE4(sender);
-        hormBuffer2[buffercount[2]][4] = CAN_RX_DATA_BYTE5(sender);
-        hormBuffer2[buffercount[2]][5] = CAN_RX_DATA_BYTE6(sender);
+            hormBuffer2[buffercount[2]][0] = CAN_RX_DATA_BYTE1(sender);
+            hormBuffer2[buffercount[2]][1] = CAN_RX_DATA_BYTE2(sender);
+            hormBuffer2[buffercount[2]][2] = CAN_RX_DATA_BYTE3(sender);
+            hormBuffer2[buffercount[2]][3] = CAN_RX_DATA_BYTE4(sender);
+            hormBuffer2[buffercount[2]][4] = CAN_RX_DATA_BYTE5(sender);
+            hormBuffer2[buffercount[2]][5] = CAN_RX_DATA_BYTE6(sender);
         
-        buffercount[2]++;
-    } else if(sender == CAN_RX_MAILBOX_hormoneData30 || sender == CAN_RX_MAILBOX_hormoneData31 || sender == CAN_RX_MAILBOX_hormoneData32) {
+            buffercount[2]++;
+        } else if(sender == CAN_RX_MAILBOX_hormoneData30 || sender == CAN_RX_MAILBOX_hormoneData31 || sender == CAN_RX_MAILBOX_hormoneData32) {
         
-        hormBuffer3[buffercount[3]][0] = CAN_RX_DATA_BYTE1(sender);
-        hormBuffer3[buffercount[3]][1] = CAN_RX_DATA_BYTE2(sender);
-        hormBuffer3[buffercount[3]][2] = CAN_RX_DATA_BYTE3(sender);
-        hormBuffer3[buffercount[3]][3] = CAN_RX_DATA_BYTE4(sender);
-        hormBuffer3[buffercount[3]][4] = CAN_RX_DATA_BYTE5(sender);
-        hormBuffer3[buffercount[3]][5] = CAN_RX_DATA_BYTE6(sender);
+            hormBuffer3[buffercount[3]][0] = CAN_RX_DATA_BYTE1(sender);
+            hormBuffer3[buffercount[3]][1] = CAN_RX_DATA_BYTE2(sender);
+            hormBuffer3[buffercount[3]][2] = CAN_RX_DATA_BYTE3(sender);
+            hormBuffer3[buffercount[3]][3] = CAN_RX_DATA_BYTE4(sender);
+            hormBuffer3[buffercount[3]][4] = CAN_RX_DATA_BYTE5(sender);
+            hormBuffer3[buffercount[3]][5] = CAN_RX_DATA_BYTE6(sender);
         
-        buffercount[3]++;
-    }*/
+            buffercount[3]++;
+        }*/
+    }
   }  
     
 void readHormoneBuffers(void){
@@ -238,6 +244,42 @@ float float_decode(uint8 p_encoded_data[]){
     encoder.char_val[3] = p_encoded_data[3];
  
     return(encoder.float_val);
+}
+
+int8 checkMessageMask(uint8 receivedMask){
+    
+    if (((receivedMask >> MODULE_NUMBER) & 1u) != 0u){
+        return 1;
+    } else {
+        return 0;
+    }
+    
+    
+}
+
+uint8 createMaskAll(){
+    int8 i;
+    uint8 mask = 0x00u;
+    for (i = 0;i<4;i++){
+        if (connh[i] != -1){
+            mask |= (1u << connh[i]);
+        }
+    }
+    
+    return mask;
+}
+
+uint8 createMaskForward(int8 incomingFace){  
+    int8 i;
+    uint8 mask = 0x00u;
+    for (i = 0;i<4;i++){
+        if (i != incomingFace && connh[i] != -1){
+            mask |= (1u << connh[i]);
+        }
+    }
+    
+    return mask;
+    
 }
 
 

@@ -1,4 +1,5 @@
 #include <project.h>
+#include <..\lib\Configuration.h>
 
 #define HORM_SIZE  (6)
 #define HORM_BUFFER_SIZE  (3)
@@ -15,7 +16,7 @@ int8 buffercount[4];
 
 
 void sendPhase(float phase);
-void sendHormone(uint8 horm[]);
+void sendHormone(uint8 horm[],uint8 mask);
 //void sendHormone(void);
 void receivePhase(uint8 sender, float phase[]);
 //void readPhaseBuffers(float phase[]); //Deprecated
@@ -24,3 +25,7 @@ void receiveHormoneFull(uint8 sender);
 void readHormoneBuffers(void);
 void float_encode(float p_value, uint8 * p_encoded_data);
 float float_decode(uint8 * p_encoded_data);
+
+int8 checkMessageMask(uint8 receivedMask);
+uint8 createMaskAll();
+uint8 createMaskForward(int8 incomingFace);

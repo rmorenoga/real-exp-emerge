@@ -1,4 +1,5 @@
 #include <project.h>
+#include <stdlib.h>
 #include <..\lib\CPG.h>
 #include <..\lib\CANProtocol.h>
 #include <..\lib\Hormone.h>
@@ -35,6 +36,7 @@
 /*Function Prototypes*/
 CY_ISR_PROTO(ISR_CAN); // CAN Interruption handler declaration
 int convertAngleToPosition(float input, int maxPos, int minPos);
+float randd();
 
 
 int main()
@@ -82,7 +84,7 @@ int main()
     for(;;){
         
         //Read and clear phase and hormone buffers
-        buffercount[0]=0u;
+        buffercount[0]=0;
         if(((receivedFlags >> 0) & 1u) != 0u){
             receivePhase(CAN_RX_MAILBOX_phaseData0, teta);
             receivedFlags &= ~(1u << 0);
@@ -128,7 +130,8 @@ int main()
         
         //Send Generated Hormone message
         if ((controlFlags & 0x01u) != 0u){
-            sendHormone(horm);
+            uint8 mask = createMaskAll();
+            sendHormone(horm,mask);
         }
         
         //Propagate received hormone message
@@ -149,7 +152,7 @@ CY_ISR(ISR_CAN){
     //CAN_MsgRXIsr();     //Be careful acknowledges message before receiving mailbox can be sorted out
     
     LED_1_Write(1);
-    CyDelay(10);
+    CyDelay((int)(randd()*50));
     LED_1_Write(0);
     //Identify message header (see isr example)
     //If phase data
@@ -183,4 +186,8 @@ int convertAngleToPosition(float input, int maxPos, int minPos){
     output = convertedInput;
     
     return output;    
+}
+
+float randd(){
+    return (float)rand()/((float)RAND_MAX+1);   
 }
