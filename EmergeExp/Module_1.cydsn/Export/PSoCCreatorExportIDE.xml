@@ -48,6 +48,7 @@
           <File BuildType="BUILD" Toolchain="">..\lib\SpTransform.c</File>
           <File BuildType="BUILD" Toolchain="">..\lib\ANNBias.c</File>
           <File BuildType="BUILD" Toolchain="">..\lib\Propagate.c</File>
+          <File BuildType="BUILD" Toolchain="">..\lib\Configuration.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">..\lib\AX12.h</File>
           <File BuildType="BUILD" Toolchain="">..\lib\DynamixelSerial1.h</File>

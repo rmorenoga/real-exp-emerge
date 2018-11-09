@@ -6,7 +6,7 @@
 #include <..\lib\AX12.h>
 #include <..\lib\SpTransform.h>
 #include <..\lib\Propagate.h>
-#include <..\lib\Configuration.h>
+
 
 #define CAN_RX_MAILBOX_0_SHIFT      (1u)
 #define CAN_RX_MAILBOX_1_SHIFT      (2u)
@@ -153,6 +153,7 @@ CY_ISR(ISR_CAN){
     
     LED_1_Write(1);
     CyDelay((int)(randd()*50));
+    //CyDelay(10);
     LED_1_Write(0);
     //Identify message header (see isr example)
     //If phase data

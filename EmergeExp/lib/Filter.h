@@ -1,4 +1,4 @@
-#include <project.h>
+//#include <project.h>
 #include <..\lib\CANProtocol.h>
 
 #define HORM_SUM_WINDOW  (7)

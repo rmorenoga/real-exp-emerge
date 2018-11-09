@@ -438,6 +438,12 @@
                             break;
                             case 4u : CAN_ReceiveMsghormoneData00();
                             break;
+                            case 7u : CAN_ReceiveMsghormoneData10();
+                            break;
+                            case 10u : CAN_ReceiveMsghormoneData20();
+                            break;
+                            case 13u : CAN_ReceiveMsghormoneData30();
+                            break;
                             default:
                             break;
                         }

@@ -900,7 +900,7 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
 
 #if (CAN_RX7_FUNC_ENABLE)
     /*******************************************************************************
-    * FUNCTION NAME:   CAN_ReceiveMsg7
+    * FUNCTION NAME:   CAN_ReceiveMsghormoneData10
     ********************************************************************************
     *
     * Summary:
@@ -918,15 +918,15 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
     *  Depends on the Customer code.
     *
     *******************************************************************************/
-    void CAN_ReceiveMsg7(void) 
+    void CAN_ReceiveMsghormoneData10(void) 
     {
-        /* `#START MESSAGE_7_RECEIVED` */
+        /* `#START MESSAGE_hormoneData10_RECEIVED` */
 
         /* `#END` */
 
-        #ifdef CAN_RECEIVE_MSG_7_CALLBACK
-            CAN_ReceiveMsg_7_Callback();
-        #endif /* CAN_RECEIVE_MSG_7_CALLBACK */
+        #ifdef CAN_RECEIVE_MSG_hormoneData10_CALLBACK
+            CAN_ReceiveMsg_hormoneData10_Callback();
+        #endif /* CAN_RECEIVE_MSG_hormoneData10_CALLBACK */
 
         CAN_RX_ACK_MESSAGE(7u);
     }
@@ -1005,7 +1005,7 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
 
 #if (CAN_RX10_FUNC_ENABLE)
     /*******************************************************************************
-    * FUNCTION NAME:   CAN_ReceiveMsg10
+    * FUNCTION NAME:   CAN_ReceiveMsghormoneData20
     ********************************************************************************
     *
     * Summary:
@@ -1023,15 +1023,15 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
     *  Depends on the Customer code.
     *
     *******************************************************************************/
-    void CAN_ReceiveMsg10(void) 
+    void CAN_ReceiveMsghormoneData20(void) 
     {
-        /* `#START MESSAGE_10_RECEIVED` */
+        /* `#START MESSAGE_hormoneData20_RECEIVED` */
 
         /* `#END` */
 
-        #ifdef CAN_RECEIVE_MSG_10_CALLBACK
-            CAN_ReceiveMsg_10_Callback();
-        #endif /* CAN_RECEIVE_MSG_10_CALLBACK */
+        #ifdef CAN_RECEIVE_MSG_hormoneData20_CALLBACK
+            CAN_ReceiveMsg_hormoneData20_Callback();
+        #endif /* CAN_RECEIVE_MSG_hormoneData20_CALLBACK */
 
         CAN_RX_ACK_MESSAGE(10u);
     }
@@ -1110,7 +1110,7 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
 
 #if (CAN_RX13_FUNC_ENABLE)
     /*******************************************************************************
-    * FUNCTION NAME:   CAN_ReceiveMsg13
+    * FUNCTION NAME:   CAN_ReceiveMsghormoneData30
     ********************************************************************************
     *
     * Summary:
@@ -1128,15 +1128,15 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
     *  Depends on the Customer code.
     *
     *******************************************************************************/
-    void CAN_ReceiveMsg13(void) 
+    void CAN_ReceiveMsghormoneData30(void) 
     {
-        /* `#START MESSAGE_13_RECEIVED` */
+        /* `#START MESSAGE_hormoneData30_RECEIVED` */
 
         /* `#END` */
 
-        #ifdef CAN_RECEIVE_MSG_13_CALLBACK
-            CAN_ReceiveMsg_13_Callback();
-        #endif /* CAN_RECEIVE_MSG_13_CALLBACK */
+        #ifdef CAN_RECEIVE_MSG_hormoneData30_CALLBACK
+            CAN_ReceiveMsg_hormoneData30_Callback();
+        #endif /* CAN_RECEIVE_MSG_hormoneData30_CALLBACK */
 
         CAN_RX_ACK_MESSAGE(13u);
     }

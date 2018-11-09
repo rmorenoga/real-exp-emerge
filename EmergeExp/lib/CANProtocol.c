@@ -175,7 +175,7 @@ void receiveHormoneFull(uint8 sender){
             hormBuffer0[buffercount[0]][5] = CAN_RX_DATA_BYTE6(sender);
         
             buffercount[0]++;
-        } /* else if(sender == CAN_RX_MAILBOX_hormoneData10 || sender == CAN_RX_MAILBOX_hormoneData11 || sender == CAN_RX_MAILBOX_hormoneData12) {
+        }  else if(sender == CAN_RX_MAILBOX_hormoneData10 || sender == CAN_RX_MAILBOX_hormoneData11 || sender == CAN_RX_MAILBOX_hormoneData12) {
         
             hormBuffer1[buffercount[1]][0] = CAN_RX_DATA_BYTE1(sender);
             hormBuffer1[buffercount[1]][1] = CAN_RX_DATA_BYTE2(sender);
@@ -205,7 +205,7 @@ void receiveHormoneFull(uint8 sender){
             hormBuffer3[buffercount[3]][5] = CAN_RX_DATA_BYTE6(sender);
         
             buffercount[3]++;
-        }*/
+        }
     }
   }  
     
@@ -281,38 +281,3 @@ uint8 createMaskForward(int8 incomingFace){
     return mask;
     
 }
-
-
-
-//WHY DOESN'T THIS WORK?????
-// unsigned char part1;
-// unsigned char part2;
-// unsigned char part3;
-// unsigned char part4;
-
-// float *float_ptr1;
-// float *float_ptr2;
-
-// float fl = 0.25;
-// float fl2 = 0.0;
-
-
-
-
-// int main(void) {
-//   float_ptr1 = &fl;
-//   float_ptr2 = &fl2;
-
-//   part1 = *float_ptr1++;
-//   part2 = *float_ptr1++;
-//   part3 = *float_ptr1++;
-//   part4 = *float_ptr1;
-
-//   *float_ptr2++ = part1;
-//   *float_ptr2++ = part2;
-//   *float_ptr2++ = part3;
-//   *float_ptr2 = part4;
-
-//   printf("Hello\n");
-//   printf("%.6f", fl2);
-

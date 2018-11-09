@@ -14,7 +14,6 @@ uint8 hormBuffer2[HORM_BUFFER_SIZE][HORM_SIZE];
 uint8 hormBuffer3[HORM_BUFFER_SIZE][HORM_SIZE];
 int8 buffercount[4];
 
-
 void sendPhase(float phase);
 void sendHormone(uint8 horm[],uint8 mask);
 //void sendHormone(void);

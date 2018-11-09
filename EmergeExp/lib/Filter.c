@@ -8,7 +8,7 @@ int8 filteredOri = 0;
 
 void filterHormones(float horm[],float hormFiltered[]){
     
-    float hormSumTotal[HORM_SIZE] = {0u,0u,0u,0u,0u,0u};
+    float hormSumTotal[HORM_SIZE] = {0.0,0.0,0.0,0.0,0.0,0.0};
     int8 i;
     int8 j;
     
@@ -55,6 +55,27 @@ void normalizedHormoneSum(uint8 horm[] ,float hormNorm[]){
         integrate(count,hormBuffer0[i]);
         for(j=0;j<HORM_SIZE;j++){
             hormSum[j] = hormSum[j] + hormBuffer0[i][j];  
+        }
+    }
+    
+    for (i=0;i<buffercount[1];i++){
+        integrate(count,hormBuffer1[i]);
+        for(j=0;j<HORM_SIZE;j++){
+            hormSum[j] = hormSum[j] + hormBuffer1[i][j];  
+        }
+    }
+    
+    for (i=0;i<buffercount[2];i++){
+        integrate(count,hormBuffer2[i]);
+        for(j=0;j<HORM_SIZE;j++){
+            hormSum[j] = hormSum[j] + hormBuffer2[i][j];  
+        }
+    }
+    
+    for (i=0;i<buffercount[3];i++){
+        integrate(count,hormBuffer3[i]);
+        for(j=0;j<HORM_SIZE;j++){
+            hormSum[j] = hormSum[j] + hormBuffer3[i][j];  
         }
     }
         

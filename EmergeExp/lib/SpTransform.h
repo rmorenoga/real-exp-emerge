@@ -1,4 +1,4 @@
-#include <project.h>
+//#include <project.h>
 #include <math.h>
 #include <..\lib\CANProtocol.h>
 

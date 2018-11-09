@@ -88,18 +88,18 @@ extern uint8 CAN_initVar;
 #define CAN_RX2_FUNC_ENABLE            (1u)
 #define CAN_RX3_FUNC_ENABLE            (1u)
 #define CAN_RX4_FUNC_ENABLE            (1u)
+#define CAN_RX7_FUNC_ENABLE            (1u)
+#define CAN_RX10_FUNC_ENABLE           (1u)
+#define CAN_RX13_FUNC_ENABLE           (1u)
 #define CAN_RX5_FUNC_ENABLE            (0u)
 #define CAN_RX6_FUNC_ENABLE            (0u)
-#define CAN_RX7_FUNC_ENABLE            (0u)
 #define CAN_RX8_FUNC_ENABLE            (0u)
 #define CAN_RX9_FUNC_ENABLE            (0u)
-#define CAN_RX10_FUNC_ENABLE           (0u)
 #define CAN_RX11_FUNC_ENABLE           (0u)
 #define CAN_RX12_FUNC_ENABLE           (0u)
-#define CAN_RX13_FUNC_ENABLE           (0u)
 #define CAN_RX14_FUNC_ENABLE           (0u)
 #define CAN_RX15_FUNC_ENABLE           (0u)
-#define CAN_RX_MAILBOX_TYPE            (0x1Fu)
+#define CAN_RX_MAILBOX_TYPE            (0x249Fu)
 #define CAN_TX_MAILBOX_TYPE            (0x3u)
 
 
@@ -327,7 +327,7 @@ void  CAN_ReceiveMsg(uint8 rxMailbox) ;
     void CAN_ReceiveMsg6(void) ;
 #endif /* CAN_RX6_FUNC_ENABLE */
 #if (CAN_RX7_FUNC_ENABLE)
-    void CAN_ReceiveMsg7(void) ;
+    void CAN_ReceiveMsghormoneData10(void) ;
 #endif /* CAN_RX7_FUNC_ENABLE */
 #if (CAN_RX8_FUNC_ENABLE)
     void CAN_ReceiveMsg8(void) ;
@@ -336,7 +336,7 @@ void  CAN_ReceiveMsg(uint8 rxMailbox) ;
     void CAN_ReceiveMsg9(void) ;
 #endif /* CAN_RX9_FUNC_ENABLE */
 #if (CAN_RX10_FUNC_ENABLE)
-    void CAN_ReceiveMsg10(void) ;
+    void CAN_ReceiveMsghormoneData20(void) ;
 #endif /* CAN_RX10_FUNC_ENABLE */
 #if (CAN_RX11_FUNC_ENABLE)
     void CAN_ReceiveMsg11(void) ;
@@ -345,7 +345,7 @@ void  CAN_ReceiveMsg(uint8 rxMailbox) ;
     void CAN_ReceiveMsg12(void) ;
 #endif /* CAN_RX12_FUNC_ENABLE */
 #if (CAN_RX13_FUNC_ENABLE)
-    void CAN_ReceiveMsg13(void) ;
+    void CAN_ReceiveMsghormoneData30(void) ;
 #endif /* CAN_RX13_FUNC_ENABLE */
 #if (CAN_RX14_FUNC_ENABLE)
     void CAN_ReceiveMsg14(void) ;
@@ -428,15 +428,15 @@ void  CAN_ReceiveMsg(uint8 rxMailbox) ;
 #define CAN_RX_MAILBOX_hormoneData00   (4u)
 #define CAN_RX_MAILBOX_hormoneData01   (5u)
 #define CAN_RX_MAILBOX_hormoneData02   (6u)
-#define CAN_RX_MAILBOX_7               (7u)
-#define CAN_RX_MAILBOX_8               (8u)
-#define CAN_RX_MAILBOX_9               (9u)
-#define CAN_RX_MAILBOX_10              (10u)
-#define CAN_RX_MAILBOX_11              (11u)
-#define CAN_RX_MAILBOX_12              (12u)
-#define CAN_RX_MAILBOX_13              (13u)
-#define CAN_RX_MAILBOX_14              (14u)
-#define CAN_RX_MAILBOX_15              (15u)
+#define CAN_RX_MAILBOX_hormoneData10   (7u)
+#define CAN_RX_MAILBOX_hormoneData11   (8u)
+#define CAN_RX_MAILBOX_hormoneData12   (9u)
+#define CAN_RX_MAILBOX_hormoneData20   (10u)
+#define CAN_RX_MAILBOX_hormoneData21   (11u)
+#define CAN_RX_MAILBOX_hormoneData22   (12u)
+#define CAN_RX_MAILBOX_hormoneData30   (13u)
+#define CAN_RX_MAILBOX_hormoneData31   (14u)
+#define CAN_RX_MAILBOX_hormoneData32   (15u)
 
 
 /***************************************
