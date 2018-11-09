@@ -1,5 +1,22 @@
 #include <project.h>
 
+#define CAN_RX_MAILBOX_0_SHIFT      (1u)
+#define CAN_RX_MAILBOX_1_SHIFT      (2u)
+#define CAN_RX_MAILBOX_2_SHIFT      (4u)
+#define CAN_RX_MAILBOX_3_SHIFT      (8u)
+#define CAN_RX_MAILBOX_4_SHIFT      (16u)
+#define CAN_RX_MAILBOX_5_SHIFT      (32u)
+#define CAN_RX_MAILBOX_6_SHIFT      (64u)
+#define CAN_RX_MAILBOX_7_SHIFT      (128u)
+#define CAN_RX_MAILBOX_8_SHIFT      (256u)
+#define CAN_RX_MAILBOX_9_SHIFT      (512u)
+#define CAN_RX_MAILBOX_10_SHIFT      (1024u)
+#define CAN_RX_MAILBOX_11_SHIFT      (2048u)
+#define CAN_RX_MAILBOX_12_SHIFT      (4096u)
+#define CAN_RX_MAILBOX_13_SHIFT      (8192u)
+#define CAN_RX_MAILBOX_14_SHIFT      (16384u)
+#define CAN_RX_MAILBOX_15_SHIFT      (32768u)
+
 #define MODULE_0
 //#define MODULE_1
 //#define MODULE_2
@@ -10,6 +27,8 @@
 //#define MODULE_7
 #define AMR (0x001FFFF9) /* AMR (Bit[31;21]is Mask set to 0 for ID, Bit[20:3]=1, Bit2(IDE)=0, Bit1  RTR=0,Bit0=N/A*/
 #define ACR_ORIENTATION (0x10000000)
+//#define MODULE_T
+
 int8 connh[4];
 
 

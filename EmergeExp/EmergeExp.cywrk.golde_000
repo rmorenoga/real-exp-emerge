@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="EmergeExp\Module_1\Source Files">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="EmergeExp\Module_1\Generated_Source\PSoC4\CAN\CAN.c">
 <ExpandedNodeIds>
 <v>EmergeExp</v>
 <v>EmergeExp\Acelerometer\TopDesign</v>
@@ -111,6 +111,7 @@
 <v>EmergeExp\Module_1\Source Files\VCNL4010_2.c</v>
 <v>EmergeExp\Module_1\Source Files\VCNL4010_3.c</v>
 <v>EmergeExp\Module_1\Source Files\VCNL4010_4.c</v>
+<v>EmergeExp\Module_1\Generated_Source</v>
 <v>EmergeExp\Module_1\Generated_Source\PSoC4</v>
 <v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN</v>
 <v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN_isr</v>
@@ -234,20 +235,6 @@
 <v>EmergeExp\Test_Module_CAN_2\Generated_Source\PSoC4\CAN</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>EmergeExp\Module_1\Module_1.cydwr</v>
-<v>EmergeExp\Module_1\Header Files</v>
-<v>EmergeExp\Module_1\Header Files\ANNBias.h</v>
-<v>EmergeExp\Module_1\Header Files\AX12.h</v>
-<v>EmergeExp\Module_1\Header Files\CANProtocol.h</v>
-<v>EmergeExp\Module_1\Header Files\Configuration.h</v>
-<v>EmergeExp\Module_1\Header Files\CPG.h</v>
-<v>EmergeExp\Module_1\Header Files\cyapicallbacks.h</v>
-<v>EmergeExp\Module_1\Header Files\DynamixelSerial1.h</v>
-<v>EmergeExp\Module_1\Header Files\Filter.h</v>
-<v>EmergeExp\Module_1\Header Files\Hormone.h</v>
-<v>EmergeExp\Module_1\Header Files\Propagate.h</v>
-<v>EmergeExp\Module_1\Header Files\SpTransform.h</v>
-<v>EmergeExp\Module_1\Header Files\VCNL4010.h</v>
 <v>EmergeExp\Module_1\Header Files\VCNL4010_1.h</v>
 <v>EmergeExp\Module_1\Header Files\VCNL4010_2.h</v>
 <v>EmergeExp\Module_1\Header Files\VCNL4010_3.h</v>
@@ -264,6 +251,20 @@
 <v>EmergeExp\Module_1\Source Files\SpTransform.c</v>
 <v>EmergeExp\Module_1\Source Files\VCNL4010_1.c</v>
 <v>EmergeExp\Module_1\Source Files\VCNL4010_2.c</v>
+<v>EmergeExp\Module_1\Source Files\VCNL4010_3.c</v>
+<v>EmergeExp\Module_1\Source Files\VCNL4010_4.c</v>
+<v>EmergeExp\Module_1\Generated_Source</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN\CAN.c</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN\CAN.h</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN\CAN_INT.c</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN\CAN_PM.c</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN\CAN_TX_RX_func.c</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN_HFCLK</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN_isr</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN_isr\CAN_isr.c</v>
+<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN_isr\CAN_isr.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
