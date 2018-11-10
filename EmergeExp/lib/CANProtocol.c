@@ -25,7 +25,7 @@ void sendPhase(float phase){
     CAN_SendMsgphaseOwn();
 }
 
-
+/*
 void sendHormone(uint8 horm[],uint8 mask){
     
     
@@ -41,10 +41,10 @@ void sendHormone(uint8 horm[],uint8 mask){
 
     CAN_SendMsghormoneOwn();
     
-}
+}*/
 
-/*
-void sendHormone(uint8 horm[]){
+
+void sendHormone(uint8 horm[],uint8 mask){
     
     if(dummy > 2u){
         dummy = 0u;
@@ -56,7 +56,7 @@ void sendHormone(uint8 horm[]){
     CAN_TX_DATA_BYTE4(CAN_TX_MAILBOX_hormoneOwn,0x04+dummy);
     CAN_TX_DATA_BYTE5(CAN_TX_MAILBOX_hormoneOwn,0x05+dummy);
     CAN_TX_DATA_BYTE6(CAN_TX_MAILBOX_hormoneOwn,0x06+dummy);
-    CAN_TX_DATA_BYTE7(CAN_TX_MAILBOX_hormoneOwn,0x07+dummy);
+    CAN_TX_DATA_BYTE7(CAN_TX_MAILBOX_hormoneOwn,mask);
     CAN_TX_DATA_BYTE8(CAN_TX_MAILBOX_hormoneOwn,0x08+dummy);
 
     dummy++;
@@ -64,7 +64,7 @@ void sendHormone(uint8 horm[]){
     CAN_SendMsghormoneOwn();
     
 }
-*/
+
 void receivePhase(uint8 sender, float phase[]){
     
     uint8 bytePhase[4];
@@ -75,89 +75,8 @@ void receivePhase(uint8 sender, float phase[]){
     bytePhase[3] = CAN_RX_DATA_BYTE4(sender);
     
     phase[sender+1] = float_decode(bytePhase);
- /*   
-    switch(sender){
-        case 0u : 
-            phase[1] = float_decode(bytePhase);
-            break;
-        case 1u : 
-            phase[2] = float_decode(bytePhase);
-            break;
-        case 2u : 
-            phase[3] = float_decode(bytePhase);
-            break;
-        default:
-            break;
-    }*/
 }
 
-/* Deprecated
-void receivePhase(uint8 sender){
-    
-    uint8 bytePhase[4];
-   
-    bytePhase[0] = CAN_RX_DATA_BYTE1(CAN_RX_MAILBOX_phaseData0);
-    bytePhase[1] = CAN_RX_DATA_BYTE2(CAN_RX_MAILBOX_phaseData0);
-    bytePhase[2] = CAN_RX_DATA_BYTE3(CAN_RX_MAILBOX_phaseData0);
-    bytePhase[3] = CAN_RX_DATA_BYTE4(CAN_RX_MAILBOX_phaseData0);
-    
-    switch(sender)
-        {
-        case 0u : 
-            phaseBuffer[0] = float_decode(bytePhase);
-            receivedFlags |= 0x01u; 
-            break;
-        default:
-            break;
-        }
-}
-
-void readPhaseBuffers(float phase[]){
-    
-    uint8 shift = 0x01u;
-    uint8 bufferNumber;
-    
-    for (bufferNumber = 0;bufferNumber < 4;bufferNumber++){
-        if((receivedFlags & shift) != 0u){
-            phase[bufferNumber+1] = phaseBuffer[0];           
-        }else{
-            phase[bufferNumber+1] = -1;
-        }
-        shift <<= 1u;
-    }
-    receivedFlags &= 0xF0u;  //Clear phase received flags
-}
-*/
-
-/*
-void receiveHormone(uint8 sender){
-    
-    uint8 receivedHormone[6];
-    int8 i;
-    
-    receivedHormone[0] = CAN_RX_DATA_BYTE1(CAN_RX_MAILBOX_hormoneData0);
-    receivedHormone[1] = CAN_RX_DATA_BYTE2(CAN_RX_MAILBOX_hormoneData0);
-    receivedHormone[2] = CAN_RX_DATA_BYTE3(CAN_RX_MAILBOX_hormoneData0);
-    receivedHormone[3] = CAN_RX_DATA_BYTE4(CAN_RX_MAILBOX_hormoneData0);
-    receivedHormone[4] = CAN_RX_DATA_BYTE5(CAN_RX_MAILBOX_hormoneData0);
-    receivedHormone[5] = CAN_RX_DATA_BYTE6(CAN_RX_MAILBOX_hormoneData0);
-    
-    switch(sender)
-        {
-        case 0u : 
-            if(buffercount[0] < HORM_BUFFER_SIZE){
-                for(i=0;i < 6;i++){
-                    hormBuffer0[buffercount[0]][i] = receivedHormone[i]; 
-                }
-                buffercount[0]++;
-            }
-            receivedFlags |= 0x10u; 
-            break;
-        default:
-            break;
-        } 
-}
-*/
 
 void receiveHormoneFull(uint8 sender){
     

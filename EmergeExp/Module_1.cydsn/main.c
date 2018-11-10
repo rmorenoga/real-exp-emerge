@@ -1,5 +1,5 @@
 #include <project.h>
-#include <stdlib.h>
+//#include <stdlib.h>
 #include <..\lib\CPG.h>
 #include <..\lib\CANProtocol.h>
 #include <..\lib\Hormone.h>
@@ -21,14 +21,13 @@
     uint8 controlFlags = 0x00u; //Flags: bit0(0x01):SendHormone bit1(0x02):N/A bit2(0x04):N/A bit3(0x08):N/A
                         //Flags: bit4(0x10):N/A         bit5(0x20):N/A bit6(0x40):N/A bit7(0x80):N/A
     uint8 horm[HORM_SIZE];
-    //uint8 flag = 0u;
     
 //uint8 receiveMailboxNumber = RX_MAILBOX_RESET; // Global variable used to store receive message mailbox number
 
 /*Function Prototypes*/
 CY_ISR_PROTO(ISR_CAN); // CAN Interruption handler declaration
 int convertAngleToPosition(float input, int maxPos, int minPos);
-float randd(void);
+//float randd(void);
 void receive(void);
 
 
@@ -77,10 +76,7 @@ int main()
     for(;;){
         
         //Read and clear phase and hormone buffers
-        receive();
-            
-            //readHormoneBuffers();
-            
+        receive();            
         
         //Sense environment
             //Clear SendHormone flag
@@ -102,11 +98,14 @@ int main()
         //Send phase message
         sendPhase(teta[0]);         // Send phase through CAN
         
+        //LED_1_Write(1);
+        //CyDelay(10);
+        //LED_1_Write(0);
         //Send Generated Hormone message
-        if ((controlFlags & 0x01u) != 0u){
+        //if ((controlFlags & 0x01u) != 0u){
             uint8 mask = createMaskAll();
             sendHormone(horm,mask);
-        }
+        //}
         
         //Propagate received hormone message
         propagate();
@@ -126,8 +125,8 @@ CY_ISR(ISR_CAN){
     //CAN_MsgRXIsr();     //Be careful acknowledges message before receiving mailbox can be sorted out
     
     LED_1_Write(1);
-    CyDelay((int)(randd()*30));
-    //CyDelay(10);
+    //CyDelay((int)(randd()*30));
+    CyDelay(10);
     LED_1_Write(0);
     //Identify message header (see isr example)
     //If phase data
@@ -188,7 +187,6 @@ CY_ISR(ISR_CAN){
         //CAN_RX_ACK_MESSAGE(CAN_RX_MAILBOX_hormoneData02);
     }
     
-        //Add to filtered value
 
 }
 
@@ -204,9 +202,9 @@ int convertAngleToPosition(float input, int maxPos, int minPos){
     return output;    
 }
 
-float randd(){
-    return (float)rand()/((float)RAND_MAX+1);   
-}
+//float randd(){
+  //  return (float)rand()/((float)RAND_MAX+1);   
+//}
 
 void receive(void){
     

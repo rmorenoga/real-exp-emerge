@@ -1,5 +1,5 @@
 #include <project.h>
-#include <..\lib\CPG.h>
+//#include <..\lib\CPG.h>
 #include <..\lib\CANProtocol.h>
 #include <..\lib\Hormone.h>
 #include <..\lib\AX12.h>
@@ -108,8 +108,8 @@ int main()
         
         //CPG and movement
         updateCPG(teta);            // Update CPG Equations
-        angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
-        motorGoal = convertAngleToPosition(angle,800,200);                                    
+        //angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
+        //motorGoal = convertAngleToPosition(angle,800,200);                                    
         //MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message
@@ -117,7 +117,8 @@ int main()
         
         //Send Generated Hormone message
         //if ((controlFlags & 0x01u) != 0u){
-            sendHormone(horm);
+            uint8 mask = 0x01;
+            sendHormone(horm,mask);
         //}
         
         //Propagate received hormone message

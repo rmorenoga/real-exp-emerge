@@ -42,9 +42,9 @@ void configureCANID(void){
     CAN_SET_TX_ID_STANDARD_MSG(1, HORMONE_ID);  // Set transmit id for tx 1
     
     #ifdef MODULE_0
-        connh[0] = 1;
+        connh[0] =  4;
         connh[1] = -1;
-        connh[2] = -1;
+        connh[2] = 0;
         connh[3] = -1;
     #endif
     
