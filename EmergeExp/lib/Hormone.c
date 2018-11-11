@@ -3,13 +3,21 @@
 
 void generateHormone(uint8 * controlFlags, uint8 horm[]){
     
-    uint8 SensorValues[4]={0u};
+    uint8 SensorValues[4]={0u,0u,0u,0u};
     uint8 i;
     
-    SensorValues[0] = readSensor(1u);
-    SensorValues[1] = readSensor(2u);
-    SensorValues[2] = readSensor(3u);
-    SensorValues[3] = readSensor(4u);
+    if(connh[0] == -1){
+        SensorValues[0] = readSensor(4u);
+    }
+    if(connh[1] == -1){
+        SensorValues[1] = readSensor(2u);
+    }
+    if(connh[2] == -1){
+        SensorValues[2] = readSensor(1u);
+    }
+    if(connh[3] == -1){
+        SensorValues[3] = readSensor(3u);
+    }
     
     for (i=0;i < 4;i++){
         if(SensorValues[i] != 0u){

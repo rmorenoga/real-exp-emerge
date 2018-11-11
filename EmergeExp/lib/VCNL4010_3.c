@@ -44,7 +44,7 @@ void initVCNL_3(){
   } 
   //VCNL Init Params
   writeVCNL_3(VCNL4010_AMBIENT_LIGHT_REG, 0x0F); // Configures ambient light measures - Single conversion mode, 128 averages
-  writeVCNL_3(VCNL4010_LED_CURRENT_REG, 0x64);   // sets IR current in steps of 10mA 0-200mA --> 200mA
+  writeVCNL_3(VCNL4010_LED_CURRENT_REG, 30);   // sets IR current in steps of 10mA 0-200mA --> 200mA
   writeVCNL_3(VCNL4010_ICR, 0);    // Proximity IR test signal freq, 0-3 - 781.25 kHz
   writeVCNL_3(VCNL4010_LOW_THRESHOLD, 0x81); // proximity modulator timing - 129, recommended by Vishay 
 }

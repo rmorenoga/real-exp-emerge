@@ -1,6 +1,7 @@
 #include <..\lib\Configuration.h>
 
 int8 connh[4] = {-1,-1,-1,-1};
+int8 connOri[4] = {-1,-1,-1,-1};
 
 void configureCANID(void){
     
@@ -42,58 +43,90 @@ void configureCANID(void){
     CAN_SET_TX_ID_STANDARD_MSG(1, HORMONE_ID);  // Set transmit id for tx 1
     
     #ifdef MODULE_0
-        connh[0] =  4;
-        connh[1] = -1;
-        connh[2] = 0;
+        connh[0] = -1;
+        connh[1] = 1;
+        connh[2] = -1;
         connh[3] = -1;
+        connOri[0] = -1;
+        connOri[1] = 2;
+        connOri[2] = -1;
+        connOri[3] = -1;
     #endif
     
     #ifdef MODULE_1
-        connh[0] = 2;
-        connh[1] = -1;
-        connh[2] = 0;
+        connh[0] = 0;
+        connh[1] = 2;
+        connh[2] = -1;
         connh[3] = -1;
+        connOri[0] = 12;
+        connOri[1] = 4;
+        connOri[2] = -1;
+        connOri[3] = -1;
     #endif
     
     #ifdef MODULE_2
-        connh[0] = 3;
-        connh[1] = -1;
-        connh[2] = 1;
+        connh[0] = 1;
+        connh[1] = 3;
+        connh[2] = -1;
         connh[3] = -1;
+        connOri[0] = 14;
+        connOri[1] = 2;
+        connOri[2] = -1;
+        connOri[3] = -1;
     #endif
     
     #ifdef MODULE_3
-        connh[0] = 4;
-        connh[1] = -1;
-        connh[2] = 2;
+        connh[0] = 2;
+        connh[1] = 4;
+        connh[2] = -1;
         connh[3] = -1;
+        connOri[0] = 12;
+        connOri[1] = 4;
+        connOri[2] = -1;
+        connOri[3] = -1;
     #endif
     
     #ifdef MODULE_4
-        connh[0] = 5;
-        connh[1] = -1;
-        connh[2] = 3;
+        connh[0] = 3;
+        connh[1] = 5;
+        connh[2] = -1;
         connh[3] = -1;
+        connOri[0] = 14;
+        connOri[1] = 2;
+        connOri[2] = -1;
+        connOri[3] = -1;
     #endif
     
     #ifdef MODULE_5
-        connh[0] = 6;
-        connh[1] = -1;
-        connh[2] = 4;
+        connh[0] = 4;
+        connh[1] = 6;
+        connh[2] = -1;
         connh[3] = -1;
+        connOri[0] = 12;
+        connOri[1] = 4;
+        connOri[2] = -1;
+        connOri[3] = -1;
     #endif
     
      #ifdef MODULE_6
-        connh[0] = 7;
-        connh[1] = -1;
-        connh[2] = 5;
+        connh[0] = 5;
+        connh[1] = 7;
+        connh[2] = -1;
         connh[3] = -1;
+        connOri[0] = 14;
+        connOri[1] = 2;
+        connOri[2] = -1;
+        connOri[3] = -1;
     #endif
     
      #ifdef MODULE_7
-        connh[0] = -1;
+        connh[0] = 6;
         connh[1] = -1;
-        connh[2] = 6;
+        connh[2] = -1;
         connh[3] = -1;
+        connOri[0] = 12;
+        connOri[1] = -1;
+        connOri[2] = -1;
+        connOri[3] = -1;
     #endif
 }

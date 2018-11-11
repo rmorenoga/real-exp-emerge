@@ -8,8 +8,6 @@ int8 f2[ORIENTATIONS][HORM_SIZE] = {{1,2,3,4,5,6},{1,2,6,5,3,4},{1,2,4,3,6,5},{1
 int8 f3[ORIENTATIONS][HORM_SIZE] = {{3,4,2,1,5,6},{6,5,2,1,3,4},{4,3,2,1,6,5},{5,6,2,1,4,3}};
 int8 f4[ORIENTATIONS][HORM_SIZE] = {{4,3,1,2,5,6},{5,6,1,2,3,4},{3,4,1,2,6,5},{6,5,1,2,4,3}};
 
-int8 connOri[4] = {21,-1,-1,-1};
-
 /* Face starts from 1 to maintain compatibility with simulation part */
 /* connori also comes from simulation */
 void spHormoneTransform(uint8 horm[],int8 face,int8 connori,uint8 hormTransformed[]){
