@@ -64,16 +64,20 @@ uint8 readSensor(uint8 sensor){
     }
 }
 
-void receptors(uint8 horm[]){
+void receptors(uint8 horm[],int8 ori){
     float hormSummed[HORM_SIZE];
     float output[ANN_OUTPUT_SIZE];
     float input[ANN_INPUT_SIZE];
+    float oriInputs[ANN_ORI_INPUT_SIZE];
     int i;
        
     normalizedHormoneSum(horm,hormSummed);
     filterHormones(hormSummed,hormFiltered);
+    filterOri(ori);
+    getANNInputsFromOri(oriInputs,filteredOri);
     
     for(i=0;i<HORM_SIZE;i++){
+        //input[i] = convertFromRangetoUnit(hormFiltered[i], 255.0,10.0);
         input[i] = hormFiltered[i]/255.0;       
     }
     /*
@@ -82,18 +86,30 @@ void receptors(uint8 horm[]){
     input[2] = 0.0;
     input[3] = 0.0;
     input[4] = 0.0;
-    input[5] = 0.0;*/
+    input[5] = 0.0;
     
     input[6] = 0.9;
     input[7] = 0.1;
     input[8] = 0.1;
     input[9] = 0.0;
     input[10] = 0.1;
-    input[11] = 0.1;
+    input[11] = 0.1;*/
+    
+    for (i=0;i<ANN_ORI_INPUT_SIZE;i++){
+        input[i+ANN_ORI_INPUT_SIZE] = oriInputs[i];   
+    }
     
     propagateANN(input,output);
     convertOutputToCPGParameters(output);
     
+}
+
+void getANNInputsFromOri(float oriInputs[],int8 orientation){
+    int8 i;
+    for (i = 0; i < ANN_ORI_INPUT_SIZE; i++){
+        oriInputs[i] = 0.1;    
+    }   
+    oriInputs[orientation] = 0.9;
 }
 
 void convertOutputToCPGParameters(float output[]){
@@ -106,3 +122,7 @@ void convertOutputToCPGParameters(float output[]){
 float convertFromUnitToRange(float value,float maxValue,float minValue){
     return (((value)*(maxValue-minValue))) + minValue;
 }
+
+//float convertFromRangetoUnit(float value, float maxvalue,float minvalue){
+	//return (value-minvalue)/(maxvalue-minvalue);
+//}

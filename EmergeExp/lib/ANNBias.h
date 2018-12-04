@@ -4,6 +4,7 @@
 #define ANN_INPUT_SIZE (12)
 #define ANN_HIDDEN_SIZE (12)
 #define ANN_OUTPUT_SIZE (6)
+#define ANN_ORI_INPUT_SIZE (6)
 
 //float input[ANN_INPUT_SIZE];
 //float output[ANN_OUTPUT_SIZE];

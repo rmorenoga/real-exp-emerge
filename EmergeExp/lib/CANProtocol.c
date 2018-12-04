@@ -127,6 +127,11 @@ void receiveHormoneFull(uint8 sender){
         }
     }
   }  
+
+int8 receiveOri(uint8 sender){
+     uint8 orientationMessage = CAN_RX_DATA_BYTE1(sender);
+     return orientationMessage; //TODO: Check return value   
+}
     
 void readHormoneBuffers(void){
     int8 i;

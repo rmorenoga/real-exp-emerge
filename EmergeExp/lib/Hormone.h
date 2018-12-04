@@ -21,6 +21,11 @@ float hormFiltered[HORM_SIZE];
 void generateHormone(uint8 * controlFlags, uint8 horm[]);
 uint8 readSensor(uint8 sensor);
 
-void receptors(uint8 horm[]);
+void receptors(uint8 horm[],int8 ori);
+
+void getANNInputsFromOri(float oriInputs[],int8 orientation);
+
 void convertOutputToCPGParameters(float output[]);
 float convertFromUnitToRange(float value,float maxValue,float minValue);
+//float convertFromRangetoUnit(float value, float maxvalue,float minvalue);
+
