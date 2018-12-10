@@ -76,10 +76,7 @@ void receptors(uint8 horm[],int8 ori){
     filterOri(ori);
     getANNInputsFromOri(oriInputs,filteredOri);
     
-    for(i=0;i<HORM_SIZE;i++){
-        //input[i] = convertFromRangetoUnit(hormFiltered[i], 255.0,10.0);
-        input[i] = hormFiltered[i]/255.0;       
-    }
+    
     /*
     input[0] = 0.0;
     input[1] = 0.0;
@@ -96,7 +93,12 @@ void receptors(uint8 horm[],int8 ori){
     input[11] = 0.1;*/
     
     for (i=0;i<ANN_ORI_INPUT_SIZE;i++){
-        input[i+ANN_ORI_INPUT_SIZE] = oriInputs[i];   
+        input[i] = oriInputs[i];   
+    }
+    
+    for(i=0;i<HORM_SIZE;i++){
+        //input[i] = convertFromRangetoUnit(hormFiltered[i], 255.0,10.0);
+        input[i+HORM_SIZE] = hormFiltered[i]/255.0;       
     }
     
     propagateANN(input,output);
