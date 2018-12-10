@@ -74,7 +74,7 @@ functions to the new system clock value.
 \subsection section_clocking_runtime_cache Cache Configuration
 If the CPU clock frequency increases during device operation, the number of clock cycles cache will wait before sampling
 data coming back from Flash should be adjusted. If the CPU clock frequency decreases, the number of clock cycles can be
-also adjusted to improve CPU performance. See ìCySysFlashSetWaitCycles()î for PSoC 4 for more information.
+also adjusted to improve CPU performance. See ‚ÄúCySysFlashSetWaitCycles()‚Äù for PSoC 4 for more information.
 
 */
 
