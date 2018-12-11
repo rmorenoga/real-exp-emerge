@@ -25,10 +25,8 @@ void sendPhase(float phase){
     CAN_SendMsgphaseOwn();
 }
 
-/*
+
 void sendHormone(uint8 horm[],uint8 mask){
-    
-    
     
     CAN_TX_DATA_BYTE1(CAN_TX_MAILBOX_hormoneOwn,horm[0]);
 	CAN_TX_DATA_BYTE2(CAN_TX_MAILBOX_hormoneOwn,horm[1]);
@@ -41,9 +39,9 @@ void sendHormone(uint8 horm[],uint8 mask){
 
     CAN_SendMsghormoneOwn();
     
-}*/
+}
 
-
+/*
 void sendHormone(uint8 horm[],uint8 mask){
     
     if(dummy > 2u){
@@ -63,7 +61,7 @@ void sendHormone(uint8 horm[],uint8 mask){
         
     CAN_SendMsghormoneOwn();
     
-}
+}*/
 
 void receivePhase(uint8 sender, float phase[]){
     

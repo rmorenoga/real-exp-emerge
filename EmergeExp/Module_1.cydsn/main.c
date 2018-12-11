@@ -42,8 +42,8 @@ int main()
 	LED_4_Write(0);
     
     //Motor communication
-    //RX_Start();                     //rx motor
-    //MOTOR_Start();                  //tx motor
+    RX_Start();                     //rx motor
+    MOTOR_Start();                  //tx motor
  
     CAN_Start(); //  Start CAN module
     
@@ -93,8 +93,8 @@ int main()
         //CPG and movement
         updateCPG(teta);            // Update CPG Equations
         angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
-        motorGoal = convertAngleToPosition(angle,800,200);                                    
-        //MoveSpeed(MOTOR_ID, motorGoal, 150);
+        motorGoal = convertAngleToPosition(angle,600,400); //800,200                                    
+        MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message
         sendPhase(teta[0]);         // Send phase through CAN
@@ -103,10 +103,10 @@ int main()
         //CyDelay(10);
         //LED_1_Write(0);
         //Send Generated Hormone message
-        //if ((controlFlags & 0x01u) != 0u){
+        if ((controlFlags & 0x01u) != 0u){
             uint8 mask = createMaskAll();
             sendHormone(horm,mask);
-        //}
+        }
         
         //Propagate received hormone message
         propagate();
@@ -115,7 +115,7 @@ int main()
         //CyDelay(500);
         //LED_1_Write(0);
         
-        CyDelay(1000);              // Wait for 1 second and repeat
+        CyDelay(10);              // Wait for 1 second and repeat
     }
 }
 
@@ -194,9 +194,9 @@ CY_ISR(ISR_CAN){
 int convertAngleToPosition(float input, int maxPos, int minPos){
     
     int output = 0;
-    const float oldRange = M_PI/2-(-M_PI/2);
+    const float oldRange = 2-(-2);
     float newRange = maxPos - minPos;
-    float convertedInput =  (((input - (-M_PI/2)) * newRange) / oldRange) + minPos;
+    float convertedInput =  (((input - (-2)) * newRange) / oldRange) + minPos;
     
     output = convertedInput;
     

@@ -113,12 +113,12 @@ int main()
         //MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message
-        sendPhase(teta[0]);         // Send phase through CAN
+        //sendPhase(teta[0]);         // Send phase through CAN
         
         //Send Generated Hormone message
         //if ((controlFlags & 0x01u) != 0u){
             uint8 mask = 0x01;
-            sendHormone(horm,mask);
+            //sendHormone(horm,mask);
         //}
         
         //Propagate received hormone message

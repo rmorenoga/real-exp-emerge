@@ -10,7 +10,9 @@ int main()
     LED_1_Write(0);
     ADC_Start();
     ADC_StartConvert();
+    //Multiplexor_Start();
     CAN_Start();  //Start CAN
+    CAN_SET_TX_ID_STANDARD_MSG(0,ORIENTATION_ADDRESS);
     CyGlobalIntEnable;
     for(;;){
         LED_1_Write(0);

@@ -12,7 +12,7 @@ void configureCANID(void){
     CY_SET_REG32((reg32 *)(&CAN_RX[2].rxamr),AMR); // Set receiving mask for rx 2
     CY_SET_REG32((reg32 *)(&CAN_RX[2].rxacr),ACR_PHASE2); // Set receiving id for rx 2, id can be set with three hexadecimal numbers (0x001 for example) 
     CY_SET_REG32((reg32 *)(&CAN_RX[3].rxamr),AMR); // Set receiving mask for rx 3
-    CY_SET_REG32((reg32 *)(&CAN_RX[3].rxacr),ACR_PHASE3); // Set receiving id for rx 3, id can be set with three hexadecimal numbers (0x001 for example) 
+    CY_SET_REG32((reg32 *)(&CAN_RX[3].rxacr),ACR_ORIENTATION); // Set receiving id for rx 3, id can be set with three hexadecimal numbers (0x001 for example) 
     
     CY_SET_REG32((reg32 *)(&CAN_RX[4].rxamr),AMR); // Set receiving mask for rx 4
     CY_SET_REG32((reg32 *)(&CAN_RX[4].rxacr),ACR_HORMONE0);
