@@ -128,6 +128,32 @@ void receiveHormoneFull(uint8 sender){
 
 int8 receiveOri(uint8 sender){
      uint8 orientationMessage = CAN_RX_DATA_BYTE1(sender);
+    
+    #if defined(MODULE_1) || defined(MODULE_3) || defined(MODULE_5) || defined(MODULE_7)
+       switch (orientationMessage){
+        case 0 :
+            orientationMessage = 1;
+            break;
+        case 1 :
+            orientationMessage = 2;
+            break;
+        case 2 :
+            orientationMessage = 3;
+            break;
+        case 3 :
+            orientationMessage = 0;
+            break;
+        case 4 :
+            orientationMessage = 4;
+            break;
+        case 5 :
+            orientationMessage = 5;
+            break;
+        }
+    
+    #endif
+    
+    
      return orientationMessage; //TODO: Check return value   
 }
     

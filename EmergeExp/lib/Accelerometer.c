@@ -61,80 +61,34 @@ void sendOrientation(int8 orientation){
 }
 
 int8 getOriNumber(int16 xAxis,int16 yAxis,int16 zAxis){
+    
     int8 resultOri = 0;
-    int threshold = 30;
+    int threshold = 80;
     
-    int xRead = 1042;
-    int yRead = 1154;
-    int zRead = 868;
+    const int xHigh = 840;
+    const int xLow = 565;
+    const int yHigh = 840;
+    const int yLow = 567;
+    const int zHigh = 855;
+    const int zLow = 585;
     
-    if( xAxis < xRead + threshold && xAxis > xRead - threshold){
-        if (yAxis < yRead + threshold && yAxis > yRead - threshold){
-            if(zAxis < zRead + threshold && zAxis > zRead - threshold){
-                resultOri = 0;
-            }
-        }
-    } 
+    if (yAxis >= yHigh - threshold) {
+        resultOri = 5;
+    } else if(yAxis <= yLow + threshold){
+        resultOri = 4;
+    }
     
-    xRead = 955;
-    yRead = 1087;
-    zRead = 722;
+    if (zAxis >= zHigh - threshold) {
+        resultOri = 3;
+    } else if(zAxis <= zLow + threshold){
+        resultOri = 1;
+    }
     
-    if( xAxis < xRead + threshold && xAxis > xRead - threshold){
-        if (yAxis < yRead + threshold && yAxis > yRead - threshold){
-            if(zAxis < zRead + threshold && zAxis > zRead - threshold){
-                resultOri = 1;
-            }
-        }
-    } 
-    
-    xRead = 956;
-    yRead = 1090;
-    zRead = 730;
-    
-    if( xAxis < xRead + threshold && xAxis > xRead - threshold){
-        if (yAxis < yRead + threshold && yAxis > yRead - threshold){
-            if(zAxis < zRead + threshold && zAxis > zRead - threshold){
-                resultOri = 2;
-            }
-        }
-    } 
-    
-    xRead = 953;
-    yRead = 1087;
-    zRead = 712;
-    
-    if( xAxis < xRead + threshold && xAxis > xRead - threshold){
-        if (yAxis < yRead + threshold && yAxis > yRead - threshold){
-            if(zAxis < zRead + threshold && zAxis > zRead - threshold){
-                resultOri = 3;
-            }
-        }
-    } 
-    
-    xRead = 960;
-    yRead = 1145;
-    zRead = 744;
-    
-    if( xAxis < xRead + threshold && xAxis > xRead - threshold){
-        if (yAxis < yRead + threshold && yAxis > yRead - threshold){
-            if(zAxis < zRead + threshold && zAxis > zRead - threshold){
-                resultOri = 4;
-            }
-        }
-    } 
-    
-    xRead = 845;
-    yRead = 1040;
-    zRead = 589;
-    
-    if( xAxis < xRead + threshold && xAxis > xRead - threshold){
-        if (yAxis < yRead + threshold && yAxis > yRead - threshold){
-            if(zAxis < zRead + threshold && zAxis > zRead - threshold){
-                resultOri = 5;
-            }
-        }
-    } 
+    if (xAxis >= xHigh - threshold) {
+        resultOri = 2;
+    } else if(xAxis <= xLow + threshold){
+        resultOri = 0;
+    }
     
     return resultOri;
     

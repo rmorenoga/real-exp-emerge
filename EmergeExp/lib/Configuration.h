@@ -18,8 +18,8 @@
 #define CAN_RX_MAILBOX_15_SHIFT      (32768u)
 
 //#define MODULE_0
-//#define MODULE_1
-#define MODULE_2
+#define MODULE_1
+//#define MODULE_2
 //#define MODULE_3
 //#define MODULE_4
 //#define MODULE_5
