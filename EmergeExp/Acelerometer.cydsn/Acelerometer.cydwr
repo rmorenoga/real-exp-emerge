@@ -3721,7 +3721,7 @@
     </Group>
     <Group key="1e0cfad1-5834-4368-ba47-ddd89d0ebf5f">
       <Group key="0">
-        <Data key="Port Format" value="2,1" />
+        <Data key="Port Format" value="1,6" />
       </Group>
     </Group>
     <Group key="2f267d64-d948-45d7-883f-a34d333d64e2/5382e105-1382-4a2e-b9f4-3bb2feba71e0">
@@ -3786,7 +3786,7 @@
     </Group>
     <Group key="77715107-f8d5-47e5-a629-0fb83101ac6b">
       <Group key="0">
-        <Data key="Port Format" value="2,0" />
+        <Data key="Port Format" value="1,2" />
       </Group>
     </Group>
     <Group key="a904e29a-ebe9-4374-83f7-7c552ce6080a">

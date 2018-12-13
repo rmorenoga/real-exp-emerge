@@ -467,6 +467,10 @@
 <file name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
 <file name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
 <file name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\cymetadata.o">
+<dep name=".\Generated_Source\PSoC4\cymetadata.c" />
+</file>
+<file name=".\Generated_Source\PSoC4\cymetadata.c" />
 <file name=".\Generated_Source\PSoC4\Multiplexor.h" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\Multiplexor.o">
 <dep name=".\Generated_Source\PSoC4\Multiplexor.c" />
@@ -477,10 +481,6 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\Multiplexor.c" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\cymetadata.o">
-<dep name=".\Generated_Source\PSoC4\cymetadata.c" />
-</file>
-<file name=".\Generated_Source\PSoC4\cymetadata.c" />
 <file name=".\Generated_Source\PSoC4\Clock_1.h" />
 <file name=".\Generated_Source\PSoC4\Timer.h" />
 <file name=".\Generated_Source\PSoC4\Timer_1.h" />
@@ -823,13 +823,6 @@
 <v>Generated_Source\PSoC4\CAN_INT.c</v>
 <v>Generated_Source\PSoC4\CAN_PM.c</v>
 <v>Generated_Source\PSoC4\CAN_TX_RX_func.c</v>
-<v>Generated_Source\PSoC4\Timer_1.c</v>
-<v>Generated_Source\PSoC4\Timer_1.h</v>
-<v>Generated_Source\PSoC4\Timer_1_PM.c</v>
-<v>Generated_Source\PSoC4\Timer.c</v>
-<v>Generated_Source\PSoC4\Timer.h</v>
-<v>Generated_Source\PSoC4\Clock_1.c</v>
-<v>Generated_Source\PSoC4\Clock_1.h</v>
 <v>Generated_Source\PSoC4\ADC.c</v>
 <v>Generated_Source\PSoC4\ADC.h</v>
 <v>Generated_Source\PSoC4\ADC_PM.c</v>
@@ -886,8 +879,6 @@
 <v>Generated_Source\PSoC4\cycodeshareimport.ld</v>
 <v>Generated_Source\PSoC4\cycodeshareexport.ld</v>
 <v>Generated_Source\PSoC4\cycodeshareimport.scat</v>
-<v>Generated_Source\PSoC4\Multiplexor.c</v>
-<v>Generated_Source\PSoC4\Multiplexor.h</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
@@ -896,7 +887,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cy_psoc3_inc.v</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="131889617549052344" />
+<deps_time v="131891286470769439" />
 <top_block v="TopDesign" />
 <last_generation v="13" />
 <pdl_path v="" />
@@ -906,7 +897,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131889617663356962" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="131891286569669145" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
@@ -916,6 +907,7 @@
 <CyGuid_ccf7a56e-c00d-460c-82dd-56c8f54feb7f type_name="CyDesigner.Common.Debugger.CyWatchedVariableList+CyWatchedItem" version="1" window="0" name="xAxis" radix="decimal" />
 <CyGuid_ccf7a56e-c00d-460c-82dd-56c8f54feb7f type_name="CyDesigner.Common.Debugger.CyWatchedVariableList+CyWatchedItem" version="1" window="0" name="yAxis" radix="decimal" />
 <CyGuid_ccf7a56e-c00d-460c-82dd-56c8f54feb7f type_name="CyDesigner.Common.Debugger.CyWatchedVariableList+CyWatchedItem" version="1" window="0" name="zAxis" radix="decimal" />
+<CyGuid_ccf7a56e-c00d-460c-82dd-56c8f54feb7f type_name="CyDesigner.Common.Debugger.CyWatchedVariableList+CyWatchedItem" version="1" window="0" name="orientation" radix="Default" />
 </debugger_watch_list>
 </CyGuid_bf610382-39c6-441f-80b8-b04622ea7845>
 </dataGuid>
