@@ -16,11 +16,11 @@ int main()
     CyGlobalIntEnable;
     for(;;){
         LED_1_Write(0);
-        CyDelay(500);
+        CyDelay(400);
         orientation = readSensor();
         sendOrientation(orientation);
         LED_1_Write(1);
-        CyDelay(500);
+        CyDelay(400);
     }
     
     

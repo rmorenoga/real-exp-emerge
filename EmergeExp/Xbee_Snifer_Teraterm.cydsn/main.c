@@ -25,7 +25,12 @@ int Orientacion_2=V;
 int16 int16_decode(uint8 * p_encoded_data);
 
 void Oyente_Mail_1(){
-    int16 received = 0;
+    
+    sprintf(publicar, formato, mailbox0[0]);
+    XBEE_PutString(publicar);
+    XBEE_PutCRLF(0);
+    
+    /*int16 received = 0;
     uint8 encoded[2];
     
     encoded[0] = mailbox0[0];
@@ -54,7 +59,7 @@ void Oyente_Mail_1(){
     sprintf(publicar, formato, received);
     XBEE_PutString(publicar);
     
-    XBEE_PutCRLF(0);
+    XBEE_PutCRLF(0);*/
 }
 
 void Oyente_Mail_2(){

@@ -1,5 +1,6 @@
 #include <project.h>
 #include <math.h>
+#include <stdlib.h>
 
 #define ORIENTATION_ADDRESS (0x80)
 
