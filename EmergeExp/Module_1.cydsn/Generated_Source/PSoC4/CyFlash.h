@@ -117,7 +117,7 @@ void   CySysFlashSetWaitCycles  (uint32 freq);
 #define CY_SYS_FLASH_INVALID_ADDR       (0x04u)
 /** Specified flash row is protected. */
 #define CY_SYS_FLASH_PROTECTED          (0x05u)
-/** Resume Completed – All non-blocking API’s have completed. The resume/abort function cannot be called until the
+/** Resume Completed â€“ All non-blocking APIâ€™s have completed. The resume/abort function cannot be called until the
 next non-blocking. */
 #define CY_SYS_FLASH_RESUME_COMPLETED   (0x07u)
 /** \brief Pending Resume. A non-blocking was initiated and must be completed by calling the resume API, before any other

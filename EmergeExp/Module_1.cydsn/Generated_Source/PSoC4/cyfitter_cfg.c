@@ -138,9 +138,7 @@ static void CyClockStartupError(uint8 errorCode)
     /*  If not using CY_CFG_CLOCK_STARTUP_ERROR_CALLBACK, place your clock startup code here. */
     /* `#START CyClockStartupError` */
 
-    /* If we have a clock startup error (bad MHz crystal, PLL lock, etc.),  */
-    /* we will end up here to allow the customer to implement something to  */
-    /* deal with the clock condition.                                       */
+
 
     /* `#END` */
 

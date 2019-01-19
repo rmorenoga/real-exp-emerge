@@ -260,8 +260,8 @@ typedef void (*cyWdtCallback)(void);
 
 /* CySysClkWcoClockOutSelect() - parameter definitions */
 #if (CY_IP_WCO)
-    #define CY_SYS_CLK_WCO_SEL_CRYSTAL                  (1u)    /**< Selects External crystal as WCO’s clock source */
-    #define CY_SYS_CLK_WCO_SEL_PIN                      (0u)    /**<Selects External clock input on wco_in pin as WCO’s clock source */
+    #define CY_SYS_CLK_WCO_SEL_CRYSTAL                  (1u)    /**< Selects External crystal as WCOâ€™s clock source */
+    #define CY_SYS_CLK_WCO_SEL_PIN                      (0u)    /**<Selects External clock input on wco_in pin as WCOâ€™s clock source */
 #endif /* (CY_IP_WCO) */
 
 /* CySysClkWcoClockOutSelect() - implementation definitions */

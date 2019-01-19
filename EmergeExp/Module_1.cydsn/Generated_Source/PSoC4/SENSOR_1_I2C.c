@@ -56,7 +56,7 @@ volatile uint8 SENSOR_1_state;  /* Current state of I2C FSM */
     *  Configures the SENSOR_1 for I2C operation.
     *
     *  This function is intended specifically to be used when the SENSOR_1 
-    *  configuration is set to ìUnconfigured SENSOR_1î in the customizer. 
+    *  configuration is set to ‚ÄúUnconfigured SENSOR_1‚Äù in the customizer. 
     *  After initializing the SENSOR_1 in I2C mode using this function, 
     *  the component can be enabled using the SENSOR_1_Start() or 
     * SENSOR_1_Enable() function.

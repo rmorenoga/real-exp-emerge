@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="EmergeExp\Acelerometer">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="EmergeExp\Module_1">
 <ExpandedNodeIds>
 <v>EmergeExp</v>
 <v>EmergeExp\Acelerometer\TopDesign</v>
@@ -132,8 +132,6 @@
 <v>EmergeExp\Module_1\Source Files\VCNL4010_4.c</v>
 <v>EmergeExp\Module_1\Generated_Source</v>
 <v>EmergeExp\Module_1\Generated_Source\PSoC4</v>
-<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN</v>
-<v>EmergeExp\Module_1\Generated_Source\PSoC4\CAN_isr</v>
 <v>EmergeExp\Module_2\TopDesign</v>
 <v>EmergeExp\Module_2\Module_2.cydwr\Pins</v>
 <v>EmergeExp\Module_2\Module_2.cydwr\Analog</v>
@@ -338,23 +336,6 @@
 <v>EmergeExp\Design01</v>
 <v>EmergeExp\Design01\TopDesign</v>
 <v>EmergeExp\Design01\TopDesign\TopDesign.cysch</v>
-<v>EmergeExp\Module_1</v>
-<v>EmergeExp\Module_1\TopDesign</v>
-<v>EmergeExp\Module_1\TopDesign\TopDesign.cysch</v>
-<v>EmergeExp\Module_2</v>
-<v>EmergeExp\Module_2\TopDesign</v>
-<v>EmergeExp\Module_2\TopDesign\TopDesign.cysch</v>
-<v>EmergeExp\Module_CPG</v>
-<v>EmergeExp\Module_CPG\TopDesign</v>
-<v>EmergeExp\Module_CPG\TopDesign\TopDesign.cysch</v>
-<v>EmergeExp\Test_Module</v>
-<v>EmergeExp\Test_Module\TopDesign</v>
-<v>EmergeExp\Test_Module\TopDesign\TopDesign.cysch</v>
-<v>EmergeExp\Test_Module_CAN_1</v>
-<v>EmergeExp\Test_Module_CAN_1\TopDesign</v>
-<v>EmergeExp\Test_Module_CAN_1\TopDesign\TopDesign.cysch</v>
-<v>EmergeExp\Test_Module_CAN_2</v>
-<v>EmergeExp\Test_Module_CAN_2\TopDesign</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -1108,23 +1089,6 @@
 <v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
 <v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
 <v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_HFCLK.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_INT.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_isr.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_PM.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_TX_RX_func.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>EmergeExp\Acelerometer\CortexM0\ARM_GCC_541\Debug\Listing Files\LED_1.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -1304,23 +1268,6 @@
 <v>EmergeExp\Acelerometer\cy_pins_v2_20</v>
 <v>EmergeExp\Acelerometer\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>EmergeExp\CAN_Basic_Example01</v>
-<v>EmergeExp\CAN_Basic_Example01\PSoC 3 Architecture TRM</v>
-<v>EmergeExp\CAN_Basic_Example01\CY8C38 Family Datasheet</v>
-<v>EmergeExp\CAN_Basic_Example01\System Reference Guides</v>
-<v>EmergeExp\CAN_Basic_Example01\System Reference Guides\cy_boot_v5_60</v>
-<v>EmergeExp\CAN_Basic_Example01\ADC_DelSig_v3_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\CAN_v3_0.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\CharLCD_v2_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\cy_clock_v2_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\cy_pins_v2_20</v>
-<v>EmergeExp\CAN_Basic_Example01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\Gnd_v1_0.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\PWM_v3_30.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\SwitchSPST_v1_0.pdf</v>
-<v>EmergeExp\CAN_Basic_Example01\ZeroTerminal.pdf</v>
-<v>EmergeExp\CAN_Full_Example02</v>
-<v>EmergeExp\CAN_Full_Example02\PSoC 3 Architecture TRM</v>
-<v>EmergeExp\CAN_Full_Example02\CY8C38 Family Datasheet</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -1372,7 +1319,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1281, 390" SelectedTabbedMdiWindow="84d6adf8-2e19-43bd-9a16-24aef31b2992"><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\main.c" Guid="f638a743-3221-410e-8d4a-ff27c928cedd" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\TopDesign\TopDesign.cysch" Guid="16009a89-b511-421e-aeb6-f962872084c0" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Configuration.h" Guid="c528c498-f6d7-4331-8129-00bcd71816fa" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Configuration.c" Guid="5382cb32-9d75-4f95-a66e-0d26c20048e7" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.h" Guid="96f6c483-06ed-4428-9bab-ea3a34a71bff" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.c" Guid="17ce5ef0-e7b7-476f-8529-9fe774517458" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.h" Guid="d0f5b4c8-a081-4417-a743-be04cc448402" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.c" Guid="8c1be083-6118-495e-84e2-7af7afc8c413" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Hormone.c" Guid="811214d4-3e01-4c71-95eb-0a82c00635e7" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Hormone.h" Guid="e6d38c4e-bd22-4013-91da-53c60dea163e" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\main.c" Guid="39561e28-755c-4c7e-9214-a987dff8ffbc" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\TopDesign\TopDesign.cysch" Guid="9b29df89-7df6-4040-8de7-67200cc74f0b" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Filter.c" Guid="f91e9217-3842-4982-8ffb-a3608d6d6a61" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Filter.h" Guid="3cc30c25-916d-4e44-82fd-4c00b3b16b4b" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\SpTransform.c" Guid="8e6099a8-c5fd-48ee-b8a2-5fc03dae05ea" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\SpTransform.h" Guid="ec658ff6-f328-424e-b54c-3404c640b9cd" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\ANNBias.h" Guid="3a1d0064-d238-43ac-820f-6b56eda1a456" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\ANNBias.c" Guid="6494eca8-f527-4bd4-b8dc-fff3df802451" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Propagate.c" Guid="fada7b51-8e10-4ce4-afce-ceac63e1bd1e" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Propagate.h" Guid="b013a9f7-b341-4b39-a3e2-b1af9c152282" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN.h" Guid="e553affd-6ac4-4240-9ad4-9b844da680e8" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN.c" Guid="71362b4a-021d-4c2e-83c8-804ea203c762" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Acelerometer.cydsn\main.c" Guid="84d6adf8-2e19-43bd-9a16-24aef31b2992" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Accelerometer.c" Guid="90b39c5b-a4e6-4857-b67c-c64bdcd840fd" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Accelerometer.h" Guid="55de6be5-dfb5-4f8f-a193-fd9e773b9c05" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Xbee_Snifer_Teraterm.cydsn\main.c" Guid="ec09a50c-7679-4050-a9e1-c67f038e7209" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Acelerometer.cydsn\TopDesign\TopDesign.cysch" Guid="aee7c096-a542-49d8-a421-4939cdae4654" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Xbee_Snifer_Teraterm.cydsn\TopDesign\TopDesign.cysch" Guid="ed9bd3d9-ab8a-4429-b4e4-6e439a91cdaa" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="90a81b9e-9a9a-441f-8bd9-6f23b1c55339" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Acelerometer.cydsn\Acelerometer.cydwr" Guid="9b5232fb-2d74-472a-80db-e0257d98bcf7" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1281, 390" SelectedTabbedMdiWindow="f638a743-3221-410e-8d4a-ff27c928cedd"><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\main.c" Guid="f638a743-3221-410e-8d4a-ff27c928cedd" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\TopDesign\TopDesign.cysch" Guid="16009a89-b511-421e-aeb6-f962872084c0" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Configuration.h" Guid="c528c498-f6d7-4331-8129-00bcd71816fa" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Configuration.c" Guid="5382cb32-9d75-4f95-a66e-0d26c20048e7" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.h" Guid="96f6c483-06ed-4428-9bab-ea3a34a71bff" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CANProtocol.c" Guid="17ce5ef0-e7b7-476f-8529-9fe774517458" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.h" Guid="d0f5b4c8-a081-4417-a743-be04cc448402" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\CPG.c" Guid="8c1be083-6118-495e-84e2-7af7afc8c413" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Hormone.c" Guid="811214d4-3e01-4c71-95eb-0a82c00635e7" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Hormone.h" Guid="e6d38c4e-bd22-4013-91da-53c60dea163e" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\main.c" Guid="39561e28-755c-4c7e-9214-a987dff8ffbc" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_2.cydsn\TopDesign\TopDesign.cysch" Guid="9b29df89-7df6-4040-8de7-67200cc74f0b" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Filter.c" Guid="f91e9217-3842-4982-8ffb-a3608d6d6a61" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Filter.h" Guid="3cc30c25-916d-4e44-82fd-4c00b3b16b4b" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\SpTransform.c" Guid="8e6099a8-c5fd-48ee-b8a2-5fc03dae05ea" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\SpTransform.h" Guid="ec658ff6-f328-424e-b54c-3404c640b9cd" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\ANNBias.h" Guid="3a1d0064-d238-43ac-820f-6b56eda1a456" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\ANNBias.c" Guid="6494eca8-f527-4bd4-b8dc-fff3df802451" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Propagate.c" Guid="fada7b51-8e10-4ce4-afce-ceac63e1bd1e" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Propagate.h" Guid="b013a9f7-b341-4b39-a3e2-b1af9c152282" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN.h" Guid="e553affd-6ac4-4240-9ad4-9b844da680e8" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Module_1.cydsn\Generated_Source\PSoC4\CAN.c" Guid="71362b4a-021d-4c2e-83c8-804ea203c762" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Acelerometer.cydsn\main.c" Guid="84d6adf8-2e19-43bd-9a16-24aef31b2992" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Accelerometer.c" Guid="90b39c5b-a4e6-4857-b67c-c64bdcd840fd" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\lib\Accelerometer.h" Guid="55de6be5-dfb5-4f8f-a193-fd9e773b9c05" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Xbee_Snifer_Teraterm.cydsn\main.c" Guid="ec09a50c-7679-4050-a9e1-c67f038e7209" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Acelerometer.cydsn\TopDesign\TopDesign.cysch" Guid="aee7c096-a542-49d8-a421-4939cdae4654" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Xbee_Snifer_Teraterm.cydsn\TopDesign\TopDesign.cysch" Guid="ed9bd3d9-ab8a-4429-b4e4-6e439a91cdaa" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="90a81b9e-9a9a-441f-8bd9-6f23b1c55339" /><DocumentWindow Key="C:\Users\golde_000\git\real-exp-emerge.git\EmergeExp\Acelerometer.cydsn\Acelerometer.cydwr" Guid="9b5232fb-2d74-472a-80db-e0257d98bcf7" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="7b650e8f-dc80-4bdc-956b-cbbdad47cb7d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

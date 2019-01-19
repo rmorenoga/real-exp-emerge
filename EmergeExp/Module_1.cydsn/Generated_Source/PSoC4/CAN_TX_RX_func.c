@@ -26,8 +26,6 @@
 
 /* `#START TX_RX_FUNCTION` */
 
-
-
 /* `#END` */
 
 
@@ -326,14 +324,7 @@ void CAN_TxCancel(uint8 bufferId)
             else
             {
                 /* `#START MESSAGE_2_TRASMITTED` */
-                    CAN_TX_DATA_BYTE(2,0,dato_enviado_2[0]);
-                    CAN_TX_DATA_BYTE(2,1,dato_enviado_2[1]);
-                    CAN_TX_DATA_BYTE(2,2,dato_enviado_2[2]);
-                    CAN_TX_DATA_BYTE(2,3,dato_enviado_2[3]);
-                    CAN_TX_DATA_BYTE(2,4,dato_enviado_2[4]);
-                    CAN_TX_DATA_BYTE(2,5,dato_enviado_2[5]);
-                    CAN_TX_DATA_BYTE(2,6,dato_enviado_2[6]);
-                    CAN_TX_DATA_BYTE(2,7,dato_enviado_2[7]);
+
                 /* `#END` */
 
                 #ifdef CAN_SEND_MSG_2_CALLBACK
@@ -1214,59 +1205,3 @@ void CAN_ReceiveMsg(uint8 rxMailbox)
 
 
 /* [] END OF FILE */
-#if 0 /* begin disabled code */
-`#start MESSAGE_1_RECEIVED` -- section removed from template
-            mailbox1[0]=CAN_RX_DATA_BYTE1(1);
-            mailbox1[1]=CAN_RX_DATA_BYTE2(1);
-            mailbox1[2]=CAN_RX_DATA_BYTE3(1);
-            mailbox1[3]=CAN_RX_DATA_BYTE4(1);
-            mailbox1[4]=CAN_RX_DATA_BYTE5(1);
-            mailbox1[5]=CAN_RX_DATA_BYTE6(1);
-            mailbox1[6]=CAN_RX_DATA_BYTE7(1);
-            mailbox1[7]=CAN_RX_DATA_BYTE8(1);
-`#end`
-
-#endif /* end disabled code */
-#if 0 /* begin disabled code */
-`#start MESSAGE_0_RECEIVED` -- section removed from template
-  
-            mailbox0[0]=CAN_RX_DATA_BYTE1(0);
-            mailbox0[1]=CAN_RX_DATA_BYTE2(0);
-            mailbox0[2]=CAN_RX_DATA_BYTE3(0);
-            mailbox0[3]=CAN_RX_DATA_BYTE4(0);
-            mailbox0[4]=CAN_RX_DATA_BYTE5(0);
-            mailbox0[5]=CAN_RX_DATA_BYTE6(0);
-            mailbox0[6]=CAN_RX_DATA_BYTE7(0);
-            mailbox0[7]=CAN_RX_DATA_BYTE8(0);
-      
-        
-        
-`#end`
-
-#endif /* end disabled code */
-#if 0 /* begin disabled code */
-`#start MESSAGE_1_TRASMITTED` -- section removed from template
-                CAN_TX_DATA_BYTE(1,0,dato_enviado[0]);
-                CAN_TX_DATA_BYTE(1,1,dato_enviado[1]);
-                CAN_TX_DATA_BYTE(1,2,dato_enviado[2]);
-                CAN_TX_DATA_BYTE(1,3,dato_enviado[3]);
-                CAN_TX_DATA_BYTE(1,4,dato_enviado[4]);
-                CAN_TX_DATA_BYTE(1,5,dato_enviado[5]);
-                CAN_TX_DATA_BYTE(1,6,dato_enviado[6]);
-                CAN_TX_DATA_BYTE(1,7,dato_enviado[7]);
-`#end`
-
-#endif /* end disabled code */
-#if 0 /* begin disabled code */
-`#start MESSAGE_0_TRASMITTED` -- section removed from template
-                CAN_TX_DATA_BYTE(0,0,dato_enviado[0]);
-                CAN_TX_DATA_BYTE(0,1,dato_enviado[1]);
-                CAN_TX_DATA_BYTE(0,2,dato_enviado[2]);
-                CAN_TX_DATA_BYTE(0,3,dato_enviado[3]);
-                CAN_TX_DATA_BYTE(0,4,dato_enviado[4]);
-                CAN_TX_DATA_BYTE(0,5,dato_enviado[5]);
-                CAN_TX_DATA_BYTE(0,6,dato_enviado[6]);
-                CAN_TX_DATA_BYTE(0,7,dato_enviado[7]);                           
-`#end`
-
-#endif /* end disabled code */

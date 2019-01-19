@@ -162,7 +162,7 @@ void SENSOR_3_Init(void)
 *  The SENSOR_3 configuration should be not changed when the component
 *  is enabled. Any configuration changes should be made after disabling the 
 *  component.
-*  When configuration is set to ìUnconfigured SENSOR_3î, the component 
+*  When configuration is set to ‚ÄúUnconfigured SENSOR_3‚Äù, the component 
 *  must first be initialized to operate in one of the following configurations: 
 *  I2C, SPI, UART or EZ I2C, using the mode-specific initialization API. 
 *  Otherwise this function does not enable the component.

@@ -192,14 +192,14 @@ typedef struct
 
     /** 8-bit slave address mask. Bit 0 must have a value of 0. Ignored for
      *  non-slave modes.
-     *  - Bit value 0 – excludes bit from address comparison.
-     *  - Bit value 1 – the bit needs to match with the corresponding bit
+     *  - Bit value 0 â€“ excludes bit from address comparison.
+     *  - Bit value 1 â€“ the bit needs to match with the corresponding bit
      *   of the device address.
     */
     uint32 slaveAddrMask;
 
     /** When enabled the matching address is received into the RX FIFO:
-     *  0 – disable, 1 – enable.
+     *  0 â€“ disable, 1 â€“ enable.
      *
      *  The callback function has to be registered to handle the address
      *  accepted in the RX FIFO. Refer to section Accept matching address
@@ -208,12 +208,12 @@ typedef struct
     uint32 acceptAddr;
 
     /** When enabled the matching address generates a wakeup request:
-     *  0 – disable, 1 – enable. 1 – enable. Ignored for non-slave modes.
+     *  0 â€“ disable, 1 â€“ enable. 1 â€“ enable. Ignored for non-slave modes.
     */
     uint32 enableWake;
 
     /** When enabled the TX and RX FIFO depth is doubled and equal to
-     *  16 bytes: 0 – disable, 1 – enable.
+     *  16 bytes: 0 â€“ disable, 1 â€“ enable.
      *
      * Ignored for all devices other than PSoC 4100 BLE / PSoC 4200 BLE /
      * PSoC 4100M / PSoC 4200M / PSoC 4200L / PSoC 4000S / PSoC 4100S /
@@ -229,7 +229,7 @@ typedef struct
     uint16 dataRate;
 
     /** When enabled the I2C general call address (0x00) will be accepted by
-     *  the I2C hardware and trigger an interrupt: 0 – disable, 1 – enable.
+     *  the I2C hardware and trigger an interrupt: 0 â€“ disable, 1 â€“ enable.
      *
      *  The callback function has to be registered to handle a general call
      *  address. Refer to section Accept General Call for more information.

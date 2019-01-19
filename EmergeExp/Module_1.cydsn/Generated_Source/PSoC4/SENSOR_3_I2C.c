@@ -56,7 +56,7 @@ volatile uint8 SENSOR_3_state;  /* Current state of I2C FSM */
     *  Configures the SENSOR_3 for I2C operation.
     *
     *  This function is intended specifically to be used when the SENSOR_3 
-    *  configuration is set to ìUnconfigured SENSOR_3î in the customizer. 
+    *  configuration is set to ‚ÄúUnconfigured SENSOR_3‚Äù in the customizer. 
     *  After initializing the SENSOR_3 in I2C mode using this function, 
     *  the component can be enabled using the SENSOR_3_Start() or 
     * SENSOR_3_Enable() function.

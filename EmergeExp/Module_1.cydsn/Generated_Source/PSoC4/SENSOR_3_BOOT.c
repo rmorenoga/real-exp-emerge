@@ -144,7 +144,7 @@ void SENSOR_3_CyBtldrCommReset(void)
 *  \return
 *  cystatus: Returns CYRET_SUCCESS if no problem was encountered or returns the
 *  value that best describes the problem. For more information refer to 
-*  the ìReturn Codesî section of the System Reference Guide.
+*  the ‚ÄúReturn Codes‚Äù section of the System Reference Guide.
 *
 *******************************************************************************/
 cystatus SENSOR_3_CyBtldrCommRead(uint8 pData[], uint16 size, uint16 * count, uint8 timeOut)
@@ -197,7 +197,7 @@ cystatus SENSOR_3_CyBtldrCommRead(uint8 pData[], uint16 size, uint16 * count, ui
 *  \return
 *  cystatus: Returns CYRET_SUCCESS if no problem was encountered or returns the
 *  value that best describes the problem. For more information refer to 
-*  the ìReturn Codesî section of the System Reference Guide.
+*  the ‚ÄúReturn Codes‚Äù section of the System Reference Guide.
 *
 *******************************************************************************/
 cystatus SENSOR_3_CyBtldrCommWrite(const uint8 pData[], uint16 size, uint16 * count, uint8 timeOut)

@@ -1,5 +1,5 @@
 #include <project.h>
-//#include <stdlib.h>
+#include <stdlib.h>
 #include <..\lib\CPG.h>
 #include <..\lib\CANProtocol.h>
 #include <..\lib\Hormone.h>
@@ -21,14 +21,14 @@
     uint8 controlFlags = 0x00u; //Flags: bit0(0x01):SendHormone bit1(0x02):N/A bit2(0x04):N/A bit3(0x08):N/A
                         //Flags: bit4(0x10):N/A         bit5(0x20):N/A bit6(0x40):N/A bit7(0x80):N/A
     uint8 horm[HORM_SIZE];
-    int8 ori = 2;
+    int8 ori = 0;
     
 //uint8 receiveMailboxNumber = RX_MAILBOX_RESET; // Global variable used to store receive message mailbox number
 
 /*Function Prototypes*/
 CY_ISR_PROTO(ISR_CAN); // CAN Interruption handler declaration
 int convertAngleToPosition(float input, int maxPos, int minPos);
-//float randd(void);
+float randd(void);
 void receive(void);
 
 
@@ -47,17 +47,25 @@ int main()
  
     CAN_Start(); //  Start CAN module
     
-    SENSOR_1_Start();               // Start sensor I2C (Start calls enable)
-	//SENSOR_1_Enable();
-	SENSOR_2_Start();
-	//SENSOR_2_Enable();
-	SENSOR_3_Start();
-	//SENSOR_3_Enable();
-	SENSOR_4_Start();
-	//SENSOR_4_Enable();
-    
-    
     configureCANID();
+    
+    if(connh[2] == -1){
+        SENSOR_1_Start();               // Start sensor I2C (Start calls enable)
+	    //SENSOR_1_Enable();
+    }
+    if(connh[1] == -1){
+	    SENSOR_2_Start();
+	    //SENSOR_2_Enable();
+    }
+    if(connh[3] == -1){
+	    SENSOR_3_Start();
+	    //SENSOR_3_Enable();
+    }
+    if(connh[0] == -1){
+	    SENSOR_4_Start();
+	    //SENSOR_4_Enable();
+    }
+
     //CyIntSetVector(CAN_ISR_NUMBER, ISR_CAN); // Set CAN interrupt handler to local routine
     CAN_isr_StartEx(ISR_CAN);       // Equivalent to last instruction 
     
@@ -66,10 +74,11 @@ int main()
     
     CyDelay(100);
     
-	initVCNL_1();                   // Check sensors working (Enable global interrupts before this!)
-	initVCNL_2();
-	initVCNL_3();
-	initVCNL_4();
+	
+    if(connh[2] == -1){initVCNL_1();}                   // Check sensors working (Enable global interrupts before this!)
+	if(connh[1] == -1){initVCNL_2();}
+	if(connh[3] == -1){initVCNL_3();}
+	if(connh[0] == -1){initVCNL_4();}
     
                   
 
@@ -93,7 +102,7 @@ int main()
         //CPG and movement
         updateCPG(teta);            // Update CPG Equations
         angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
-        motorGoal = convertAngleToPosition(angle,600,400); //800,200                                    
+        motorGoal = convertAngleToPosition(angle,650,350); //800,200                                    
         MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message
@@ -115,7 +124,8 @@ int main()
         //CyDelay(500);
         //LED_1_Write(0);
         
-        CyDelay(10);              // Wait for 1 second and repeat
+        //CyDelay(10);              // Wait for 1 second and repeat
+        CyDelay((int)(randd()*100));
     }
 }
 
@@ -203,9 +213,9 @@ int convertAngleToPosition(float input, int maxPos, int minPos){
     return output;    
 }
 
-//float randd(){
-  //  return (float)rand()/((float)RAND_MAX+1);   
-//}
+float randd(){
+    return (float)rand()/((float)RAND_MAX+1);   
+}
 
 void receive(void){
     

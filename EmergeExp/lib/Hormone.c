@@ -57,7 +57,7 @@ uint8 readSensor(uint8 sensor){
             break;
     }
     
-    if(reading < 2883u){
+    if(reading < 3000u){
         return 0u;
     }else{
         return reading >> 8;
