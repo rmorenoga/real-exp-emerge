@@ -49,9 +49,9 @@ int main()
 		//else{LED_2_Write(0);} 
         
         if (S1 > 3000 ){
-            MoveSpeed(1,200,100);   
+            MoveSpeed(1,362,100);   
         }else if(S3 > 3000){
-            MoveSpeed(1,800,100);
+            MoveSpeed(1,662,100);
         }else{
             MoveSpeed(1,512,100);
         }      

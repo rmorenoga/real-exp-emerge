@@ -102,7 +102,7 @@ int main()
         //CPG and movement
         updateCPG(teta);            // Update CPG Equations
         angle = (offset+(cos(teta[0])*ampli)); // Calculate motor position change to output a number between 0 and 1
-        motorGoal = convertAngleToPosition(angle,650,350); //800,200                                    
+        motorGoal = convertAngleToPosition(angle,662,362); //812,212                                    
         MoveSpeed(MOTOR_ID, motorGoal, 150);
         
         //Send phase message

@@ -25,6 +25,7 @@
 //#define MODULE_5
 //#define MODULE_6
 //#define MODULE_7
+
 #define AMR (0x001FFFF9) /* AMR (Bit[31;21]is Mask set to 0 for ID, Bit[20:3]=1, Bit2(IDE)=0, Bit1  RTR=0,Bit0=N/A*/
 #define ACR_ORIENTATION (0x10000000)
 //#define MODULE_T
