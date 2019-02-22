@@ -67,11 +67,11 @@ int8 connOri[4];
     #define PHASE_ID (0x003)
     #define HORMONE_ID (0x009)
     #define ACR_PHASE0 (0x00400000) /* ACR (Bit[31;21]is ID=0x001, Bit2(IDE)=0, Bit1  RTR=0,Bit0=N/A, refer to faq document*/
-    #define ACR_PHASE1 (0x00800000)
+    #define ACR_PHASE1 (0x0fe00000)
     #define ACR_PHASE2 (0x0fe00000)
     #define ACR_PHASE3 (0x0fe00000)
     #define ACR_HORMONE0 (0x01000000) /* ACR (Bit[31;21]is ID=0x003, Bit2(IDE)=0, Bit1  RTR=0,Bit0=N/A*/
-    #define ACR_HORMONE1 (0x01400000)
+    #define ACR_HORMONE1 (0x0fe00000)
     #define ACR_HORMONE2 (0x0fe00000)
     #define ACR_HORMONE3 (0x0fe00000)    
 #endif

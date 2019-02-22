@@ -45,11 +45,11 @@ void configureCANID(void){
     #ifdef MODULE_0
         connh[0] = 20; // Power
         connh[1] = 1;  
-        connh[2] = -1;
+        connh[2] = 20; //Accelerometer
         connh[3] = -1;
         connOri[0] = -1;
         connOri[1] = 2;
-        connOri[2] = -1;
+        connOri[2] = -1;  
         connOri[3] = -1;
     #endif
     
@@ -66,11 +66,11 @@ void configureCANID(void){
     
     #ifdef MODULE_2
         connh[0] = 1;
-        connh[1] = 3;
+        connh[1] = -1;
         connh[2] = -1;
         connh[3] = -1;
         connOri[0] = 14;
-        connOri[1] = 2;
+        connOri[1] = -1;
         connOri[2] = -1;
         connOri[3] = -1;
     #endif
@@ -121,9 +121,9 @@ void configureCANID(void){
     
      #ifdef MODULE_7
         connh[0] = 6;
-        connh[1] = -1;
-        connh[2] = -1;
-        connh[3] = -1;
+        connh[1] = 20;
+        connh[2] = 20;
+        connh[3] = 20;
         connOri[0] = 12;
         connOri[1] = -1;
         connOri[2] = -1;
